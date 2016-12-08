@@ -13,8 +13,9 @@ import TopicListItem from './components/TopicListItem/TopicListItem.jsx';
 render((
   // <App />, document.querySelector('#container'));
   <Router history={hashHistory}>
-    <Route path="/" component={App} />
-    <Route path="/topic" component={TopicList} />
-    <Route path="/topicItem" component={TopicListItem} />
+    <Route path="/" component={App}>
+      <Route path="/topic" component={TopicList} />
+      <Route path="/topicItem" component={TopicListItem} />
+    </Route>
   </Router>
   ), document.querySelector('#container'));
