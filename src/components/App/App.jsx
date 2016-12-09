@@ -12,20 +12,20 @@ export default React.createClass({
   render(){
     return(
       <container>
-          <div role="nav">
-            <Header />
-          </div>
-        <div className="appContainer">
-            <Aside>
-              <div><NavLink to="/topic">Topic List</NavLink></div>
-              {/*<li><Link to="/topicItem" activeStyle={{ color: 'red' }}>Topic Items</Link></li>*/}
-            </Aside>
-            <DisplayNoteContainer>
-              <div><NavLink to="/oldNote">Saved Note</NavLink></div>
-              <div><NavLink to="/newNote">New Note</NavLink></div>
-            </DisplayNoteContainer>
+        <div role="nav">
+          <Header />
         </div>
-          {this.props.children}
+        <div className="appContainer">
+          <Aside>
+            {/*<div><NavLink to="/topic">Topic List</NavLink></div>*/}
+            {/*<li><Link to="/topicItem" activeStyle={{ color: 'red' }}>Topic Items</Link></li>*/}
+          </Aside>
+          <DisplayNoteContainer>
+            {/*<div><NavLink to="/oldNote">Saved Note</NavLink></div>*/}
+            {/*<div><NavLink to="/newNote">New Note</NavLink></div>*/}
+          </DisplayNoteContainer>
+        </div>
+        {this.props.children}
       </container>
     )
   }

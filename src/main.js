@@ -14,10 +14,10 @@ render((
   // <App />, document.querySelector('#container'));
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <Route path="/topic" component={TopicList}>
+      {/*<Route path="/topic" component={TopicList}>*/}
       {/*<Route path="/topicItem" component={TopicListItem} />*/}
-        <Route path="/topic/:topicName" component={TopicListItem} />
-      </Route>
+      {/*  <Route path="/topic/:topicName" component={TopicListItem} />
+      </Route>*/}
     </Route>
   </Router>
   ), document.querySelector('#container'));
