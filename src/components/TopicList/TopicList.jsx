@@ -9,14 +9,11 @@ export default React.createClass({
     return(
       <div className="topicListDiv">
         <h2>Topic List</h2>
-        <ul>
-          {/*<li><NavLink to="/topic/topicName">Rails</NavLink></li>
-          <li><NavLink to="/topic/topicName">Ruby</NavLink></li>
-          <li><NavLink to="/topic/topicName">Javascript</NavLink></li>
-          <li><NavLink to="/topic/topicName">Mongo</NavLink></li>
-          <li><NavLink to="/topic/topicName">SQL</NavLink></li>
-        */}
-        </ul>
+        <div>
+          <NavLink to="/topic/topicName"><button>Rails</button></NavLink>
+          <NavLink to="/topic/topicName"><button>Ruby</button></NavLink>
+          <NavLink to="/topic/topicName"><button>Javascript</button></NavLink>
+        </div>
         {this.props.children}
       </div>
     )

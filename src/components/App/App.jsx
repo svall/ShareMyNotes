@@ -17,15 +17,8 @@ export default React.createClass({
           </div>
         <div className="appContainer">
             <Aside>
-              {/*<div><NavLink to="/topic">Topic List</NavLink></div>*/}
-                <h2>Topic List</h2>
-                <ul>
-                  <li><NavLink to="/topic/topicName">Rails</NavLink></li>
-                  <li><NavLink to="/topic/topicName">Ruby</NavLink></li>
-                  <li><NavLink to="/topic/topicName">Javascript</NavLink></li>
-                  <li><NavLink to="/topic/topicName">Mongo</NavLink></li>
-                  <li><NavLink to="/topic/topicName">SQL</NavLink></li>
-                </ul>
+              <div><NavLink to="/topic">Topic List</NavLink></div>
+              {/*<li><Link to="/topicItem" activeStyle={{ color: 'red' }}>Topic Items</Link></li>*/}
             </Aside>
             <DisplayNoteContainer>
               <div><NavLink to="/oldNote">Saved Note</NavLink></div>
