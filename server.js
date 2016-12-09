@@ -1,11 +1,11 @@
 'use strict'
+const isDev = !('NODE_ENV' in process.env) && require('dotenv').config() && true;
 
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-const isDev = !('NODE_ENV' in process.env) && require('dotenv').config() && true;
 
 const app = express();
 const PORT = process.argv[2] || process.env.PORT || 3000;
@@ -26,5 +26,10 @@ app.use((err, req, res, next) => {
 });
 
 app.use(express.static(path.join(__dirname, 'dist')));
+
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
+})
+
 
 app.listen(PORT);

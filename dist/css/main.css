@@ -1,0 +1,32 @@
+.active {
+  color: green;
+}
+
+.appContainer {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.headerContainer {
+  background-color: pink;
+  /*height: 50px;*/
+  /*width: 100px;*/
+  /*display: inline-block;*/
+}
+.noteContainerDisplay {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  background-color: lightgreen;
+}
+.topicListDiv {
+  background-color: lightblue;
+  /*width: 150px;*/
+  /*display: inline-block;*/
+}
+
+/*# sourceMappingURL=main.css.map*/

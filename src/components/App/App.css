@@ -1,0 +1,12 @@
+.active {
+  color: green;
+}
+
+.appContainer {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+

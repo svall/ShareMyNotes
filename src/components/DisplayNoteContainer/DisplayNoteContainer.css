@@ -1,0 +1,7 @@
+.noteContainerDisplay {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  background-color: lightgreen;
+}

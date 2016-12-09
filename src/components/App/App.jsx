@@ -1,19 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router'
+import NavLink from '../NavLink/NavLink'
+import App from './App.css'
+import Header from '../Header/Header'
+import DisplayNoteContainer from '../DisplayNoteContainer/DisplayNoteContainer'
+import Aside from '../Aside/Aside'
 
-export default class App extends React.Component{
+export default React.createClass({
 
   render(){
     return(
       <container>
-        <h1>My Notes!!!!</h1>
-          <ul role="nav">
-            <li><Link to="/topic">Topic List</Link></li>
-            <li><Link to="/topicItem">Topic Items</Link></li>
-          </ul>
+          <div role="nav">
+            <Header />
+          </div>
+        <div className="appContainer">
+            <Aside>
+              {/*<div><NavLink to="/topic">Topic List</NavLink></div>*/}
+                <h2>Topic List</h2>
+                <ul>
+                  <li><NavLink to="/topic/topicName">Rails</NavLink></li>
+                  <li><NavLink to="/topic/topicName">Ruby</NavLink></li>
+                  <li><NavLink to="/topic/topicName">Javascript</NavLink></li>
+                  <li><NavLink to="/topic/topicName">Mongo</NavLink></li>
+                  <li><NavLink to="/topic/topicName">SQL</NavLink></li>
+                </ul>
+            </Aside>
+            <DisplayNoteContainer>
+              <div><NavLink to="/oldNote">Saved Note</NavLink></div>
+              <div><NavLink to="/newNote">New Note</NavLink></div>
+            </DisplayNoteContainer>
+        </div>
           {this.props.children}
       </container>
     )
   }
-}
+})
