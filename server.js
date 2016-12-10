@@ -6,6 +6,7 @@ const logger = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
 
+const apiRouter = require('./routes/api');
 
 const app = express();
 const PORT = process.argv[2] || process.env.PORT || 3000;
@@ -27,9 +28,12 @@ app.use((err, req, res, next) => {
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
+app.use('/api/cohort', apiRouter);
+
 app.get('*', function (request, response){
   response.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
 })
+
 
 
 app.listen(PORT);

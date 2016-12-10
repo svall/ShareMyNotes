@@ -41,16 +41,7 @@
   width: 48%;
   height: 95%;
 }
-.asideContainer {
-  background-color: purple;
-  display: inline-block;
-}
 .topicListDiv {
-  background-color: lightblue;
-  /*width: 150px;*/
-  /*display: inline-block;*/
-}
-.noteListDiv {
   background-color: lightblue;
   /*width: 150px;*/
   /*display: inline-block;*/

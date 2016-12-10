@@ -1,16 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TopicListItem from './TopicListItem.css'
+import TopicListItemCss from './TopicListItemCss.css'
 
-export default React.createClass({
-  render() {
-    return(
+
+// export default React.createClass({
+ const TopicListItem = props => (
+  // render() {
+  //   return(
       <div>
-        <h5>Ruby</h5>
-        <h5>Rails</h5>
-        <h5>Javascript</h5>
+        <button>{props.name}</button>
       </div>
-    )
-  }
-})
+  //   )
+  // }
+)
+// })
 
+export default TopicListItem;
