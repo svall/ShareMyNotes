@@ -10,7 +10,6 @@ export default React.createClass({
   render() {
     return(
       <div className="asideContainer">
-        <h2>ASIDE.....</h2>
         <TopicList />
       </div>
     )
