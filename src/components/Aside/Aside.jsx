@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import Aside from './Aside.css'
 import TopicList from '../TopicList/TopicList'
-
+import NoteSnippetList from '../NoteSnippetList/NoteSnippetList'
 
 
 export default React.createClass({
@@ -11,6 +11,7 @@ export default React.createClass({
     return(
       <div className="asideContainer">
         <TopicList />
+        <NoteSnippetList />
       </div>
     )
   }

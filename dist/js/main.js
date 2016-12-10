@@ -8603,7 +8603,7 @@
   \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _Aside=__webpack_require__(/*! ./Aside.css */ 252);var _Aside2=_interopRequireDefault(_Aside);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 253);var _TopicList2=_interopRequireDefault(_TopicList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'Aside',render:function render(){return _react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement(_TopicList2.default,null));}});
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _Aside=__webpack_require__(/*! ./Aside.css */ 252);var _Aside2=_interopRequireDefault(_Aside);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 253);var _TopicList2=_interopRequireDefault(_TopicList);var _NoteSnippetList=__webpack_require__(/*! ../NoteSnippetList/NoteSnippetList */ 388);var _NoteSnippetList2=_interopRequireDefault(_NoteSnippetList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'Aside',render:function render(){return _react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement(_TopicList2.default,null),_react2.default.createElement(_NoteSnippetList2.default,null));}});
 
 /***/ },
 /* 252 */
@@ -13452,6 +13452,42 @@
 /*!*************************************************************!*\
   !*** ./src/components/DisplayNewNote/DisplayNewNoteCss.css ***!
   \*************************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 388 */
+/*!************************************************************!*\
+  !*** ./src/components/NoteSnippetList/NoteSnippetList.jsx ***!
+  \************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _NoteSnippetList=__webpack_require__(/*! ./NoteSnippetList.css */ 389);var _NoteSnippetList2=_interopRequireDefault(_NoteSnippetList);var _NoteSnippetItem=__webpack_require__(/*! ../NoteSnippetItem/NoteSnippetItem */ 390);var _NoteSnippetItem2=_interopRequireDefault(_NoteSnippetItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'NoteSnippetList',render:function render(){return _react2.default.createElement('div',{className:'noteListDiv'},_react2.default.createElement('h2',null,'Note Snippet List'),_react2.default.createElement('div',null,_react2.default.createElement(_NoteSnippetItem2.default,null)));}});// {this.props.children}
+
+/***/ },
+/* 389 */
+/*!************************************************************!*\
+  !*** ./src/components/NoteSnippetList/NoteSnippetList.css ***!
+  \************************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 390 */
+/*!************************************************************!*\
+  !*** ./src/components/NoteSnippetItem/NoteSnippetItem.jsx ***!
+  \************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _NoteSnippetItem=__webpack_require__(/*! ./NoteSnippetItem.css */ 391);var _NoteSnippetItem2=_interopRequireDefault(_NoteSnippetItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'NoteSnippetItem',render:function render(){return _react2.default.createElement('div',null,_react2.default.createElement('h5',null,'Note 1'),_react2.default.createElement('h5',null,'Note 2'),_react2.default.createElement('h5',null,'Note 3'));}});
+
+/***/ },
+/* 391 */
+/*!************************************************************!*\
+  !*** ./src/components/NoteSnippetItem/NoteSnippetItem.css ***!
+  \************************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

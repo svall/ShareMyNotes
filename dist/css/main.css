@@ -20,7 +20,7 @@
   display: inline-block;
   width: 350px;
   height: 400px;
-  margin-left: 100px;
+  /*margin-left: 100px;*/
   background-color: lightgreen;
 }
 
@@ -43,8 +43,14 @@
 }
 .asideContainer {
   background-color: purple;
+  display: inline-block;
 }
 .topicListDiv {
+  background-color: lightblue;
+  /*width: 150px;*/
+  /*display: inline-block;*/
+}
+.noteListDiv {
   background-color: lightblue;
   /*width: 150px;*/
   /*display: inline-block;*/
