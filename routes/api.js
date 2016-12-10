@@ -1,22 +1,21 @@
 const express = require('express');
 const router = express.Router();
 
-const { getAllTopics } = require('../model/notes')
+const { getAllTopics, getOneTopic } = require('../model/notes')
 
 
 // get all notes for one topic
-// router.get('/:gardenID', getOneGarden, (req, res) => {
-//   res.json(res.garden || []);
-//   // res.rows = res.garden
-//   // console.log('in routes for garden id ', res.garden);
-// });
+router.get('/:topicID', getOneTopic, (req, res) => {
+  res.json(res.topic || []);
+  console.log('in routes for topic id ', res.topic);
+});
 
 
 // route for /api/cohort
 // get all topics for the cohort
 router.get('/', getAllTopics, (req, res) => {
   res.json(res.topics || []);
-  console.log(res.topics);
+  // console.log(res.topics);
 });
 
 

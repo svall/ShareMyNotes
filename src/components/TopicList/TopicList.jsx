@@ -5,19 +5,21 @@ import NavLink from '../NavLink/NavLink'
 import TopicListCss from './TopicListCss.css'
 import TopicListItem from '../TopicListItem/TopicListItem'
 
-
 // export default React.createClass({
 export default class TopicList extends React.Component {
 
   showTopics(topics) {
+    // console.log('topic in toplicList ', topics[0]);
     return topics.map((topic, index) =>
-
+      <button key={index} onClick={() => this.props.getTopicNotes(index)}>
         <TopicListItem
-          key={index}
+          // key={index}
+          // onClick={() => this.props.getTopicNotes(index)}
+          id={topic.id}
           name={topic.name}
           cohort={topic.cohort_id}
         />
-
+      </button>
     )
   }
 

@@ -7,8 +7,8 @@ import TopicListItemCss from './TopicListItemCss.css'
  const TopicListItem = props => (
   // render() {
   //   return(
-      <div>
-        <button>{props.name}</button>
+      <div className="topicItemContainer">
+        <p>{props.id} {props.name}</p>
       </div>
   //   )
   // }
@@ -16,3 +16,4 @@ import TopicListItemCss from './TopicListItemCss.css'
 // })
 
 export default TopicListItem;
+        // <button className="topicButton">{props.id} {props.name}</button>

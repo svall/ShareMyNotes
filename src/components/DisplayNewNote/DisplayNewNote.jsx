@@ -39,7 +39,7 @@ export default class DisplayNewNote extends React.Component {
 
   render() {
     const current = this.state.editorState.toJS();
-    console.log(current.currentContent.blockMap);
+    // console.log(current.currentContent.blockMap);
     // const arr = [];
     // arr.push(current.currentContent.blockMap)
     // console.log(arr)

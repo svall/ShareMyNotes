@@ -1,16 +1,30 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import NoteSnippetItem from './NoteSnippetItem.css'
+import NoteSnippetItemCss from './NoteSnippetItemCss.css'
 
-export default React.createClass({
-  render() {
-    return(
+const NoteSnippetItem = props => (
+// export default React.createClass({
+  // render() {
+  //   return(
       <div>
-        <h5>Note 1</h5>
-        <h5>Note 2</h5>
-        <h5>Note 3</h5>
+        <p>{props.title}</p>
       </div>
-    )
-  }
-})
+    // )
+  // }
+)
 
+export default NoteSnippetItem;
+
+//  const TopicListItem = props => (
+//   // render() {
+//   //   return(
+//       <div className="topicItemContainer">
+//         <p>{props.id} {props.name}</p>
+//       </div>
+//   //   )
+//   // }
+// )
+// // })
+
+// export default TopicListItem;
+        // <button className="topicButton">{props.id} {props.name}</button>

@@ -2,23 +2,33 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router'
 import NavLink from '../NavLink/NavLink'
-import NoteSnippetList from './NoteSnippetList.css'
+import NoteSnippetListCss from './NoteSnippetListCss.css'
 import NoteSnippetItem from '../NoteSnippetItem/NoteSnippetItem'
 
-export default React.createClass({
+class NoteSnippetList extends React.Component {
+// export default class NoteSnippetList extends React.Component {
+// export default React.createClass({
+  showNotes(notes) {
+    return this.props.notes.map((notes, key) =>
+      <NoteSnippetItem
+        key={key}
+        name={notes.title}
+      />
+    )
+  }
+
   render() {
     return(
       <div className="noteListDiv">
         <h2>Note Snippet List</h2>
         <div>
-          <NoteSnippetItem />
-          {/*<NavLink to="/topic/topicName"><button>Rails</button></NavLink>
-          <NavLink to="/topic/topicName"><button>Ruby</button></NavLink>
-          <NavLink to="/topic/topicName"><button>Javascript</button></NavLink>
-          */}
+          {this.showNotes(this.props.notes)}
+
         </div>
       </div>
     )
   }
-})
+}
         // {this.props.children}
+
+export default NoteSnippetList;
