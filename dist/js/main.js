@@ -47,7 +47,7 @@
   \*********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 241);var _App2=_interopRequireDefault(_App);var _TopicList=__webpack_require__(/*! ./components/TopicList/TopicList */ 250);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ./components/TopicListItem/TopicListItem.jsx */ 252);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import './components/favicon.ico';
+	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 241);var _App2=_interopRequireDefault(_App);var _TopicList=__webpack_require__(/*! ./components/TopicList/TopicList */ 254);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ./components/TopicListItem/TopicListItem.jsx */ 256);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import './components/favicon.ico';
 	// mount our App at #container
 	(0,_reactDom.render)(_react2.default.createElement(_reactRouter.Router,{history:_reactRouter.browserHistory},_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default})),document.querySelector('#container'));// import 'bootstrap/dist/css/bootstrap.css';
 	// import ReactDOM from 'react-dom';
@@ -8489,7 +8489,7 @@
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _App=__webpack_require__(/*! ./App.css */ 243);var _App2=_interopRequireDefault(_App);var _Header=__webpack_require__(/*! ../Header/Header */ 244);var _Header2=_interopRequireDefault(_Header);var _DisplayNoteContainer=__webpack_require__(/*! ../DisplayNoteContainer/DisplayNoteContainer */ 246);var _DisplayNoteContainer2=_interopRequireDefault(_DisplayNoteContainer);var _Aside=__webpack_require__(/*! ../Aside/Aside */ 248);var _Aside2=_interopRequireDefault(_Aside);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'App',render:function render(){return _react2.default.createElement('container',null,_react2.default.createElement('div',{role:'nav'},_react2.default.createElement(_Header2.default,null)),_react2.default.createElement('div',{className:'appContainer'},_react2.default.createElement(_Aside2.default,null),_react2.default.createElement(_DisplayNoteContainer2.default,null)),this.props.children);}});
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _App=__webpack_require__(/*! ./App.css */ 243);var _App2=_interopRequireDefault(_App);var _Header=__webpack_require__(/*! ../Header/Header */ 244);var _Header2=_interopRequireDefault(_Header);var _DisplayNoteContainer=__webpack_require__(/*! ../DisplayNoteContainer/DisplayNoteContainer */ 246);var _DisplayNoteContainer2=_interopRequireDefault(_DisplayNoteContainer);var _Aside=__webpack_require__(/*! ../Aside/Aside */ 252);var _Aside2=_interopRequireDefault(_Aside);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'App',render:function render(){return _react2.default.createElement('container',null,_react2.default.createElement('div',{role:'nav'},_react2.default.createElement(_Header2.default,null)),_react2.default.createElement('div',{className:'appContainer'},_react2.default.createElement(_Aside2.default,null),_react2.default.createElement(_DisplayNoteContainer2.default,null)),this.props.children);}});
 
 /***/ },
 /* 242 */
@@ -8541,7 +8541,7 @@
   \**********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _DisplayNoteContainer=__webpack_require__(/*! ./DisplayNoteContainer.css */ 247);var _DisplayNoteContainer2=_interopRequireDefault(_DisplayNoteContainer);var _DisplayNewNote=__webpack_require__(/*! ../DisplayNewNote/DisplayNewNote */ 254);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);var _DisplaySavedNote=__webpack_require__(/*! ../DisplaySavedNote/DisplaySavedNote */ 255);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplayNoteContainer',render:function render(){return _react2.default.createElement('div',{className:'noteContainerDisplay'},_react2.default.createElement('h2',null,'Display Note Container'),_react2.default.createElement('div',{className:'savedNewNoteContainer'},_react2.default.createElement(_DisplaySavedNote2.default,null),_react2.default.createElement(_DisplayNewNote2.default,null)));}});// {this.props.children}
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _DisplayNoteContainer=__webpack_require__(/*! ./DisplayNoteContainer.css */ 247);var _DisplayNoteContainer2=_interopRequireDefault(_DisplayNoteContainer);var _DisplayNewNote=__webpack_require__(/*! ../DisplayNewNote/DisplayNewNote */ 248);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);var _DisplaySavedNote=__webpack_require__(/*! ../DisplaySavedNote/DisplaySavedNote */ 250);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplayNoteContainer',render:function render(){return _react2.default.createElement('div',{className:'noteContainerDisplay'},_react2.default.createElement('h2',null,'Display Note Container'),_react2.default.createElement('div',{className:'savedNewNoteContainer'},_react2.default.createElement(_DisplaySavedNote2.default,null),_react2.default.createElement(_DisplayNewNote2.default,null)));}});// {this.props.children}
 	// import NavLink from '../NavLink/NavLink'
 
 /***/ },
@@ -8555,78 +8555,15 @@
 
 /***/ },
 /* 248 */
-/*!****************************************!*\
-  !*** ./src/components/Aside/Aside.jsx ***!
-  \****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _Aside=__webpack_require__(/*! ./Aside.css */ 249);var _Aside2=_interopRequireDefault(_Aside);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 250);var _TopicList2=_interopRequireDefault(_TopicList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'Aside',render:function render(){return _react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement('h2',null,'ASIDE.....'),_react2.default.createElement(_TopicList2.default,null));}});
-
-/***/ },
-/* 249 */
-/*!****************************************!*\
-  !*** ./src/components/Aside/Aside.css ***!
-  \****************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 250 */
-/*!************************************************!*\
-  !*** ./src/components/TopicList/TopicList.jsx ***!
-  \************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _TopicList=__webpack_require__(/*! ./TopicList.css */ 251);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ../TopicListItem/TopicListItem */ 252);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'TopicList',render:function render(){return _react2.default.createElement('div',{className:'topicListDiv'},_react2.default.createElement('h2',null,'Topic List'),_react2.default.createElement('div',null,_react2.default.createElement(_TopicListItem2.default,null)));}});// {this.props.children}
-
-/***/ },
-/* 251 */
-/*!************************************************!*\
-  !*** ./src/components/TopicList/TopicList.css ***!
-  \************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 252 */
-/*!********************************************************!*\
-  !*** ./src/components/TopicListItem/TopicListItem.jsx ***!
-  \********************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _TopicListItem=__webpack_require__(/*! ./TopicListItem.css */ 253);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'TopicListItem',render:function render(){return _react2.default.createElement('div',null,_react2.default.createElement('h5',null,'Ruby'),_react2.default.createElement('h5',null,'Rails'),_react2.default.createElement('h5',null,'Javascript'));}});
-
-/***/ },
-/* 253 */
-/*!********************************************************!*\
-  !*** ./src/components/TopicListItem/TopicListItem.css ***!
-  \********************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 254 */
 /*!**********************************************************!*\
   !*** ./src/components/DisplayNewNote/DisplayNewNote.jsx ***!
   \**********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplayNewNote=__webpack_require__(/*! ./DisplayNewNote.css */ 256);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplayNewNote',render:function render(){return _react2.default.createElement('div',{className:'newNoteContainer'},_react2.default.createElement('h5',null,'Display New Note'));}});
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplayNewNote=__webpack_require__(/*! ./DisplayNewNote.css */ 249);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplayNewNote',render:function render(){return _react2.default.createElement('div',{className:'newNoteContainer'},_react2.default.createElement('h5',null,'Display New Note'));}});
 
 /***/ },
-/* 255 */
-/*!**************************************************************!*\
-  !*** ./src/components/DisplaySavedNote/DisplaySavedNote.jsx ***!
-  \**************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNote=__webpack_require__(/*! ./DisplaySavedNote.css */ 257);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplaySavedNote',render:function render(){return _react2.default.createElement('div',{className:'savedNoteContainer'},_react2.default.createElement('h5',null,'Display Saved Note'));}});
-
-/***/ },
-/* 256 */
+/* 249 */
 /*!**********************************************************!*\
   !*** ./src/components/DisplayNewNote/DisplayNewNote.css ***!
   \**********************************************************/
@@ -8635,10 +8572,73 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 257 */
+/* 250 */
+/*!**************************************************************!*\
+  !*** ./src/components/DisplaySavedNote/DisplaySavedNote.jsx ***!
+  \**************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNote=__webpack_require__(/*! ./DisplaySavedNote.css */ 251);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplaySavedNote',render:function render(){return _react2.default.createElement('div',{className:'savedNoteContainer'},_react2.default.createElement('h5',null,'Display Saved Note'));}});
+
+/***/ },
+/* 251 */
 /*!**************************************************************!*\
   !*** ./src/components/DisplaySavedNote/DisplaySavedNote.css ***!
   \**************************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 252 */
+/*!****************************************!*\
+  !*** ./src/components/Aside/Aside.jsx ***!
+  \****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _Aside=__webpack_require__(/*! ./Aside.css */ 253);var _Aside2=_interopRequireDefault(_Aside);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 254);var _TopicList2=_interopRequireDefault(_TopicList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'Aside',render:function render(){return _react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement('h2',null,'ASIDE.....'),_react2.default.createElement(_TopicList2.default,null));}});
+
+/***/ },
+/* 253 */
+/*!****************************************!*\
+  !*** ./src/components/Aside/Aside.css ***!
+  \****************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 254 */
+/*!************************************************!*\
+  !*** ./src/components/TopicList/TopicList.jsx ***!
+  \************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _TopicList=__webpack_require__(/*! ./TopicList.css */ 255);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ../TopicListItem/TopicListItem */ 256);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'TopicList',render:function render(){return _react2.default.createElement('div',{className:'topicListDiv'},_react2.default.createElement('h2',null,'Topic List'),_react2.default.createElement('div',null,_react2.default.createElement(_TopicListItem2.default,null)));}});// {this.props.children}
+
+/***/ },
+/* 255 */
+/*!************************************************!*\
+  !*** ./src/components/TopicList/TopicList.css ***!
+  \************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 256 */
+/*!********************************************************!*\
+  !*** ./src/components/TopicListItem/TopicListItem.jsx ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _TopicListItem=__webpack_require__(/*! ./TopicListItem.css */ 257);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'TopicListItem',render:function render(){return _react2.default.createElement('div',null,_react2.default.createElement('h5',null,'Ruby'),_react2.default.createElement('h5',null,'Rails'),_react2.default.createElement('h5',null,'Javascript'));}});
+
+/***/ },
+/* 257 */
+/*!********************************************************!*\
+  !*** ./src/components/TopicListItem/TopicListItem.css ***!
+  \********************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
