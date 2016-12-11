@@ -1,5 +1,23 @@
 .newNoteContainer {
   border: 2px solid green;
   width: 48%;
-  height: 95%;
+  height: 93%;
+  padding-top: 10px;
+  /*text-align: center;*/
+}
+
+.displayNewNoteContent {
+  /*background-color: purple;*/
+  height: 80%;
+}
+
+.editorBox {
+  /*height: 200px;*/
+  /*width: 20px;*/
+}
+
+#newNoteHeader {
+  /*margin: auto;*/
+  text-align:center;
+  margin-top: 5px;
 }

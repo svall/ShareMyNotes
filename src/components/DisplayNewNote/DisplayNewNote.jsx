@@ -51,18 +51,20 @@ export default class DisplayNewNote extends React.Component {
 
     return(
       <div className="newNoteContainer">
-        <h5>Display New Note</h5>
+        <h5 id="newNoteHeader">Display New Note</h5>
         {/*<h2>{this.props.params.repoName}</h2>*/}
-
-        <button onClick={() => {this.makeBold();}}>B</button>
-        <button onClick={() => {this.makeItalic();}}>I</button>
-        <button onClick={() => {this.makeUnderline();}}>U</button>
-        <div className="editorContainer" style={{ backgroundColor: 'lightblue', width: '100%', height: '70%', border: '2px solid black' }}>
-          <Editor
-            onChange={(editorState) => { this.onChange(editorState) }}
-            editorState={this.state.editorState}
-            // placeholder="This is the editor"
-          />
+        <div className="displayNewNoteContent">
+          <button onClick={() => {this.makeBold();}}>B</button>
+          <button onClick={() => {this.makeItalic();}}>I</button>
+          <button onClick={() => {this.makeUnderline();}}>U</button>
+          <div className="editorContainer" style={{ backgroundColor: 'white', width: '98%', height: '100%', border: '1px solid black' }}>
+            <Editor
+              className="editorBox"
+              onChange={(editorState) => { this.onChange(editorState) }}
+              editorState={this.state.editorState}
+              // placeholder="This is the editor"
+            />
+          </div>
         </div>
         <div>
           {/*{jsonedRaw}*/}

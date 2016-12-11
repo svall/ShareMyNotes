@@ -1,4 +1,12 @@
 .noteSnippet {
-  background-color: yellow;
+  background-color: white;
   border: 1px dotted black;
+  /*height: 18px;*/
+  /*width: 30px;*/
+  text-align: center;
+}
+
+.snippetTitle {
+  height: 15px;
+  font-size: 12px;
 }

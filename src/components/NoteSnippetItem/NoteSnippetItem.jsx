@@ -17,6 +17,7 @@ class NoteSnippetItem extends React.Component {
     return(
       <div className="noteSnippet">
         <p
+          className="snippetTitle"
           id={this.props.note_id}
           value={this.props.note_id}
           onClick={(e) => this.props.selectNote(e)}

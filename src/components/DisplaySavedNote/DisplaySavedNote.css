@@ -7,8 +7,9 @@
 
 .displaySavedNoteContent {
   border: 1px solid black;
-  background: grey;
+  background: white;
   width: 90%;
   margin: auto;
   /*height: 90%;*/
 }
+

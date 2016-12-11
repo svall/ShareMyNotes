@@ -1,5 +1,6 @@
 .noteListDiv {
-  background-color: lightgreen;
+  background-color: lightblue;
+  border: 1px solid black;
   width: 150px;
   display: inline-block;
 
@@ -7,6 +8,6 @@
 
 .allNotesContainer {
   overflow-y: scroll;
-  background-color: purple;
+  /*background-color: purple;*/
   height: 200px;
 }
