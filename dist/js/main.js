@@ -47,7 +47,7 @@
   \*********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 241);var _App2=_interopRequireDefault(_App);var _TopicList=__webpack_require__(/*! ./components/TopicList/TopicList */ 247);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ./components/TopicListItem/TopicListItem.jsx */ 249);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import './components/favicon.ico';
+	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 241);var _App2=_interopRequireDefault(_App);var _TopicList=__webpack_require__(/*! ./components/TopicList/TopicList */ 246);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ./components/TopicListItem/TopicListItem.jsx */ 248);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import './components/favicon.ico';
 	// mount our App at #container
 	(0,_reactDom.render)(_react2.default.createElement(_reactRouter.Router,{history:_reactRouter.browserHistory},_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default})),document.querySelector('#container'));// import 'bootstrap/dist/css/bootstrap.css';
 	// import ReactDOM from 'react-dom';
@@ -8489,14 +8489,13 @@
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _AppCss=__webpack_require__(/*! ./AppCss.css */ 243);var _AppCss2=_interopRequireDefault(_AppCss);var _Header=__webpack_require__(/*! ../Header/Header */ 244);var _Header2=_interopRequireDefault(_Header);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 247);var _TopicList2=_interopRequireDefault(_TopicList);var _DisplayNewNote=__webpack_require__(/*! ../DisplayNewNote/DisplayNewNote */ 251);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);var _DisplaySavedNote=__webpack_require__(/*! ../DisplaySavedNote/DisplaySavedNote */ 383);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);var _NoteSnippetList=__webpack_require__(/*! ../NoteSnippetList/NoteSnippetList */ 385);var _NoteSnippetList2=_interopRequireDefault(_NoteSnippetList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import DisplayNoteContainer from '../DisplayNoteContainer/DisplayNoteContainer'
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _AppCss=__webpack_require__(/*! ./AppCss.css */ 243);var _AppCss2=_interopRequireDefault(_AppCss);var _Header=__webpack_require__(/*! ../Header/Header */ 244);var _Header2=_interopRequireDefault(_Header);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 246);var _TopicList2=_interopRequireDefault(_TopicList);var _DisplayNewNote=__webpack_require__(/*! ../DisplayNewNote/DisplayNewNote */ 250);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);var _DisplaySavedNote=__webpack_require__(/*! ../DisplaySavedNote/DisplaySavedNote */ 382);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);var _NoteSnippetList=__webpack_require__(/*! ../NoteSnippetList/NoteSnippetList */ 384);var _NoteSnippetList2=_interopRequireDefault(_NoteSnippetList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import DisplayNoteContainer from '../DisplayNoteContainer/DisplayNoteContainer'
 	var App=function(_React$Component){_inherits(App,_React$Component);// export default React.createClass({
-	function App(props){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={topics:[],selected_topic:'',topic_id:'',notes:[]};return _this;}// getTopicNotes() displays the notes associated to a selected topic
-	_createClass(App,[{key:'getTopicNotes',value:function getTopicNotes(notes){var _this2=this;this.setState({selected_topic:this.state.topics[notes],topic_id:this.state.topics[notes].id});// console.log('in app.jsx topic id ', this.state.topics[notes].id);
-	fetch('/api/cohort/'+this.state.topics[notes].id).then(function(r){return r.json();}).then(function(data){_this2.setState({notes:data});}).catch(function(err){return console.log(err);});console.log('in app.jsx notes',this.state.notes);}// getAllTopics() displays all Topics for the Cohort
+	function App(props){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={topics:[],topic_id:'',selected_topic:'',notes:[],note_id:'',selected_note:0};return _this;}// getTopicNotes() displays the notes associated to a selected topic
+	_createClass(App,[{key:'getTopicNotes',value:function getTopicNotes(topicID){var _this2=this;this.setState({selected_topic:this.state.topics[topicID],topic_id:this.state.topics[topicID].id});console.log('in app.jsx topic id ',this.state.topics[topicID].id);fetch('/api/cohort/'+this.state.topics[topicID].id).then(function(r){return r.json();}).then(function(data){_this2.setState({notes:data});}).catch(function(err){return console.log(err);});console.log('in app.jsx selected topic:',this.state.selected_topic);console.log('in app.jsx selected topic id:',this.state.topic_id);console.log('in app.jsx notes:',this.state.notes);// console.log('in app.jsx note id:', this.state.note_id);
+	}// getAllTopics() displays all Topics for the Cohort
 	},{key:'getAllTopics',value:function getAllTopics(){var _this3=this;// console.log('topics in app.jsx ', this.state.topics);
-	fetch('/api/cohort').then(function(r){return r.json();}).then(function(data){_this3.setState({topics:data});// console.log('in app.jsx ', data);
-	}).catch(function(err){return console.log(err);});}},{key:'render',value:function render(){return _react2.default.createElement('container',null,_react2.default.createElement('div',{role:'nav'},_react2.default.createElement(_Header2.default,null)),_react2.default.createElement('div',{className:'appContainer'},_react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement(_TopicList2.default,{getAllTopics:this.getAllTopics.bind(this),topics:this.state.topics,getTopicNotes:this.getTopicNotes.bind(this)/*<div><NavLink to="/topic">Topic List</NavLink></div>*//*<li><Link to="/topicItem" activeStyle={{ color: 'red' }}>Topic Items</Link></li>*/}),_react2.default.createElement(_NoteSnippetList2.default,{topics:this.state.topics,topic_id:this.state.topic_id,notes:this.state.notes})),_react2.default.createElement('div',{className:'savedNewNoteContainer'},_react2.default.createElement(_DisplaySavedNote2.default,null),_react2.default.createElement(_DisplayNewNote2.default,null))),this.props.children);}}]);return App;}(_react2.default.Component);// <DisplayNoteContainer
+	fetch('/api/cohort').then(function(r){return r.json();}).then(function(data){_this3.setState({topics:data});console.log('in app.jsx all data ==== ',data);}).catch(function(err){return console.log(err);});}},{key:'render',value:function render(){return _react2.default.createElement('container',null,_react2.default.createElement('div',{role:'nav'},_react2.default.createElement(_Header2.default,null)),_react2.default.createElement('div',{className:'appContainer'},_react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement(_TopicList2.default,{getAllTopics:this.getAllTopics.bind(this),topics:this.state.topics,getTopicNotes:this.getTopicNotes.bind(this)/*<div><NavLink to="/topic">Topic List</NavLink></div>*//*<li><Link to="/topicItem" activeStyle={{ color: 'red' }}>Topic Items</Link></li>*/}),_react2.default.createElement(_NoteSnippetList2.default,{topics:this.state.topics,topic_id:this.state.topic_id,notes:this.state.notes,note_id:this.state.note_id,selected_note:this.state.selected_note})),_react2.default.createElement('div',{className:'savedNewNoteContainer'},_react2.default.createElement(_DisplaySavedNote2.default,{notes:this.state.notes,note_id:this.state.note_id,selected_note:this.state.selected_note}),_react2.default.createElement(_DisplayNewNote2.default,null))),this.props.children);}}]);return App;}(_react2.default.Component);// <DisplayNoteContainer
 	/*<div><NavLink to="/oldNote">Saved Note</NavLink></div>*//*<div><NavLink to="/newNote">New Note</NavLink></div>*/// />
 	exports.default=App;
 
@@ -8544,14 +8543,13 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 246 */,
-/* 247 */
+/* 246 */
 /*!************************************************!*\
   !*** ./src/components/TopicList/TopicList.jsx ***!
   \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _TopicListCss=__webpack_require__(/*! ./TopicListCss.css */ 248);var _TopicListCss2=_interopRequireDefault(_TopicListCss);var _TopicListItem=__webpack_require__(/*! ../TopicListItem/TopicListItem */ 249);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _TopicListCss=__webpack_require__(/*! ./TopicListCss.css */ 247);var _TopicListCss2=_interopRequireDefault(_TopicListCss);var _TopicListItem=__webpack_require__(/*! ../TopicListItem/TopicListItem */ 248);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
 	var TopicList=function(_React$Component){_inherits(TopicList,_React$Component);function TopicList(){_classCallCheck(this,TopicList);return _possibleConstructorReturn(this,(TopicList.__proto__||Object.getPrototypeOf(TopicList)).apply(this,arguments));}_createClass(TopicList,[{key:'showTopics',value:function showTopics(topics){var _this2=this;// console.log('topic in toplicList ', topics[0]);
 	return topics.map(function(topic,index){return _react2.default.createElement('button',{key:index,onClick:function onClick(){return _this2.props.getTopicNotes(index);}},_react2.default.createElement(_TopicListItem2.default// key={index}
 	// onClick={() => this.props.getTopicNotes(index)}
@@ -8560,7 +8558,7 @@
 	exports.default=TopicList;
 
 /***/ },
-/* 248 */
+/* 247 */
 /*!***************************************************!*\
   !*** ./src/components/TopicList/TopicListCss.css ***!
   \***************************************************/
@@ -8569,13 +8567,13 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 249 */
+/* 248 */
 /*!********************************************************!*\
   !*** ./src/components/TopicListItem/TopicListItem.jsx ***!
   \********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _TopicListItemCss=__webpack_require__(/*! ./TopicListItemCss.css */ 250);var _TopicListItemCss2=_interopRequireDefault(_TopicListItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default React.createClass({
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _TopicListItemCss=__webpack_require__(/*! ./TopicListItemCss.css */ 249);var _TopicListItemCss2=_interopRequireDefault(_TopicListItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default React.createClass({
 	var TopicListItem=function TopicListItem(props){return(// render() {
 	//   return(
 	_react2.default.createElement('div',{className:'topicItemContainer'},_react2.default.createElement('p',null,props.id,' ',props.name))//   )
@@ -8584,7 +8582,7 @@
 	exports.default=TopicListItem;// <button className="topicButton">{props.id} {props.name}</button>
 
 /***/ },
-/* 250 */
+/* 249 */
 /*!***********************************************************!*\
   !*** ./src/components/TopicListItem/TopicListItemCss.css ***!
   \***********************************************************/
@@ -8593,13 +8591,13 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 251 */
+/* 250 */
 /*!**********************************************************!*\
   !*** ./src/components/DisplayNewNote/DisplayNewNote.jsx ***!
   \**********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplayNewNoteCss=__webpack_require__(/*! ./DisplayNewNoteCss.css */ 252);var _DisplayNewNoteCss2=_interopRequireDefault(_DisplayNewNoteCss);var _draftJs=__webpack_require__(/*! draft-js */ 253);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplayNewNoteCss=__webpack_require__(/*! ./DisplayNewNoteCss.css */ 251);var _DisplayNewNoteCss2=_interopRequireDefault(_DisplayNewNoteCss);var _draftJs=__webpack_require__(/*! draft-js */ 252);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
 	var DisplayNewNote=function(_React$Component){_inherits(DisplayNewNote,_React$Component);function DisplayNewNote(props){_classCallCheck(this,DisplayNewNote);var _this=_possibleConstructorReturn(this,(DisplayNewNote.__proto__||Object.getPrototypeOf(DisplayNewNote)).call(this,props));_this.state={editorState:_draftJs.EditorState.createEmpty()};// console.log(this.state.editorState)
 	return _this;}_createClass(DisplayNewNote,[{key:'onChange',value:function onChange(editorState){this.setState({editorState:editorState});// console.log(this.state.editorState);
 	}},{key:'makeBold',value:function makeBold(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'BOLD'));}},{key:'makeItalic',value:function makeItalic(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'ITALIC'));}},{key:'makeUnderline',value:function makeUnderline(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'UNDERLINE'));}},{key:'render',value:function render(){var _this2=this;var current=this.state.editorState.toJS();// console.log(current.currentContent.blockMap);
@@ -8613,7 +8611,7 @@
 	})),_react2.default.createElement('div',null));}}]);return DisplayNewNote;}(_react2.default.Component);exports.default=DisplayNewNote;
 
 /***/ },
-/* 252 */
+/* 251 */
 /*!*************************************************************!*\
   !*** ./src/components/DisplayNewNote/DisplayNewNoteCss.css ***!
   \*************************************************************/
@@ -8622,7 +8620,7 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 253 */
+/* 252 */
 /*!*********************************!*\
   !*** ./~/draft-js/lib/Draft.js ***!
   \*********************************/
@@ -8637,10 +8635,10 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule Draft
-	 */'use strict';var AtomicBlockUtils=__webpack_require__(/*! ./AtomicBlockUtils */ 254);var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 255);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var CompositeDraftDecorator=__webpack_require__(/*! ./CompositeDraftDecorator */ 288);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 258);var ContentState=__webpack_require__(/*! ./ContentState */ 280);var DefaultDraftBlockRenderMap=__webpack_require__(/*! ./DefaultDraftBlockRenderMap */ 289);var DefaultDraftInlineStyle=__webpack_require__(/*! ./DefaultDraftInlineStyle */ 291);var DraftEditor=__webpack_require__(/*! ./DraftEditor.react */ 292);var DraftEditorBlock=__webpack_require__(/*! ./DraftEditorBlock.react */ 298);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);var DraftEntityInstance=__webpack_require__(/*! ./DraftEntityInstance */ 266);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var KeyBindingUtil=__webpack_require__(/*! ./KeyBindingUtil */ 340);var RichTextEditorUtil=__webpack_require__(/*! ./RichTextEditorUtil */ 371);var SelectionState=__webpack_require__(/*! ./SelectionState */ 281);var convertFromDraftStateToRaw=__webpack_require__(/*! ./convertFromDraftStateToRaw */ 373);var convertFromHTMLToContentBlocks=__webpack_require__(/*! ./convertFromHTMLToContentBlocks */ 363);var convertFromRawToDraftState=__webpack_require__(/*! ./convertFromRawToDraftState */ 377);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var getDefaultKeyBinding=__webpack_require__(/*! ./getDefaultKeyBinding */ 370);var getVisibleSelectionRect=__webpack_require__(/*! ./getVisibleSelectionRect */ 381);var DraftPublic={Editor:DraftEditor,EditorBlock:DraftEditorBlock,EditorState:EditorState,CompositeDecorator:CompositeDraftDecorator,Entity:DraftEntity,EntityInstance:DraftEntityInstance,BlockMapBuilder:BlockMapBuilder,CharacterMetadata:CharacterMetadata,ContentBlock:ContentBlock,ContentState:ContentState,SelectionState:SelectionState,AtomicBlockUtils:AtomicBlockUtils,KeyBindingUtil:KeyBindingUtil,Modifier:DraftModifier,RichUtils:RichTextEditorUtil,DefaultDraftBlockRenderMap:DefaultDraftBlockRenderMap,DefaultDraftInlineStyle:DefaultDraftInlineStyle,convertFromHTML:convertFromHTMLToContentBlocks,convertFromRaw:convertFromRawToDraftState,convertToRaw:convertFromDraftStateToRaw,genKey:generateRandomKey,getDefaultKeyBinding:getDefaultKeyBinding,getVisibleSelectionRect:getVisibleSelectionRect};module.exports=DraftPublic;
+	 */'use strict';var AtomicBlockUtils=__webpack_require__(/*! ./AtomicBlockUtils */ 253);var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 254);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var CompositeDraftDecorator=__webpack_require__(/*! ./CompositeDraftDecorator */ 287);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 257);var ContentState=__webpack_require__(/*! ./ContentState */ 279);var DefaultDraftBlockRenderMap=__webpack_require__(/*! ./DefaultDraftBlockRenderMap */ 288);var DefaultDraftInlineStyle=__webpack_require__(/*! ./DefaultDraftInlineStyle */ 290);var DraftEditor=__webpack_require__(/*! ./DraftEditor.react */ 291);var DraftEditorBlock=__webpack_require__(/*! ./DraftEditorBlock.react */ 297);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);var DraftEntityInstance=__webpack_require__(/*! ./DraftEntityInstance */ 265);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var KeyBindingUtil=__webpack_require__(/*! ./KeyBindingUtil */ 339);var RichTextEditorUtil=__webpack_require__(/*! ./RichTextEditorUtil */ 370);var SelectionState=__webpack_require__(/*! ./SelectionState */ 280);var convertFromDraftStateToRaw=__webpack_require__(/*! ./convertFromDraftStateToRaw */ 372);var convertFromHTMLToContentBlocks=__webpack_require__(/*! ./convertFromHTMLToContentBlocks */ 362);var convertFromRawToDraftState=__webpack_require__(/*! ./convertFromRawToDraftState */ 376);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var getDefaultKeyBinding=__webpack_require__(/*! ./getDefaultKeyBinding */ 369);var getVisibleSelectionRect=__webpack_require__(/*! ./getVisibleSelectionRect */ 380);var DraftPublic={Editor:DraftEditor,EditorBlock:DraftEditorBlock,EditorState:EditorState,CompositeDecorator:CompositeDraftDecorator,Entity:DraftEntity,EntityInstance:DraftEntityInstance,BlockMapBuilder:BlockMapBuilder,CharacterMetadata:CharacterMetadata,ContentBlock:ContentBlock,ContentState:ContentState,SelectionState:SelectionState,AtomicBlockUtils:AtomicBlockUtils,KeyBindingUtil:KeyBindingUtil,Modifier:DraftModifier,RichUtils:RichTextEditorUtil,DefaultDraftBlockRenderMap:DefaultDraftBlockRenderMap,DefaultDraftInlineStyle:DefaultDraftInlineStyle,convertFromHTML:convertFromHTMLToContentBlocks,convertFromRaw:convertFromRawToDraftState,convertToRaw:convertFromDraftStateToRaw,genKey:generateRandomKey,getDefaultKeyBinding:getDefaultKeyBinding,getVisibleSelectionRect:getVisibleSelectionRect};module.exports=DraftPublic;
 
 /***/ },
-/* 254 */
+/* 253 */
 /*!********************************************!*\
   !*** ./~/draft-js/lib/AtomicBlockUtils.js ***!
   \********************************************/
@@ -8657,10 +8655,10 @@
 	 * @providesModule AtomicBlockUtils
 	 * @typechecks
 	 * 
-	 */'use strict';var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 255);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 258);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var Immutable=__webpack_require__(/*! immutable */ 256);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var List=Immutable.List;var Repeat=Immutable.Repeat;var AtomicBlockUtils={insertAtomicBlock:function insertAtomicBlock(editorState,entityKey,character){var contentState=editorState.getCurrentContent();var selectionState=editorState.getSelection();var afterRemoval=DraftModifier.removeRange(contentState,selectionState,'backward');var targetSelection=afterRemoval.getSelectionAfter();var afterSplit=DraftModifier.splitBlock(afterRemoval,targetSelection);var insertionTarget=afterSplit.getSelectionAfter();var asAtomicBlock=DraftModifier.setBlockType(afterSplit,insertionTarget,'atomic');var charData=CharacterMetadata.create({entity:entityKey});var fragmentArray=[new ContentBlock({key:generateRandomKey(),type:'atomic',text:character,characterList:List(Repeat(charData,character.length))}),new ContentBlock({key:generateRandomKey(),type:'unstyled',text:'',characterList:List()})];var fragment=BlockMapBuilder.createFromArray(fragmentArray);var withAtomicBlock=DraftModifier.replaceWithFragment(asAtomicBlock,insertionTarget,fragment);var newContent=withAtomicBlock.merge({selectionBefore:selectionState,selectionAfter:withAtomicBlock.getSelectionAfter().set('hasFocus',true)});return EditorState.push(editorState,newContent,'insert-fragment');}};module.exports=AtomicBlockUtils;
+	 */'use strict';var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 254);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 257);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var Immutable=__webpack_require__(/*! immutable */ 255);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var List=Immutable.List;var Repeat=Immutable.Repeat;var AtomicBlockUtils={insertAtomicBlock:function insertAtomicBlock(editorState,entityKey,character){var contentState=editorState.getCurrentContent();var selectionState=editorState.getSelection();var afterRemoval=DraftModifier.removeRange(contentState,selectionState,'backward');var targetSelection=afterRemoval.getSelectionAfter();var afterSplit=DraftModifier.splitBlock(afterRemoval,targetSelection);var insertionTarget=afterSplit.getSelectionAfter();var asAtomicBlock=DraftModifier.setBlockType(afterSplit,insertionTarget,'atomic');var charData=CharacterMetadata.create({entity:entityKey});var fragmentArray=[new ContentBlock({key:generateRandomKey(),type:'atomic',text:character,characterList:List(Repeat(charData,character.length))}),new ContentBlock({key:generateRandomKey(),type:'unstyled',text:'',characterList:List()})];var fragment=BlockMapBuilder.createFromArray(fragmentArray);var withAtomicBlock=DraftModifier.replaceWithFragment(asAtomicBlock,insertionTarget,fragment);var newContent=withAtomicBlock.merge({selectionBefore:selectionState,selectionAfter:withAtomicBlock.getSelectionAfter().set('hasFocus',true)});return EditorState.push(editorState,newContent,'insert-fragment');}};module.exports=AtomicBlockUtils;
 
 /***/ },
-/* 255 */
+/* 254 */
 /*!*******************************************!*\
   !*** ./~/draft-js/lib/BlockMapBuilder.js ***!
   \*******************************************/
@@ -8676,10 +8674,10 @@
 	 *
 	 * @providesModule BlockMapBuilder
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);var OrderedMap=Immutable.OrderedMap;var BlockMapBuilder={createFromArray:function createFromArray(blocks){return OrderedMap(blocks.map(function(block){return[block.getKey(),block];}));}};module.exports=BlockMapBuilder;
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);var OrderedMap=Immutable.OrderedMap;var BlockMapBuilder={createFromArray:function createFromArray(blocks){return OrderedMap(blocks.map(function(block){return[block.getKey(),block];}));}};module.exports=BlockMapBuilder;
 
 /***/ },
-/* 256 */
+/* 255 */
 /*!***************************************!*\
   !*** ./~/immutable/dist/immutable.js ***!
   \***************************************/
@@ -8922,7 +8920,7 @@
 	}var Immutable={Iterable:Iterable,Seq:Seq,Collection:Collection,Map:Map,OrderedMap:OrderedMap,List:List,Stack:Stack,Set:Set,OrderedSet:OrderedSet,Record:Record,Range:Range,Repeat:Repeat,is:is,fromJS:fromJS};return Immutable;});
 
 /***/ },
-/* 257 */
+/* 256 */
 /*!*********************************************!*\
   !*** ./~/draft-js/lib/CharacterMetadata.js ***!
   \*********************************************/
@@ -8939,7 +8937,7 @@
 	 * @providesModule CharacterMetadata
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var _require=__webpack_require__(/*! immutable */ 256);var Map=_require.Map;var OrderedSet=_require.OrderedSet;var Record=_require.Record;var EMPTY_SET=OrderedSet();var defaultRecord={style:EMPTY_SET,entity:null};var CharacterMetadataRecord=Record(defaultRecord);var CharacterMetadata=function(_CharacterMetadataRec){_inherits(CharacterMetadata,_CharacterMetadataRec);function CharacterMetadata(){_classCallCheck(this,CharacterMetadata);return _possibleConstructorReturn(this,_CharacterMetadataRec.apply(this,arguments));}CharacterMetadata.prototype.getStyle=function getStyle(){return this.get('style');};CharacterMetadata.prototype.getEntity=function getEntity(){return this.get('entity');};CharacterMetadata.prototype.hasStyle=function hasStyle(style){return this.getStyle().has(style);};CharacterMetadata.applyStyle=function applyStyle(record,style){var withStyle=record.set('style',record.getStyle().add(style));return CharacterMetadata.create(withStyle);};CharacterMetadata.removeStyle=function removeStyle(record,style){var withoutStyle=record.set('style',record.getStyle().remove(style));return CharacterMetadata.create(withoutStyle);};CharacterMetadata.applyEntity=function applyEntity(record,entityKey){var withEntity=record.getEntity()===entityKey?record:record.set('entity',entityKey);return CharacterMetadata.create(withEntity);};/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var _require=__webpack_require__(/*! immutable */ 255);var Map=_require.Map;var OrderedSet=_require.OrderedSet;var Record=_require.Record;var EMPTY_SET=OrderedSet();var defaultRecord={style:EMPTY_SET,entity:null};var CharacterMetadataRecord=Record(defaultRecord);var CharacterMetadata=function(_CharacterMetadataRec){_inherits(CharacterMetadata,_CharacterMetadataRec);function CharacterMetadata(){_classCallCheck(this,CharacterMetadata);return _possibleConstructorReturn(this,_CharacterMetadataRec.apply(this,arguments));}CharacterMetadata.prototype.getStyle=function getStyle(){return this.get('style');};CharacterMetadata.prototype.getEntity=function getEntity(){return this.get('entity');};CharacterMetadata.prototype.hasStyle=function hasStyle(style){return this.getStyle().has(style);};CharacterMetadata.applyStyle=function applyStyle(record,style){var withStyle=record.set('style',record.getStyle().add(style));return CharacterMetadata.create(withStyle);};CharacterMetadata.removeStyle=function removeStyle(record,style){var withoutStyle=record.set('style',record.getStyle().remove(style));return CharacterMetadata.create(withoutStyle);};CharacterMetadata.applyEntity=function applyEntity(record,entityKey){var withEntity=record.getEntity()===entityKey?record:record.set('entity',entityKey);return CharacterMetadata.create(withEntity);};/**
 	   * Use this function instead of the `CharacterMetadata` constructor.
 	   * Since most content generally uses only a very small number of
 	   * style/entity permutations, we can reuse these objects as often as
@@ -8948,7 +8946,7 @@
 	var configMap=Map({style:EMPTY_SET,entity:null}).merge(config);var existing=pool.get(configMap);if(existing){return existing;}var newCharacter=new CharacterMetadata(configMap);pool=pool.set(configMap,newCharacter);return newCharacter;};return CharacterMetadata;}(CharacterMetadataRecord);var EMPTY=new CharacterMetadata();var pool=Map([[Map(defaultRecord),EMPTY]]);CharacterMetadata.EMPTY=EMPTY;module.exports=CharacterMetadata;
 
 /***/ },
-/* 258 */
+/* 257 */
 /*!****************************************!*\
   !*** ./~/draft-js/lib/ContentBlock.js ***!
   \****************************************/
@@ -8964,14 +8962,14 @@
 	 *
 	 * @providesModule ContentBlock
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Immutable=__webpack_require__(/*! immutable */ 256);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 259);var List=Immutable.List;var Map=Immutable.Map;var OrderedSet=Immutable.OrderedSet;var Record=Immutable.Record;var EMPTY_SET=OrderedSet();var defaultRecord={key:'',type:'unstyled',text:'',characterList:List(),depth:0,data:Map()};var ContentBlockRecord=Record(defaultRecord);var ContentBlock=function(_ContentBlockRecord){_inherits(ContentBlock,_ContentBlockRecord);function ContentBlock(){_classCallCheck(this,ContentBlock);return _possibleConstructorReturn(this,_ContentBlockRecord.apply(this,arguments));}ContentBlock.prototype.getKey=function getKey(){return this.get('key');};ContentBlock.prototype.getType=function getType(){return this.get('type');};ContentBlock.prototype.getText=function getText(){return this.get('text');};ContentBlock.prototype.getCharacterList=function getCharacterList(){return this.get('characterList');};ContentBlock.prototype.getLength=function getLength(){return this.getText().length;};ContentBlock.prototype.getDepth=function getDepth(){return this.get('depth');};ContentBlock.prototype.getData=function getData(){return this.get('data');};ContentBlock.prototype.getInlineStyleAt=function getInlineStyleAt(offset){var character=this.getCharacterList().get(offset);return character?character.getStyle():EMPTY_SET;};ContentBlock.prototype.getEntityAt=function getEntityAt(offset){var character=this.getCharacterList().get(offset);return character?character.getEntity():null;};/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Immutable=__webpack_require__(/*! immutable */ 255);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 258);var List=Immutable.List;var Map=Immutable.Map;var OrderedSet=Immutable.OrderedSet;var Record=Immutable.Record;var EMPTY_SET=OrderedSet();var defaultRecord={key:'',type:'unstyled',text:'',characterList:List(),depth:0,data:Map()};var ContentBlockRecord=Record(defaultRecord);var ContentBlock=function(_ContentBlockRecord){_inherits(ContentBlock,_ContentBlockRecord);function ContentBlock(){_classCallCheck(this,ContentBlock);return _possibleConstructorReturn(this,_ContentBlockRecord.apply(this,arguments));}ContentBlock.prototype.getKey=function getKey(){return this.get('key');};ContentBlock.prototype.getType=function getType(){return this.get('type');};ContentBlock.prototype.getText=function getText(){return this.get('text');};ContentBlock.prototype.getCharacterList=function getCharacterList(){return this.get('characterList');};ContentBlock.prototype.getLength=function getLength(){return this.getText().length;};ContentBlock.prototype.getDepth=function getDepth(){return this.get('depth');};ContentBlock.prototype.getData=function getData(){return this.get('data');};ContentBlock.prototype.getInlineStyleAt=function getInlineStyleAt(offset){var character=this.getCharacterList().get(offset);return character?character.getStyle():EMPTY_SET;};ContentBlock.prototype.getEntityAt=function getEntityAt(offset){var character=this.getCharacterList().get(offset);return character?character.getEntity():null;};/**
 	   * Execute a callback for every contiguous range of styles within the block.
 	   */ContentBlock.prototype.findStyleRanges=function findStyleRanges(filterFn,callback){findRangesImmutable(this.getCharacterList(),haveEqualStyle,filterFn,callback);};/**
 	   * Execute a callback for every contiguous range of entities within the block.
 	   */ContentBlock.prototype.findEntityRanges=function findEntityRanges(filterFn,callback){findRangesImmutable(this.getCharacterList(),haveEqualEntity,filterFn,callback);};return ContentBlock;}(ContentBlockRecord);function haveEqualStyle(charA,charB){return charA.getStyle()===charB.getStyle();}function haveEqualEntity(charA,charB){return charA.getEntity()===charB.getEntity();}module.exports=ContentBlock;
 
 /***/ },
-/* 259 */
+/* 258 */
 /*!***********************************************!*\
   !*** ./~/draft-js/lib/findRangesImmutable.js ***!
   \***********************************************/
@@ -8996,7 +8994,7 @@
 	 */function findRangesImmutable(haystack,areEqualFn,filterFn,foundFn){if(!haystack.size){return;}var cursor=0;haystack.reduce(function(value,nextValue,nextIndex){/* $FlowFixMe(>=0.28.0): `value` could be undefined! */if(!areEqualFn(value,nextValue)){/* $FlowFixMe(>=0.28.0): `value` could be undefined! */if(filterFn(value)){foundFn(cursor,nextIndex);}cursor=nextIndex;}return nextValue;});filterFn(haystack.last())&&foundFn(cursor,haystack.count());}module.exports=findRangesImmutable;
 
 /***/ },
-/* 260 */
+/* 259 */
 /*!*****************************************!*\
   !*** ./~/draft-js/lib/DraftModifier.js ***!
   \*****************************************/
@@ -9013,7 +9011,7 @@
 	 * @providesModule DraftModifier
 	 * @typechecks
 	 * 
-	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var ContentStateInlineStyle=__webpack_require__(/*! ./ContentStateInlineStyle */ 261);var Immutable=__webpack_require__(/*! immutable */ 256);var applyEntityToContentState=__webpack_require__(/*! ./applyEntityToContentState */ 262);var getCharacterRemovalRange=__webpack_require__(/*! ./getCharacterRemovalRange */ 264);var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 269);var insertFragmentIntoContentState=__webpack_require__(/*! ./insertFragmentIntoContentState */ 272);var insertTextIntoContentState=__webpack_require__(/*! ./insertTextIntoContentState */ 274);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var modifyBlockForContentState=__webpack_require__(/*! ./modifyBlockForContentState */ 275);var removeEntitiesAtEdges=__webpack_require__(/*! ./removeEntitiesAtEdges */ 271);var removeRangeFromContentState=__webpack_require__(/*! ./removeRangeFromContentState */ 276);var splitBlockInContentState=__webpack_require__(/*! ./splitBlockInContentState */ 277);var OrderedSet=Immutable.OrderedSet;/**
+	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var ContentStateInlineStyle=__webpack_require__(/*! ./ContentStateInlineStyle */ 260);var Immutable=__webpack_require__(/*! immutable */ 255);var applyEntityToContentState=__webpack_require__(/*! ./applyEntityToContentState */ 261);var getCharacterRemovalRange=__webpack_require__(/*! ./getCharacterRemovalRange */ 263);var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 268);var insertFragmentIntoContentState=__webpack_require__(/*! ./insertFragmentIntoContentState */ 271);var insertTextIntoContentState=__webpack_require__(/*! ./insertTextIntoContentState */ 273);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var modifyBlockForContentState=__webpack_require__(/*! ./modifyBlockForContentState */ 274);var removeEntitiesAtEdges=__webpack_require__(/*! ./removeEntitiesAtEdges */ 270);var removeRangeFromContentState=__webpack_require__(/*! ./removeRangeFromContentState */ 275);var splitBlockInContentState=__webpack_require__(/*! ./splitBlockInContentState */ 276);var OrderedSet=Immutable.OrderedSet;/**
 	 * `DraftModifier` provides a set of convenience methods that apply
 	 * modifications to a `ContentState` object based on a target `SelectionState`.
 	 *
@@ -9027,7 +9025,7 @@
 	if(rangeToRemove.getAnchorKey()===rangeToRemove.getFocusKey()){var key=rangeToRemove.getAnchorKey();var startOffset=rangeToRemove.getStartOffset();var endOffset=rangeToRemove.getEndOffset();var block=contentState.getBlockForKey(key);var startEntity=block.getEntityAt(startOffset);var endEntity=block.getEntityAt(endOffset-1);if(startEntity&&startEntity===endEntity){var adjustedRemovalRange=getCharacterRemovalRange(block,rangeToRemove,removalDirection);return removeRangeFromContentState(contentState,adjustedRemovalRange);}}var withoutEntities=removeEntitiesAtEdges(contentState,rangeToRemove);return removeRangeFromContentState(withoutEntities,rangeToRemove);},splitBlock:function splitBlock(contentState,selectionState){var withoutEntities=removeEntitiesAtEdges(contentState,selectionState);var withoutText=removeRangeFromContentState(withoutEntities,selectionState);return splitBlockInContentState(withoutText,withoutText.getSelectionAfter());},applyInlineStyle:function applyInlineStyle(contentState,selectionState,inlineStyle){return ContentStateInlineStyle.add(contentState,selectionState,inlineStyle);},removeInlineStyle:function removeInlineStyle(contentState,selectionState,inlineStyle){return ContentStateInlineStyle.remove(contentState,selectionState,inlineStyle);},setBlockType:function setBlockType(contentState,selectionState,blockType){return modifyBlockForContentState(contentState,selectionState,function(block){return block.merge({type:blockType,depth:0});});},setBlockData:function setBlockData(contentState,selectionState,blockData){return modifyBlockForContentState(contentState,selectionState,function(block){return block.merge({data:blockData});});},mergeBlockData:function mergeBlockData(contentState,selectionState,blockData){return modifyBlockForContentState(contentState,selectionState,function(block){return block.merge({data:block.getData().merge(blockData)});});},applyEntity:function applyEntity(contentState,selectionState,entityKey){var withoutEntities=removeEntitiesAtEdges(contentState,selectionState);return applyEntityToContentState(withoutEntities,selectionState,entityKey);}};module.exports=DraftModifier;
 
 /***/ },
-/* 261 */
+/* 260 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/ContentStateInlineStyle.js ***!
   \***************************************************/
@@ -9044,10 +9042,10 @@
 	 * @providesModule ContentStateInlineStyle
 	 * @typechecks
 	 * 
-	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var _require=__webpack_require__(/*! immutable */ 256);var Map=_require.Map;var ContentStateInlineStyle={add:function add(contentState,selectionState,inlineStyle){return modifyInlineStyle(contentState,selectionState,inlineStyle,true);},remove:function remove(contentState,selectionState,inlineStyle){return modifyInlineStyle(contentState,selectionState,inlineStyle,false);}};function modifyInlineStyle(contentState,selectionState,inlineStyle,addOrRemove){var blockMap=contentState.getBlockMap();var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var newBlocks=blockMap.skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).concat(Map([[endKey,blockMap.get(endKey)]])).map(function(block,blockKey){var sliceStart;var sliceEnd;if(startKey===endKey){sliceStart=startOffset;sliceEnd=endOffset;}else{sliceStart=blockKey===startKey?startOffset:0;sliceEnd=blockKey===endKey?endOffset:block.getLength();}var chars=block.getCharacterList();var current;while(sliceStart<sliceEnd){current=chars.get(sliceStart);chars=chars.set(sliceStart,addOrRemove?CharacterMetadata.applyStyle(current,inlineStyle):CharacterMetadata.removeStyle(current,inlineStyle));sliceStart++;}return block.set('characterList',chars);});return contentState.merge({blockMap:blockMap.merge(newBlocks),selectionBefore:selectionState,selectionAfter:selectionState});}module.exports=ContentStateInlineStyle;
+	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var _require=__webpack_require__(/*! immutable */ 255);var Map=_require.Map;var ContentStateInlineStyle={add:function add(contentState,selectionState,inlineStyle){return modifyInlineStyle(contentState,selectionState,inlineStyle,true);},remove:function remove(contentState,selectionState,inlineStyle){return modifyInlineStyle(contentState,selectionState,inlineStyle,false);}};function modifyInlineStyle(contentState,selectionState,inlineStyle,addOrRemove){var blockMap=contentState.getBlockMap();var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var newBlocks=blockMap.skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).concat(Map([[endKey,blockMap.get(endKey)]])).map(function(block,blockKey){var sliceStart;var sliceEnd;if(startKey===endKey){sliceStart=startOffset;sliceEnd=endOffset;}else{sliceStart=blockKey===startKey?startOffset:0;sliceEnd=blockKey===endKey?endOffset:block.getLength();}var chars=block.getCharacterList();var current;while(sliceStart<sliceEnd){current=chars.get(sliceStart);chars=chars.set(sliceStart,addOrRemove?CharacterMetadata.applyStyle(current,inlineStyle):CharacterMetadata.removeStyle(current,inlineStyle));sliceStart++;}return block.set('characterList',chars);});return contentState.merge({blockMap:blockMap.merge(newBlocks),selectionBefore:selectionState,selectionAfter:selectionState});}module.exports=ContentStateInlineStyle;
 
 /***/ },
-/* 262 */
+/* 261 */
 /*!*****************************************************!*\
   !*** ./~/draft-js/lib/applyEntityToContentState.js ***!
   \*****************************************************/
@@ -9064,10 +9062,10 @@
 	 * @providesModule applyEntityToContentState
 	 * @typechecks
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);var applyEntityToContentBlock=__webpack_require__(/*! ./applyEntityToContentBlock */ 263);function applyEntityToContentState(contentState,selectionState,entityKey){var blockMap=contentState.getBlockMap();var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var newBlocks=blockMap.skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).toOrderedMap().merge(Immutable.OrderedMap([[endKey,blockMap.get(endKey)]])).map(function(block,blockKey){var sliceStart=blockKey===startKey?startOffset:0;var sliceEnd=blockKey===endKey?endOffset:block.getLength();return applyEntityToContentBlock(block,sliceStart,sliceEnd,entityKey);});return contentState.merge({blockMap:blockMap.merge(newBlocks),selectionBefore:selectionState,selectionAfter:selectionState});}module.exports=applyEntityToContentState;
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);var applyEntityToContentBlock=__webpack_require__(/*! ./applyEntityToContentBlock */ 262);function applyEntityToContentState(contentState,selectionState,entityKey){var blockMap=contentState.getBlockMap();var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var newBlocks=blockMap.skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).toOrderedMap().merge(Immutable.OrderedMap([[endKey,blockMap.get(endKey)]])).map(function(block,blockKey){var sliceStart=blockKey===startKey?startOffset:0;var sliceEnd=blockKey===endKey?endOffset:block.getLength();return applyEntityToContentBlock(block,sliceStart,sliceEnd,entityKey);});return contentState.merge({blockMap:blockMap.merge(newBlocks),selectionBefore:selectionState,selectionAfter:selectionState});}module.exports=applyEntityToContentState;
 
 /***/ },
-/* 263 */
+/* 262 */
 /*!*****************************************************!*\
   !*** ./~/draft-js/lib/applyEntityToContentBlock.js ***!
   \*****************************************************/
@@ -9084,10 +9082,10 @@
 	 * @providesModule applyEntityToContentBlock
 	 * @typechecks
 	 * 
-	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);function applyEntityToContentBlock(contentBlock,start,end,entityKey){var characterList=contentBlock.getCharacterList();while(start<end){characterList=characterList.set(start,CharacterMetadata.applyEntity(characterList.get(start),entityKey));start++;}return contentBlock.set('characterList',characterList);}module.exports=applyEntityToContentBlock;
+	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);function applyEntityToContentBlock(contentBlock,start,end,entityKey){var characterList=contentBlock.getCharacterList();while(start<end){characterList=characterList.set(start,CharacterMetadata.applyEntity(characterList.get(start),entityKey));start++;}return contentBlock.set('characterList',characterList);}module.exports=applyEntityToContentBlock;
 
 /***/ },
-/* 264 */
+/* 263 */
 /*!****************************************************!*\
   !*** ./~/draft-js/lib/getCharacterRemovalRange.js ***!
   \****************************************************/
@@ -9104,7 +9102,7 @@
 	 * @providesModule getCharacterRemovalRange
 	 * @typechecks
 	 * 
-	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);var DraftEntitySegments=__webpack_require__(/*! ./DraftEntitySegments */ 267);var getRangesForDraftEntity=__webpack_require__(/*! ./getRangesForDraftEntity */ 268);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);/**
+	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);var DraftEntitySegments=__webpack_require__(/*! ./DraftEntitySegments */ 266);var getRangesForDraftEntity=__webpack_require__(/*! ./getRangesForDraftEntity */ 267);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);/**
 	 * Given a SelectionState and a removal direction, determine the entire range
 	 * that should be removed from a ContentState. This is based on any entities
 	 * within the target, with their `mutability` values taken into account.
@@ -9121,7 +9119,7 @@
 	var removalRange=DraftEntitySegments.getRemovalRange(start,end,block.getText().slice(entityRange.start,entityRange.end),entityRange.start,direction);return selectionState.merge({anchorOffset:removalRange.start,focusOffset:removalRange.end,isBackward:false});}module.exports=getCharacterRemovalRange;
 
 /***/ },
-/* 265 */
+/* 264 */
 /*!***************************************!*\
   !*** ./~/draft-js/lib/DraftEntity.js ***!
   \***************************************/
@@ -9138,7 +9136,7 @@
 	 * @providesModule DraftEntity
 	 * @typechecks
 	 * 
-	 */var DraftEntityInstance=__webpack_require__(/*! ./DraftEntityInstance */ 266);var Immutable=__webpack_require__(/*! immutable */ 256);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var Map=Immutable.Map;var instances=Map();var instanceKey=0;/**
+	 */var DraftEntityInstance=__webpack_require__(/*! ./DraftEntityInstance */ 265);var Immutable=__webpack_require__(/*! immutable */ 255);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var Map=Immutable.Map;var instances=Map();var instanceKey=0;/**
 	 * A "document entity" is an object containing metadata associated with a
 	 * piece of text in a ContentBlock.
 	 *
@@ -9170,7 +9168,7 @@
 	   */replaceData:function replaceData(key,newData){var instance=DraftEntity.get(key);var newInstance=instance.set('data',newData);instances=instances.set(key,newInstance);return newInstance;}};module.exports=DraftEntity;
 
 /***/ },
-/* 266 */
+/* 265 */
 /*!***********************************************!*\
   !*** ./~/draft-js/lib/DraftEntityInstance.js ***!
   \***********************************************/
@@ -9186,7 +9184,7 @@
 	 *
 	 * @providesModule DraftEntityInstance
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Immutable=__webpack_require__(/*! immutable */ 256);var Record=Immutable.Record;var DraftEntityInstanceRecord=Record({type:'TOKEN',mutability:'IMMUTABLE',data:Object});/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Immutable=__webpack_require__(/*! immutable */ 255);var Record=Immutable.Record;var DraftEntityInstanceRecord=Record({type:'TOKEN',mutability:'IMMUTABLE',data:Object});/**
 	 * An instance of a document entity, consisting of a `type` and relevant
 	 * `data`, metadata about the entity.
 	 *
@@ -9199,7 +9197,7 @@
 	 */var DraftEntityInstance=function(_DraftEntityInstanceR){_inherits(DraftEntityInstance,_DraftEntityInstanceR);function DraftEntityInstance(){_classCallCheck(this,DraftEntityInstance);return _possibleConstructorReturn(this,_DraftEntityInstanceR.apply(this,arguments));}DraftEntityInstance.prototype.getType=function getType(){return this.get('type');};DraftEntityInstance.prototype.getMutability=function getMutability(){return this.get('mutability');};DraftEntityInstance.prototype.getData=function getData(){return this.get('data');};return DraftEntityInstance;}(DraftEntityInstanceRecord);module.exports=DraftEntityInstance;
 
 /***/ },
-/* 267 */
+/* 266 */
 /*!***********************************************!*\
   !*** ./~/draft-js/lib/DraftEntitySegments.js ***!
   \***********************************************/
@@ -9242,7 +9240,7 @@
 	if(selectionStart<segmentEnd&&segmentStart<selectionEnd){if(removalStart!==null){removalEnd=segmentEnd;}else{removalStart=segmentStart;removalEnd=segmentEnd;}}else if(removalStart!==null){break;}segmentStart=segmentEnd;}var entityEnd=entityStart+text.length;var atStart=removalStart===entityStart;var atEnd=removalEnd===entityEnd;if(!atStart&&atEnd||atStart&&!atEnd){if(direction==='forward'){if(removalEnd!==entityEnd){removalEnd++;}}else if(removalStart!==entityStart){removalStart--;}}return{start:removalStart,end:removalEnd};}};module.exports=DraftEntitySegments;
 
 /***/ },
-/* 268 */
+/* 267 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/getRangesForDraftEntity.js ***!
   \***************************************************/
@@ -9269,7 +9267,7 @@
 	 */function getRangesForDraftEntity(block,key){var ranges=[];block.findEntityRanges(function(c){return c.getEntity()===key;},function(start,end){ranges.push({start:start,end:end});});!!!ranges.length? true?invariant(false,'Entity key not found in this range.'):invariant(false):void 0;return ranges;}module.exports=getRangesForDraftEntity;
 
 /***/ },
-/* 269 */
+/* 268 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/getContentStateFragment.js ***!
   \***************************************************/
@@ -9286,13 +9284,13 @@
 	 * @providesModule getContentStateFragment
 	 * @typechecks
 	 * 
-	 */'use strict';var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var removeEntitiesAtEdges=__webpack_require__(/*! ./removeEntitiesAtEdges */ 271);function getContentStateFragment(contentState,selectionState){var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();// Edge entities should be stripped to ensure that we don't preserve
+	 */'use strict';var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var removeEntitiesAtEdges=__webpack_require__(/*! ./removeEntitiesAtEdges */ 270);function getContentStateFragment(contentState,selectionState){var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();// Edge entities should be stripped to ensure that we don't preserve
 	// invalid partial entities when the fragment is reused. We do, however,
 	// preserve entities that are entirely within the selection range.
 	var contentWithoutEdgeEntities=removeEntitiesAtEdges(contentState,selectionState);var blockMap=contentWithoutEdgeEntities.getBlockMap();var blockKeys=blockMap.keySeq();var startIndex=blockKeys.indexOf(startKey);var endIndex=blockKeys.indexOf(endKey)+1;var slice=blockMap.slice(startIndex,endIndex).map(function(block,blockKey){var newKey=generateRandomKey();var text=block.getText();var chars=block.getCharacterList();if(startKey===endKey){return block.merge({key:newKey,text:text.slice(startOffset,endOffset),characterList:chars.slice(startOffset,endOffset)});}if(blockKey===startKey){return block.merge({key:newKey,text:text.slice(startOffset),characterList:chars.slice(startOffset)});}if(blockKey===endKey){return block.merge({key:newKey,text:text.slice(0,endOffset),characterList:chars.slice(0,endOffset)});}return block.set('key',newKey);});return slice.toOrderedMap();}module.exports=getContentStateFragment;
 
 /***/ },
-/* 270 */
+/* 269 */
 /*!*********************************************!*\
   !*** ./~/draft-js/lib/generateRandomKey.js ***!
   \*********************************************/
@@ -9312,7 +9310,7 @@
 	 */'use strict';var seenKeys={};var MULTIPLIER=Math.pow(2,24);function generateRandomKey(){var key=void 0;while(key===undefined||seenKeys.hasOwnProperty(key)||!isNaN(+key)){key=Math.floor(Math.random()*MULTIPLIER).toString(32);}seenKeys[key]=true;return key;}module.exports=generateRandomKey;
 
 /***/ },
-/* 271 */
+/* 270 */
 /*!*************************************************!*\
   !*** ./~/draft-js/lib/removeEntitiesAtEdges.js ***!
   \*************************************************/
@@ -9328,10 +9326,10 @@
 	 *
 	 * @providesModule removeEntitiesAtEdges
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 259);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);function removeEntitiesAtEdges(contentState,selectionState){var blockMap=contentState.getBlockMap();var updatedBlocks={};var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var startBlock=blockMap.get(startKey);var updatedStart=removeForBlock(startBlock,startOffset);if(updatedStart!==startBlock){updatedBlocks[startKey]=updatedStart;}var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var endBlock=blockMap.get(endKey);if(startKey===endKey){endBlock=updatedStart;}var updatedEnd=removeForBlock(endBlock,endOffset);if(updatedEnd!==endBlock){updatedBlocks[endKey]=updatedEnd;}if(!Object.keys(updatedBlocks).length){return contentState.set('selectionAfter',selectionState);}return contentState.merge({blockMap:blockMap.merge(updatedBlocks),selectionAfter:selectionState});}function getRemovalRange(characters,key,offset){var removalRange;findRangesImmutable(characters,function(a,b){return a.getEntity()===b.getEntity();},function(element){return element.getEntity()===key;},function(start,end){if(start<=offset&&end>=offset){removalRange={start:start,end:end};}});!((typeof removalRange==='undefined'?'undefined':_typeof(removalRange))==='object')? true?invariant(false,'Removal range must exist within character list.'):invariant(false):void 0;return removalRange;}function removeForBlock(block,offset){var chars=block.getCharacterList();var charBefore=offset>0?chars.get(offset-1):undefined;var charAfter=offset<chars.count()?chars.get(offset):undefined;var entityBeforeCursor=charBefore?charBefore.getEntity():undefined;var entityAfterCursor=charAfter?charAfter.getEntity():undefined;if(entityAfterCursor&&entityAfterCursor===entityBeforeCursor){var entity=DraftEntity.get(entityAfterCursor);if(entity.getMutability()!=='MUTABLE'){var _getRemovalRange=getRemovalRange(chars,entityAfterCursor,offset);var start=_getRemovalRange.start;var end=_getRemovalRange.end;var current;while(start<end){current=chars.get(start);chars=chars.set(start,CharacterMetadata.applyEntity(current,null));start++;}return block.set('characterList',chars);}}return block;}module.exports=removeEntitiesAtEdges;
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 258);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);function removeEntitiesAtEdges(contentState,selectionState){var blockMap=contentState.getBlockMap();var updatedBlocks={};var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var startBlock=blockMap.get(startKey);var updatedStart=removeForBlock(startBlock,startOffset);if(updatedStart!==startBlock){updatedBlocks[startKey]=updatedStart;}var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var endBlock=blockMap.get(endKey);if(startKey===endKey){endBlock=updatedStart;}var updatedEnd=removeForBlock(endBlock,endOffset);if(updatedEnd!==endBlock){updatedBlocks[endKey]=updatedEnd;}if(!Object.keys(updatedBlocks).length){return contentState.set('selectionAfter',selectionState);}return contentState.merge({blockMap:blockMap.merge(updatedBlocks),selectionAfter:selectionState});}function getRemovalRange(characters,key,offset){var removalRange;findRangesImmutable(characters,function(a,b){return a.getEntity()===b.getEntity();},function(element){return element.getEntity()===key;},function(start,end){if(start<=offset&&end>=offset){removalRange={start:start,end:end};}});!((typeof removalRange==='undefined'?'undefined':_typeof(removalRange))==='object')? true?invariant(false,'Removal range must exist within character list.'):invariant(false):void 0;return removalRange;}function removeForBlock(block,offset){var chars=block.getCharacterList();var charBefore=offset>0?chars.get(offset-1):undefined;var charAfter=offset<chars.count()?chars.get(offset):undefined;var entityBeforeCursor=charBefore?charBefore.getEntity():undefined;var entityAfterCursor=charAfter?charAfter.getEntity():undefined;if(entityAfterCursor&&entityAfterCursor===entityBeforeCursor){var entity=DraftEntity.get(entityAfterCursor);if(entity.getMutability()!=='MUTABLE'){var _getRemovalRange=getRemovalRange(chars,entityAfterCursor,offset);var start=_getRemovalRange.start;var end=_getRemovalRange.end;var current;while(start<end){current=chars.get(start);chars=chars.set(start,CharacterMetadata.applyEntity(current,null));start++;}return block.set('characterList',chars);}}return block;}module.exports=removeEntitiesAtEdges;
 
 /***/ },
-/* 272 */
+/* 271 */
 /*!**********************************************************!*\
   !*** ./~/draft-js/lib/insertFragmentIntoContentState.js ***!
   \**********************************************************/
@@ -9348,13 +9346,13 @@
 	 * @providesModule insertFragmentIntoContentState
 	 * @typechecks
 	 * 
-	 */'use strict';var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 255);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var insertIntoList=__webpack_require__(/*! ./insertIntoList */ 273);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);function insertFragmentIntoContentState(contentState,selectionState,fragment){!selectionState.isCollapsed()? true?invariant(false,'`insertFragment` should only be called with a collapsed selection state.'):invariant(false):void 0;var targetKey=selectionState.getStartKey();var targetOffset=selectionState.getStartOffset();var blockMap=contentState.getBlockMap();var fragmentSize=fragment.size;var finalKey;var finalOffset;if(fragmentSize===1){var targetBlock=blockMap.get(targetKey);var pastedBlock=fragment.first();var text=targetBlock.getText();var chars=targetBlock.getCharacterList();var newBlock=targetBlock.merge({text:text.slice(0,targetOffset)+pastedBlock.getText()+text.slice(targetOffset),characterList:insertIntoList(chars,pastedBlock.getCharacterList(),targetOffset),data:pastedBlock.getData()});blockMap=blockMap.set(targetKey,newBlock);finalKey=targetKey;finalOffset=targetOffset+pastedBlock.getText().length;return contentState.merge({blockMap:blockMap.set(targetKey,newBlock),selectionBefore:selectionState,selectionAfter:selectionState.merge({anchorKey:finalKey,anchorOffset:finalOffset,focusKey:finalKey,focusOffset:finalOffset,isBackward:false})});}var newBlockArr=[];contentState.getBlockMap().forEach(function(block,blockKey){if(blockKey!==targetKey){newBlockArr.push(block);return;}var text=block.getText();var chars=block.getCharacterList();// Modify head portion of block.
+	 */'use strict';var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 254);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var insertIntoList=__webpack_require__(/*! ./insertIntoList */ 272);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);function insertFragmentIntoContentState(contentState,selectionState,fragment){!selectionState.isCollapsed()? true?invariant(false,'`insertFragment` should only be called with a collapsed selection state.'):invariant(false):void 0;var targetKey=selectionState.getStartKey();var targetOffset=selectionState.getStartOffset();var blockMap=contentState.getBlockMap();var fragmentSize=fragment.size;var finalKey;var finalOffset;if(fragmentSize===1){var targetBlock=blockMap.get(targetKey);var pastedBlock=fragment.first();var text=targetBlock.getText();var chars=targetBlock.getCharacterList();var newBlock=targetBlock.merge({text:text.slice(0,targetOffset)+pastedBlock.getText()+text.slice(targetOffset),characterList:insertIntoList(chars,pastedBlock.getCharacterList(),targetOffset),data:pastedBlock.getData()});blockMap=blockMap.set(targetKey,newBlock);finalKey=targetKey;finalOffset=targetOffset+pastedBlock.getText().length;return contentState.merge({blockMap:blockMap.set(targetKey,newBlock),selectionBefore:selectionState,selectionAfter:selectionState.merge({anchorKey:finalKey,anchorOffset:finalOffset,focusKey:finalKey,focusOffset:finalOffset,isBackward:false})});}var newBlockArr=[];contentState.getBlockMap().forEach(function(block,blockKey){if(blockKey!==targetKey){newBlockArr.push(block);return;}var text=block.getText();var chars=block.getCharacterList();// Modify head portion of block.
 	var blockSize=text.length;var headText=text.slice(0,targetOffset);var headCharacters=chars.slice(0,targetOffset);var appendToHead=fragment.first();var modifiedHead=block.merge({text:headText+appendToHead.getText(),characterList:headCharacters.concat(appendToHead.getCharacterList()),type:headText?block.getType():appendToHead.getType(),data:appendToHead.getData()});newBlockArr.push(modifiedHead);// Insert fragment blocks after the head and before the tail.
 	fragment.slice(1,fragmentSize-1).forEach(function(fragmentBlock){newBlockArr.push(fragmentBlock.set('key',generateRandomKey()));});// Modify tail portion of block.
 	var tailText=text.slice(targetOffset,blockSize);var tailCharacters=chars.slice(targetOffset,blockSize);var prependToTail=fragment.last();finalKey=generateRandomKey();var modifiedTail=prependToTail.merge({key:finalKey,text:prependToTail.getText()+tailText,characterList:prependToTail.getCharacterList().concat(tailCharacters),data:prependToTail.getData()});newBlockArr.push(modifiedTail);});finalOffset=fragment.last().getLength();return contentState.merge({blockMap:BlockMapBuilder.createFromArray(newBlockArr),selectionBefore:selectionState,selectionAfter:selectionState.merge({anchorKey:finalKey,anchorOffset:finalOffset,focusKey:finalKey,focusOffset:finalOffset,isBackward:false})});}module.exports=insertFragmentIntoContentState;
 
 /***/ },
-/* 273 */
+/* 272 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/insertIntoList.js ***!
   \******************************************/
@@ -9375,7 +9373,7 @@
 	 */function insertIntoList(targetList,toInsert,offset){if(offset===targetList.count()){toInsert.forEach(function(c){targetList=targetList.push(c);});}else if(offset===0){toInsert.reverse().forEach(function(c){targetList=targetList.unshift(c);});}else{var head=targetList.slice(0,offset);var tail=targetList.slice(offset);targetList=head.concat(toInsert,tail).toList();}return targetList;}module.exports=insertIntoList;
 
 /***/ },
-/* 274 */
+/* 273 */
 /*!******************************************************!*\
   !*** ./~/draft-js/lib/insertTextIntoContentState.js ***!
   \******************************************************/
@@ -9392,10 +9390,10 @@
 	 * @providesModule insertTextIntoContentState
 	 * @typechecks
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);var insertIntoList=__webpack_require__(/*! ./insertIntoList */ 273);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var Repeat=Immutable.Repeat;function insertTextIntoContentState(contentState,selectionState,text,characterMetadata){!selectionState.isCollapsed()? true?invariant(false,'`insertText` should only be called with a collapsed range.'):invariant(false):void 0;var len=text.length;if(!len){return contentState;}var blockMap=contentState.getBlockMap();var key=selectionState.getStartKey();var offset=selectionState.getStartOffset();var block=blockMap.get(key);var blockText=block.getText();var newBlock=block.merge({text:blockText.slice(0,offset)+text+blockText.slice(offset,block.getLength()),characterList:insertIntoList(block.getCharacterList(),Repeat(characterMetadata,len).toList(),offset)});var newOffset=offset+len;return contentState.merge({blockMap:blockMap.set(key,newBlock),selectionAfter:selectionState.merge({anchorOffset:newOffset,focusOffset:newOffset})});}module.exports=insertTextIntoContentState;
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);var insertIntoList=__webpack_require__(/*! ./insertIntoList */ 272);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var Repeat=Immutable.Repeat;function insertTextIntoContentState(contentState,selectionState,text,characterMetadata){!selectionState.isCollapsed()? true?invariant(false,'`insertText` should only be called with a collapsed range.'):invariant(false):void 0;var len=text.length;if(!len){return contentState;}var blockMap=contentState.getBlockMap();var key=selectionState.getStartKey();var offset=selectionState.getStartOffset();var block=blockMap.get(key);var blockText=block.getText();var newBlock=block.merge({text:blockText.slice(0,offset)+text+blockText.slice(offset,block.getLength()),characterList:insertIntoList(block.getCharacterList(),Repeat(characterMetadata,len).toList(),offset)});var newOffset=offset+len;return contentState.merge({blockMap:blockMap.set(key,newBlock),selectionAfter:selectionState.merge({anchorOffset:newOffset,focusOffset:newOffset})});}module.exports=insertTextIntoContentState;
 
 /***/ },
-/* 275 */
+/* 274 */
 /*!******************************************************!*\
   !*** ./~/draft-js/lib/modifyBlockForContentState.js ***!
   \******************************************************/
@@ -9412,10 +9410,10 @@
 	 * @providesModule modifyBlockForContentState
 	 * @typechecks
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);var Map=Immutable.Map;function modifyBlockForContentState(contentState,selectionState,operation){var startKey=selectionState.getStartKey();var endKey=selectionState.getEndKey();var blockMap=contentState.getBlockMap();var newBlocks=blockMap.toSeq().skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).concat(Map([[endKey,blockMap.get(endKey)]])).map(operation);return contentState.merge({blockMap:blockMap.merge(newBlocks),selectionBefore:selectionState,selectionAfter:selectionState});}module.exports=modifyBlockForContentState;
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);var Map=Immutable.Map;function modifyBlockForContentState(contentState,selectionState,operation){var startKey=selectionState.getStartKey();var endKey=selectionState.getEndKey();var blockMap=contentState.getBlockMap();var newBlocks=blockMap.toSeq().skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).concat(Map([[endKey,blockMap.get(endKey)]])).map(operation);return contentState.merge({blockMap:blockMap.merge(newBlocks),selectionBefore:selectionState,selectionAfter:selectionState});}module.exports=modifyBlockForContentState;
 
 /***/ },
-/* 276 */
+/* 275 */
 /*!*******************************************************!*\
   !*** ./~/draft-js/lib/removeRangeFromContentState.js ***!
   \*******************************************************/
@@ -9431,13 +9429,13 @@
 	 *
 	 * @providesModule removeRangeFromContentState
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);function removeRangeFromContentState(contentState,selectionState){if(selectionState.isCollapsed()){return contentState;}var blockMap=contentState.getBlockMap();var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var startBlock=blockMap.get(startKey);var endBlock=blockMap.get(endKey);var characterList;if(startBlock===endBlock){characterList=removeFromList(startBlock.getCharacterList(),startOffset,endOffset);}else{characterList=startBlock.getCharacterList().slice(0,startOffset).concat(endBlock.getCharacterList().slice(endOffset));}var modifiedStart=startBlock.merge({text:startBlock.getText().slice(0,startOffset)+endBlock.getText().slice(endOffset),characterList:characterList});var newBlocks=blockMap.toSeq().skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).concat(Immutable.Map([[endKey,null]])).map(function(_,k){return k===startKey?modifiedStart:null;});blockMap=blockMap.merge(newBlocks).filter(function(block){return!!block;});return contentState.merge({blockMap:blockMap,selectionBefore:selectionState,selectionAfter:selectionState.merge({anchorKey:startKey,anchorOffset:startOffset,focusKey:startKey,focusOffset:startOffset,isBackward:false})});}/**
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);function removeRangeFromContentState(contentState,selectionState){if(selectionState.isCollapsed()){return contentState;}var blockMap=contentState.getBlockMap();var startKey=selectionState.getStartKey();var startOffset=selectionState.getStartOffset();var endKey=selectionState.getEndKey();var endOffset=selectionState.getEndOffset();var startBlock=blockMap.get(startKey);var endBlock=blockMap.get(endKey);var characterList;if(startBlock===endBlock){characterList=removeFromList(startBlock.getCharacterList(),startOffset,endOffset);}else{characterList=startBlock.getCharacterList().slice(0,startOffset).concat(endBlock.getCharacterList().slice(endOffset));}var modifiedStart=startBlock.merge({text:startBlock.getText().slice(0,startOffset)+endBlock.getText().slice(endOffset),characterList:characterList});var newBlocks=blockMap.toSeq().skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).concat(Immutable.Map([[endKey,null]])).map(function(_,k){return k===startKey?modifiedStart:null;});blockMap=blockMap.merge(newBlocks).filter(function(block){return!!block;});return contentState.merge({blockMap:blockMap,selectionBefore:selectionState,selectionAfter:selectionState.merge({anchorKey:startKey,anchorOffset:startOffset,focusKey:startKey,focusOffset:startOffset,isBackward:false})});}/**
 	 * Maintain persistence for target list when removing characters on the
 	 * head and tail of the character list.
 	 */function removeFromList(targetList,startOffset,endOffset){if(startOffset===0){while(startOffset<endOffset){targetList=targetList.shift();startOffset++;}}else if(endOffset===targetList.count()){while(endOffset>startOffset){targetList=targetList.pop();endOffset--;}}else{var head=targetList.slice(0,startOffset);var tail=targetList.slice(endOffset);targetList=head.concat(tail).toList();}return targetList;}module.exports=removeRangeFromContentState;
 
 /***/ },
-/* 277 */
+/* 276 */
 /*!****************************************************!*\
   !*** ./~/draft-js/lib/splitBlockInContentState.js ***!
   \****************************************************/
@@ -9454,10 +9452,10 @@
 	 * @providesModule splitBlockInContentState
 	 * @typechecks
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var Map=Immutable.Map;function splitBlockInContentState(contentState,selectionState){!selectionState.isCollapsed()? true?invariant(false,'Selection range must be collapsed.'):invariant(false):void 0;var key=selectionState.getAnchorKey();var offset=selectionState.getAnchorOffset();var blockMap=contentState.getBlockMap();var blockToSplit=blockMap.get(key);var text=blockToSplit.getText();var chars=blockToSplit.getCharacterList();var blockAbove=blockToSplit.merge({text:text.slice(0,offset),characterList:chars.slice(0,offset)});var keyBelow=generateRandomKey();var blockBelow=blockAbove.merge({key:keyBelow,text:text.slice(offset),characterList:chars.slice(offset),data:Map()});var blocksBefore=blockMap.toSeq().takeUntil(function(v){return v===blockToSplit;});var blocksAfter=blockMap.toSeq().skipUntil(function(v){return v===blockToSplit;}).rest();var newBlocks=blocksBefore.concat([[blockAbove.getKey(),blockAbove],[blockBelow.getKey(),blockBelow]],blocksAfter).toOrderedMap();return contentState.merge({blockMap:newBlocks,selectionBefore:selectionState,selectionAfter:selectionState.merge({anchorKey:keyBelow,anchorOffset:0,focusKey:keyBelow,focusOffset:0,isBackward:false})});}module.exports=splitBlockInContentState;
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var Map=Immutable.Map;function splitBlockInContentState(contentState,selectionState){!selectionState.isCollapsed()? true?invariant(false,'Selection range must be collapsed.'):invariant(false):void 0;var key=selectionState.getAnchorKey();var offset=selectionState.getAnchorOffset();var blockMap=contentState.getBlockMap();var blockToSplit=blockMap.get(key);var text=blockToSplit.getText();var chars=blockToSplit.getCharacterList();var blockAbove=blockToSplit.merge({text:text.slice(0,offset),characterList:chars.slice(0,offset)});var keyBelow=generateRandomKey();var blockBelow=blockAbove.merge({key:keyBelow,text:text.slice(offset),characterList:chars.slice(offset),data:Map()});var blocksBefore=blockMap.toSeq().takeUntil(function(v){return v===blockToSplit;});var blocksAfter=blockMap.toSeq().skipUntil(function(v){return v===blockToSplit;}).rest();var newBlocks=blocksBefore.concat([[blockAbove.getKey(),blockAbove],[blockBelow.getKey(),blockBelow]],blocksAfter).toOrderedMap();return contentState.merge({blockMap:newBlocks,selectionBefore:selectionState,selectionAfter:selectionState.merge({anchorKey:keyBelow,anchorOffset:0,focusKey:keyBelow,focusOffset:0,isBackward:false})});}module.exports=splitBlockInContentState;
 
 /***/ },
-/* 278 */
+/* 277 */
 /*!***************************************!*\
   !*** ./~/draft-js/lib/EditorState.js ***!
   \***************************************/
@@ -9473,7 +9471,7 @@
 	 *
 	 * @providesModule EditorState
 	 * 
-	 */'use strict';var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var BlockTree=__webpack_require__(/*! ./BlockTree */ 279);var ContentState=__webpack_require__(/*! ./ContentState */ 280);var EditorBidiService=__webpack_require__(/*! ./EditorBidiService */ 283);var Immutable=__webpack_require__(/*! immutable */ 256);var SelectionState=__webpack_require__(/*! ./SelectionState */ 281);var OrderedSet=Immutable.OrderedSet;var Record=Immutable.Record;var Stack=Immutable.Stack;var defaultRecord={allowUndo:true,currentContent:null,decorator:null,directionMap:null,forceSelection:false,inCompositionMode:false,inlineStyleOverride:null,lastChangeType:null,nativelyRenderedContent:null,redoStack:Stack(),selection:null,treeMap:null,undoStack:Stack()};var EditorStateRecord=Record(defaultRecord);var EditorState=function(){EditorState.createEmpty=function createEmpty(decorator){return EditorState.createWithContent(ContentState.createFromText(''),decorator);};EditorState.createWithContent=function createWithContent(contentState,decorator){var firstKey=contentState.getBlockMap().first().getKey();return EditorState.create({currentContent:contentState,undoStack:Stack(),redoStack:Stack(),decorator:decorator||null,selection:SelectionState.createEmpty(firstKey)});};EditorState.create=function create(config){var currentContent=config.currentContent;var decorator=config.decorator;var recordConfig=_extends({},config,{treeMap:generateNewTreeMap(currentContent,decorator),directionMap:EditorBidiService.getDirectionMap(currentContent)});return new EditorState(new EditorStateRecord(recordConfig));};EditorState.set=function set(editorState,put){var map=editorState.getImmutable().withMutations(function(state){var existingDecorator=state.get('decorator');var decorator=existingDecorator;if(put.decorator===null){decorator=null;}else if(put.decorator){decorator=put.decorator;}var newContent=put.currentContent||editorState.getCurrentContent();if(decorator!==existingDecorator){var treeMap=state.get('treeMap');var newTreeMap;if(decorator&&existingDecorator){newTreeMap=regenerateTreeForNewDecorator(newContent.getBlockMap(),treeMap,decorator,existingDecorator);}else{newTreeMap=generateNewTreeMap(newContent,decorator);}state.merge({decorator:decorator,treeMap:newTreeMap,nativelyRenderedContent:null});return;}var existingContent=editorState.getCurrentContent();if(newContent!==existingContent){state.set('treeMap',regenerateTreeForNewBlocks(editorState,newContent.getBlockMap(),decorator));}state.merge(put);});return new EditorState(map);};EditorState.prototype.toJS=function toJS(){return this.getImmutable().toJS();};EditorState.prototype.getAllowUndo=function getAllowUndo(){return this.getImmutable().get('allowUndo');};EditorState.prototype.getCurrentContent=function getCurrentContent(){return this.getImmutable().get('currentContent');};EditorState.prototype.getUndoStack=function getUndoStack(){return this.getImmutable().get('undoStack');};EditorState.prototype.getRedoStack=function getRedoStack(){return this.getImmutable().get('redoStack');};EditorState.prototype.getSelection=function getSelection(){return this.getImmutable().get('selection');};EditorState.prototype.getDecorator=function getDecorator(){return this.getImmutable().get('decorator');};EditorState.prototype.isInCompositionMode=function isInCompositionMode(){return this.getImmutable().get('inCompositionMode');};EditorState.prototype.mustForceSelection=function mustForceSelection(){return this.getImmutable().get('forceSelection');};EditorState.prototype.getNativelyRenderedContent=function getNativelyRenderedContent(){return this.getImmutable().get('nativelyRenderedContent');};EditorState.prototype.getLastChangeType=function getLastChangeType(){return this.getImmutable().get('lastChangeType');};/**
+	 */'use strict';var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var BlockTree=__webpack_require__(/*! ./BlockTree */ 278);var ContentState=__webpack_require__(/*! ./ContentState */ 279);var EditorBidiService=__webpack_require__(/*! ./EditorBidiService */ 282);var Immutable=__webpack_require__(/*! immutable */ 255);var SelectionState=__webpack_require__(/*! ./SelectionState */ 280);var OrderedSet=Immutable.OrderedSet;var Record=Immutable.Record;var Stack=Immutable.Stack;var defaultRecord={allowUndo:true,currentContent:null,decorator:null,directionMap:null,forceSelection:false,inCompositionMode:false,inlineStyleOverride:null,lastChangeType:null,nativelyRenderedContent:null,redoStack:Stack(),selection:null,treeMap:null,undoStack:Stack()};var EditorStateRecord=Record(defaultRecord);var EditorState=function(){EditorState.createEmpty=function createEmpty(decorator){return EditorState.createWithContent(ContentState.createFromText(''),decorator);};EditorState.createWithContent=function createWithContent(contentState,decorator){var firstKey=contentState.getBlockMap().first().getKey();return EditorState.create({currentContent:contentState,undoStack:Stack(),redoStack:Stack(),decorator:decorator||null,selection:SelectionState.createEmpty(firstKey)});};EditorState.create=function create(config){var currentContent=config.currentContent;var decorator=config.decorator;var recordConfig=_extends({},config,{treeMap:generateNewTreeMap(currentContent,decorator),directionMap:EditorBidiService.getDirectionMap(currentContent)});return new EditorState(new EditorStateRecord(recordConfig));};EditorState.set=function set(editorState,put){var map=editorState.getImmutable().withMutations(function(state){var existingDecorator=state.get('decorator');var decorator=existingDecorator;if(put.decorator===null){decorator=null;}else if(put.decorator){decorator=put.decorator;}var newContent=put.currentContent||editorState.getCurrentContent();if(decorator!==existingDecorator){var treeMap=state.get('treeMap');var newTreeMap;if(decorator&&existingDecorator){newTreeMap=regenerateTreeForNewDecorator(newContent.getBlockMap(),treeMap,decorator,existingDecorator);}else{newTreeMap=generateNewTreeMap(newContent,decorator);}state.merge({decorator:decorator,treeMap:newTreeMap,nativelyRenderedContent:null});return;}var existingContent=editorState.getCurrentContent();if(newContent!==existingContent){state.set('treeMap',regenerateTreeForNewBlocks(editorState,newContent.getBlockMap(),decorator));}state.merge(put);});return new EditorState(map);};EditorState.prototype.toJS=function toJS(){return this.getImmutable().toJS();};EditorState.prototype.getAllowUndo=function getAllowUndo(){return this.getImmutable().get('allowUndo');};EditorState.prototype.getCurrentContent=function getCurrentContent(){return this.getImmutable().get('currentContent');};EditorState.prototype.getUndoStack=function getUndoStack(){return this.getImmutable().get('undoStack');};EditorState.prototype.getRedoStack=function getRedoStack(){return this.getImmutable().get('redoStack');};EditorState.prototype.getSelection=function getSelection(){return this.getImmutable().get('selection');};EditorState.prototype.getDecorator=function getDecorator(){return this.getImmutable().get('decorator');};EditorState.prototype.isInCompositionMode=function isInCompositionMode(){return this.getImmutable().get('inCompositionMode');};EditorState.prototype.mustForceSelection=function mustForceSelection(){return this.getImmutable().get('forceSelection');};EditorState.prototype.getNativelyRenderedContent=function getNativelyRenderedContent(){return this.getImmutable().get('nativelyRenderedContent');};EditorState.prototype.getLastChangeType=function getLastChangeType(){return this.getImmutable().get('lastChangeType');};/**
 	   * While editing, the user may apply inline style commands with a collapsed
 	   * cursor, intending to type text that adopts the specified style. In this
 	   * case, we track the specified style as an "override" that takes precedence
@@ -9557,7 +9555,7 @@
 	return lookUpwardForInlineStyle(content,startKey);}function lookUpwardForInlineStyle(content,fromKey){var previousBlock=content.getBlockBefore(fromKey);var previousLength;while(previousBlock){previousLength=previousBlock.getLength();if(previousLength){return previousBlock.getInlineStyleAt(previousLength-1);}previousBlock=content.getBlockBefore(previousBlock.getKey());}return OrderedSet();}module.exports=EditorState;
 
 /***/ },
-/* 279 */
+/* 278 */
 /*!*************************************!*\
   !*** ./~/draft-js/lib/BlockTree.js ***!
   \*************************************/
@@ -9573,7 +9571,7 @@
 	 *
 	 * @providesModule BlockTree
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);var emptyFunction=__webpack_require__(/*! fbjs/lib/emptyFunction */ 11);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 259);var List=Immutable.List;var Repeat=Immutable.Repeat;var Record=Immutable.Record;var returnTrue=emptyFunction.thatReturnsTrue;var FINGERPRINT_DELIMITER='-';var defaultLeafRange={start:null,end:null};var LeafRange=Record(defaultLeafRange);var defaultDecoratorRange={start:null,end:null,decoratorKey:null,leaves:null};var DecoratorRange=Record(defaultDecoratorRange);var BlockTree={/**
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);var emptyFunction=__webpack_require__(/*! fbjs/lib/emptyFunction */ 11);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 258);var List=Immutable.List;var Repeat=Immutable.Repeat;var Record=Immutable.Record;var returnTrue=emptyFunction.thatReturnsTrue;var FINGERPRINT_DELIMITER='-';var defaultLeafRange={start:null,end:null};var LeafRange=Record(defaultLeafRange);var defaultDecoratorRange={start:null,end:null,decoratorKey:null,leaves:null};var DecoratorRange=Record(defaultDecoratorRange);var BlockTree={/**
 	   * Generate a block tree for a given ContentBlock/decorator pair.
 	   */generate:function generate(block,decorator){var textLength=block.getLength();if(!textLength){return List.of(new DecoratorRange({start:0,end:0,decoratorKey:null,leaves:List.of(new LeafRange({start:0,end:0}))}));}var leafSets=[];var decorations=decorator?decorator.getDecorations(block):List(Repeat(null,textLength));var chars=block.getCharacterList();findRangesImmutable(decorations,areEqual,returnTrue,function(start,end){leafSets.push(new DecoratorRange({start:start,end:end,decoratorKey:decorations.get(start),leaves:generateLeaves(chars.slice(start,end).toList(),start)}));});return List(leafSets);},/**
 	   * Create a string representation of the given tree map. This allows us
@@ -9584,7 +9582,7 @@
 	 */function generateLeaves(characters,offset){var leaves=[];var inlineStyles=characters.map(function(c){return c.getStyle();}).toList();findRangesImmutable(inlineStyles,areEqual,returnTrue,function(start,end){leaves.push(new LeafRange({start:start+offset,end:end+offset}));});return List(leaves);}function areEqual(a,b){return a===b;}module.exports=BlockTree;
 
 /***/ },
-/* 280 */
+/* 279 */
 /*!****************************************!*\
   !*** ./~/draft-js/lib/ContentState.js ***!
   \****************************************/
@@ -9601,10 +9599,10 @@
 	 * @providesModule ContentState
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 255);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 258);var Immutable=__webpack_require__(/*! immutable */ 256);var SelectionState=__webpack_require__(/*! ./SelectionState */ 281);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var sanitizeDraftText=__webpack_require__(/*! ./sanitizeDraftText */ 282);var List=Immutable.List;var Record=Immutable.Record;var Repeat=Immutable.Repeat;var defaultRecord={blockMap:null,selectionBefore:null,selectionAfter:null};var ContentStateRecord=Record(defaultRecord);var ContentState=function(_ContentStateRecord){_inherits(ContentState,_ContentStateRecord);function ContentState(){_classCallCheck(this,ContentState);return _possibleConstructorReturn(this,_ContentStateRecord.apply(this,arguments));}ContentState.prototype.getBlockMap=function getBlockMap(){return this.get('blockMap');};ContentState.prototype.getSelectionBefore=function getSelectionBefore(){return this.get('selectionBefore');};ContentState.prototype.getSelectionAfter=function getSelectionAfter(){return this.get('selectionAfter');};ContentState.prototype.getBlockForKey=function getBlockForKey(key){var block=this.getBlockMap().get(key);return block;};ContentState.prototype.getKeyBefore=function getKeyBefore(key){return this.getBlockMap().reverse().keySeq().skipUntil(function(v){return v===key;}).skip(1).first();};ContentState.prototype.getKeyAfter=function getKeyAfter(key){return this.getBlockMap().keySeq().skipUntil(function(v){return v===key;}).skip(1).first();};ContentState.prototype.getBlockAfter=function getBlockAfter(key){return this.getBlockMap().skipUntil(function(_,k){return k===key;}).skip(1).first();};ContentState.prototype.getBlockBefore=function getBlockBefore(key){return this.getBlockMap().reverse().skipUntil(function(_,k){return k===key;}).skip(1).first();};ContentState.prototype.getBlocksAsArray=function getBlocksAsArray(){return this.getBlockMap().toArray();};ContentState.prototype.getFirstBlock=function getFirstBlock(){return this.getBlockMap().first();};ContentState.prototype.getLastBlock=function getLastBlock(){return this.getBlockMap().last();};ContentState.prototype.getPlainText=function getPlainText(delimiter){return this.getBlockMap().map(function(block){return block?block.getText():'';}).join(delimiter||'\n');};ContentState.prototype.hasText=function hasText(){var blockMap=this.getBlockMap();return blockMap.size>1||blockMap.first().getLength()>0;};ContentState.createFromBlockArray=function createFromBlockArray(blocks){var blockMap=BlockMapBuilder.createFromArray(blocks);var selectionState=SelectionState.createEmpty(blockMap.first().getKey());return new ContentState({blockMap:blockMap,selectionBefore:selectionState,selectionAfter:selectionState});};ContentState.createFromText=function createFromText(text){var delimiter=arguments.length<=1||arguments[1]===undefined?/\r\n?|\n/g:arguments[1];var strings=text.split(delimiter);var blocks=strings.map(function(block){block=sanitizeDraftText(block);return new ContentBlock({key:generateRandomKey(),text:block,type:'unstyled',characterList:List(Repeat(CharacterMetadata.EMPTY,block.length))});});return ContentState.createFromBlockArray(blocks);};return ContentState;}(ContentStateRecord);module.exports=ContentState;
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 254);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 257);var Immutable=__webpack_require__(/*! immutable */ 255);var SelectionState=__webpack_require__(/*! ./SelectionState */ 280);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var sanitizeDraftText=__webpack_require__(/*! ./sanitizeDraftText */ 281);var List=Immutable.List;var Record=Immutable.Record;var Repeat=Immutable.Repeat;var defaultRecord={blockMap:null,selectionBefore:null,selectionAfter:null};var ContentStateRecord=Record(defaultRecord);var ContentState=function(_ContentStateRecord){_inherits(ContentState,_ContentStateRecord);function ContentState(){_classCallCheck(this,ContentState);return _possibleConstructorReturn(this,_ContentStateRecord.apply(this,arguments));}ContentState.prototype.getBlockMap=function getBlockMap(){return this.get('blockMap');};ContentState.prototype.getSelectionBefore=function getSelectionBefore(){return this.get('selectionBefore');};ContentState.prototype.getSelectionAfter=function getSelectionAfter(){return this.get('selectionAfter');};ContentState.prototype.getBlockForKey=function getBlockForKey(key){var block=this.getBlockMap().get(key);return block;};ContentState.prototype.getKeyBefore=function getKeyBefore(key){return this.getBlockMap().reverse().keySeq().skipUntil(function(v){return v===key;}).skip(1).first();};ContentState.prototype.getKeyAfter=function getKeyAfter(key){return this.getBlockMap().keySeq().skipUntil(function(v){return v===key;}).skip(1).first();};ContentState.prototype.getBlockAfter=function getBlockAfter(key){return this.getBlockMap().skipUntil(function(_,k){return k===key;}).skip(1).first();};ContentState.prototype.getBlockBefore=function getBlockBefore(key){return this.getBlockMap().reverse().skipUntil(function(_,k){return k===key;}).skip(1).first();};ContentState.prototype.getBlocksAsArray=function getBlocksAsArray(){return this.getBlockMap().toArray();};ContentState.prototype.getFirstBlock=function getFirstBlock(){return this.getBlockMap().first();};ContentState.prototype.getLastBlock=function getLastBlock(){return this.getBlockMap().last();};ContentState.prototype.getPlainText=function getPlainText(delimiter){return this.getBlockMap().map(function(block){return block?block.getText():'';}).join(delimiter||'\n');};ContentState.prototype.hasText=function hasText(){var blockMap=this.getBlockMap();return blockMap.size>1||blockMap.first().getLength()>0;};ContentState.createFromBlockArray=function createFromBlockArray(blocks){var blockMap=BlockMapBuilder.createFromArray(blocks);var selectionState=SelectionState.createEmpty(blockMap.first().getKey());return new ContentState({blockMap:blockMap,selectionBefore:selectionState,selectionAfter:selectionState});};ContentState.createFromText=function createFromText(text){var delimiter=arguments.length<=1||arguments[1]===undefined?/\r\n?|\n/g:arguments[1];var strings=text.split(delimiter);var blocks=strings.map(function(block){block=sanitizeDraftText(block);return new ContentBlock({key:generateRandomKey(),text:block,type:'unstyled',characterList:List(Repeat(CharacterMetadata.EMPTY,block.length))});});return ContentState.createFromBlockArray(blocks);};return ContentState;}(ContentStateRecord);module.exports=ContentState;
 
 /***/ },
-/* 281 */
+/* 280 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/SelectionState.js ***!
   \******************************************/
@@ -9621,13 +9619,13 @@
 	 * @providesModule SelectionState
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Immutable=__webpack_require__(/*! immutable */ 256);var Record=Immutable.Record;var defaultRecord={anchorKey:'',anchorOffset:0,focusKey:'',focusOffset:0,isBackward:false,hasFocus:false};var SelectionStateRecord=Record(defaultRecord);var SelectionState=function(_SelectionStateRecord){_inherits(SelectionState,_SelectionStateRecord);function SelectionState(){_classCallCheck(this,SelectionState);return _possibleConstructorReturn(this,_SelectionStateRecord.apply(this,arguments));}SelectionState.prototype.serialize=function serialize(){return'Anchor: '+this.getAnchorKey()+':'+this.getAnchorOffset()+', '+'Focus: '+this.getFocusKey()+':'+this.getFocusOffset()+', '+'Is Backward: '+String(this.getIsBackward())+', '+'Has Focus: '+String(this.getHasFocus());};SelectionState.prototype.getAnchorKey=function getAnchorKey(){return this.get('anchorKey');};SelectionState.prototype.getAnchorOffset=function getAnchorOffset(){return this.get('anchorOffset');};SelectionState.prototype.getFocusKey=function getFocusKey(){return this.get('focusKey');};SelectionState.prototype.getFocusOffset=function getFocusOffset(){return this.get('focusOffset');};SelectionState.prototype.getIsBackward=function getIsBackward(){return this.get('isBackward');};SelectionState.prototype.getHasFocus=function getHasFocus(){return this.get('hasFocus');};/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Immutable=__webpack_require__(/*! immutable */ 255);var Record=Immutable.Record;var defaultRecord={anchorKey:'',anchorOffset:0,focusKey:'',focusOffset:0,isBackward:false,hasFocus:false};var SelectionStateRecord=Record(defaultRecord);var SelectionState=function(_SelectionStateRecord){_inherits(SelectionState,_SelectionStateRecord);function SelectionState(){_classCallCheck(this,SelectionState);return _possibleConstructorReturn(this,_SelectionStateRecord.apply(this,arguments));}SelectionState.prototype.serialize=function serialize(){return'Anchor: '+this.getAnchorKey()+':'+this.getAnchorOffset()+', '+'Focus: '+this.getFocusKey()+':'+this.getFocusOffset()+', '+'Is Backward: '+String(this.getIsBackward())+', '+'Has Focus: '+String(this.getHasFocus());};SelectionState.prototype.getAnchorKey=function getAnchorKey(){return this.get('anchorKey');};SelectionState.prototype.getAnchorOffset=function getAnchorOffset(){return this.get('anchorOffset');};SelectionState.prototype.getFocusKey=function getFocusKey(){return this.get('focusKey');};SelectionState.prototype.getFocusOffset=function getFocusOffset(){return this.get('focusOffset');};SelectionState.prototype.getIsBackward=function getIsBackward(){return this.get('isBackward');};SelectionState.prototype.getHasFocus=function getHasFocus(){return this.get('hasFocus');};/**
 	   * Return whether the specified range overlaps with an edge of the
 	   * SelectionState.
 	   */SelectionState.prototype.hasEdgeWithin=function hasEdgeWithin(blockKey,start,end){var anchorKey=this.getAnchorKey();var focusKey=this.getFocusKey();if(anchorKey===focusKey&&anchorKey===blockKey){var selectionStart=this.getStartOffset();var selectionEnd=this.getEndOffset();return start<=selectionEnd&&selectionStart<=end;}if(blockKey!==anchorKey&&blockKey!==focusKey){return false;}var offsetToCheck=blockKey===anchorKey?this.getAnchorOffset():this.getFocusOffset();return start<=offsetToCheck&&end>=offsetToCheck;};SelectionState.prototype.isCollapsed=function isCollapsed(){return this.getAnchorKey()===this.getFocusKey()&&this.getAnchorOffset()===this.getFocusOffset();};SelectionState.prototype.getStartKey=function getStartKey(){return this.getIsBackward()?this.getFocusKey():this.getAnchorKey();};SelectionState.prototype.getStartOffset=function getStartOffset(){return this.getIsBackward()?this.getFocusOffset():this.getAnchorOffset();};SelectionState.prototype.getEndKey=function getEndKey(){return this.getIsBackward()?this.getAnchorKey():this.getFocusKey();};SelectionState.prototype.getEndOffset=function getEndOffset(){return this.getIsBackward()?this.getAnchorOffset():this.getFocusOffset();};SelectionState.createEmpty=function createEmpty(key){return new SelectionState({anchorKey:key,anchorOffset:0,focusKey:key,focusOffset:0,isBackward:false,hasFocus:false});};return SelectionState;}(SelectionStateRecord);module.exports=SelectionState;
 
 /***/ },
-/* 282 */
+/* 281 */
 /*!*********************************************!*\
   !*** ./~/draft-js/lib/sanitizeDraftText.js ***!
   \*********************************************/
@@ -9646,7 +9644,7 @@
 	 */'use strict';var REGEX_BLOCK_DELIMITER=new RegExp('\r','g');function sanitizeDraftText(input){return input.replace(REGEX_BLOCK_DELIMITER,'');}module.exports=sanitizeDraftText;
 
 /***/ },
-/* 283 */
+/* 282 */
 /*!*********************************************!*\
   !*** ./~/draft-js/lib/EditorBidiService.js ***!
   \*********************************************/
@@ -9663,10 +9661,10 @@
 	 * @providesModule EditorBidiService
 	 * @typechecks
 	 * 
-	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 256);var UnicodeBidiService=__webpack_require__(/*! fbjs/lib/UnicodeBidiService */ 284);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var OrderedMap=Immutable.OrderedMap;var bidiService;var EditorBidiService={getDirectionMap:function getDirectionMap(content,prevBidiMap){if(!bidiService){bidiService=new UnicodeBidiService();}else{bidiService.reset();}var blockMap=content.getBlockMap();var nextBidi=blockMap.valueSeq().map(function(block){return nullthrows(bidiService).getDirection(block.getText());});var bidiMap=OrderedMap(blockMap.keySeq().zip(nextBidi));if(prevBidiMap!=null&&Immutable.is(prevBidiMap,bidiMap)){return prevBidiMap;}return bidiMap;}};module.exports=EditorBidiService;
+	 */'use strict';var Immutable=__webpack_require__(/*! immutable */ 255);var UnicodeBidiService=__webpack_require__(/*! fbjs/lib/UnicodeBidiService */ 283);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var OrderedMap=Immutable.OrderedMap;var bidiService;var EditorBidiService={getDirectionMap:function getDirectionMap(content,prevBidiMap){if(!bidiService){bidiService=new UnicodeBidiService();}else{bidiService.reset();}var blockMap=content.getBlockMap();var nextBidi=blockMap.valueSeq().map(function(block){return nullthrows(bidiService).getDirection(block.getText());});var bidiMap=OrderedMap(blockMap.keySeq().zip(nextBidi));if(prevBidiMap!=null&&Immutable.is(prevBidiMap,bidiMap)){return prevBidiMap;}return bidiMap;}};module.exports=EditorBidiService;
 
 /***/ },
-/* 284 */
+/* 283 */
 /*!******************************************!*\
   !*** ./~/fbjs/lib/UnicodeBidiService.js ***!
   \******************************************/
@@ -9710,7 +9708,7 @@
 	 * Part of our implementation of Unicode Bidirectional Algorithm (UBA)
 	 * Unicode Standard Annex #9 (UAX9)
 	 * http://www.unicode.org/reports/tr9/
-	 */'use strict';function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var UnicodeBidi=__webpack_require__(/*! ./UnicodeBidi */ 285);var UnicodeBidiDirection=__webpack_require__(/*! ./UnicodeBidiDirection */ 286);var invariant=__webpack_require__(/*! ./invariant */ 7);var UnicodeBidiService=function(){/**
+	 */'use strict';function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var UnicodeBidi=__webpack_require__(/*! ./UnicodeBidi */ 284);var UnicodeBidiDirection=__webpack_require__(/*! ./UnicodeBidiDirection */ 285);var invariant=__webpack_require__(/*! ./invariant */ 7);var UnicodeBidiService=function(){/**
 	   * Stateful class for paragraph direction detection
 	   *
 	   * @param defaultDir  Default direction of the service
@@ -9728,7 +9726,7 @@
 	   */UnicodeBidiService.prototype.getDirection=function getDirection(str){this._lastDir=UnicodeBidi.getDirection(str,this._lastDir);return this._lastDir;};return UnicodeBidiService;}();module.exports=UnicodeBidiService;
 
 /***/ },
-/* 285 */
+/* 284 */
 /*!***********************************!*\
   !*** ./~/fbjs/lib/UnicodeBidi.js ***!
   \***********************************/
@@ -9750,7 +9748,7 @@
 	 * Part of our implementation of Unicode Bidirectional Algorithm (UBA)
 	 * Unicode Standard Annex #9 (UAX9)
 	 * http://www.unicode.org/reports/tr9/
-	 */'use strict';var UnicodeBidiDirection=__webpack_require__(/*! ./UnicodeBidiDirection */ 286);var invariant=__webpack_require__(/*! ./invariant */ 7);/**
+	 */'use strict';var UnicodeBidiDirection=__webpack_require__(/*! ./UnicodeBidiDirection */ 285);var invariant=__webpack_require__(/*! ./invariant */ 7);/**
 	 * RegExp ranges of characters with a *Strong* Bidi_Class value.
 	 *
 	 * Data is based on DerivedBidiClass.txt in UCD version 7.0.0.
@@ -9814,7 +9812,7 @@
 	 */function isDirectionRTL(str,strongFallback){return getDirection(str,strongFallback)===UnicodeBidiDirection.RTL;}var UnicodeBidi={firstStrongChar:firstStrongChar,firstStrongCharDir:firstStrongCharDir,resolveBlockDir:resolveBlockDir,getDirection:getDirection,isDirectionLTR:isDirectionLTR,isDirectionRTL:isDirectionRTL};module.exports=UnicodeBidi;
 
 /***/ },
-/* 286 */
+/* 285 */
 /*!********************************************!*\
   !*** ./~/fbjs/lib/UnicodeBidiDirection.js ***!
   \********************************************/
@@ -9868,7 +9866,7 @@
 	setGlobalDir:setGlobalDir,initGlobalDir:initGlobalDir,getGlobalDir:getGlobalDir};module.exports=UnicodeBidiDirection;
 
 /***/ },
-/* 287 */
+/* 286 */
 /*!**********************************!*\
   !*** ./~/fbjs/lib/nullthrows.js ***!
   \**********************************/
@@ -9886,7 +9884,7 @@
 	 */var nullthrows=function nullthrows(x){if(x!=null){return x;}throw new Error("Got unexpected null or undefined");};module.exports=nullthrows;
 
 /***/ },
-/* 288 */
+/* 287 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/CompositeDraftDecorator.js ***!
   \***************************************************/
@@ -9903,7 +9901,7 @@
 	 * @providesModule CompositeDraftDecorator
 	 * @typechecks
 	 * 
-	 */'use strict';function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var Immutable=__webpack_require__(/*! immutable */ 256);var List=Immutable.List;var DELIMITER='.';/**
+	 */'use strict';function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var Immutable=__webpack_require__(/*! immutable */ 255);var List=Immutable.List;var DELIMITER='.';/**
 	 * A CompositeDraftDecorator traverses through a list of DraftDecorator
 	 * instances to identify sections of a ContentBlock that should be rendered
 	 * in a "decorated" manner. For example, hashtags, mentions, and links may
@@ -9936,7 +9934,7 @@
 	 */function occupySlice(targetArr,start,end,componentKey){for(var ii=start;ii<end;ii++){targetArr[ii]=componentKey;}}module.exports=CompositeDraftDecorator;
 
 /***/ },
-/* 289 */
+/* 288 */
 /*!******************************************************!*\
   !*** ./~/draft-js/lib/DefaultDraftBlockRenderMap.js ***!
   \******************************************************/
@@ -9952,10 +9950,10 @@
 	 *
 	 * @providesModule DefaultDraftBlockRenderMap
 	 * 
-	 */'use strict';var _require=__webpack_require__(/*! immutable */ 256);var Map=_require.Map;var React=__webpack_require__(/*! react */ 1);var cx=__webpack_require__(/*! fbjs/lib/cx */ 290);var UL_WRAP=React.createElement('ul',{className:cx('public/DraftStyleDefault/ul')});var OL_WRAP=React.createElement('ol',{className:cx('public/DraftStyleDefault/ol')});var PRE_WRAP=React.createElement('pre',{className:cx('public/DraftStyleDefault/pre')});module.exports=Map({'header-one':{element:'h1'},'header-two':{element:'h2'},'header-three':{element:'h3'},'header-four':{element:'h4'},'header-five':{element:'h5'},'header-six':{element:'h6'},'unordered-list-item':{element:'li',wrapper:UL_WRAP},'ordered-list-item':{element:'li',wrapper:OL_WRAP},'blockquote':{element:'blockquote'},'atomic':{element:'figure'},'code-block':{element:'pre',wrapper:PRE_WRAP},'unstyled':{element:'div'}});
+	 */'use strict';var _require=__webpack_require__(/*! immutable */ 255);var Map=_require.Map;var React=__webpack_require__(/*! react */ 1);var cx=__webpack_require__(/*! fbjs/lib/cx */ 289);var UL_WRAP=React.createElement('ul',{className:cx('public/DraftStyleDefault/ul')});var OL_WRAP=React.createElement('ol',{className:cx('public/DraftStyleDefault/ol')});var PRE_WRAP=React.createElement('pre',{className:cx('public/DraftStyleDefault/pre')});module.exports=Map({'header-one':{element:'h1'},'header-two':{element:'h2'},'header-three':{element:'h3'},'header-four':{element:'h4'},'header-five':{element:'h5'},'header-six':{element:'h6'},'unordered-list-item':{element:'li',wrapper:UL_WRAP},'ordered-list-item':{element:'li',wrapper:OL_WRAP},'blockquote':{element:'blockquote'},'atomic':{element:'figure'},'code-block':{element:'pre',wrapper:PRE_WRAP},'unstyled':{element:'div'}});
 
 /***/ },
-/* 290 */
+/* 289 */
 /*!**************************!*\
   !*** ./~/fbjs/lib/cx.js ***!
   \**************************/
@@ -9986,7 +9984,7 @@
 	 */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function cx(classNames){if((typeof classNames==='undefined'?'undefined':_typeof(classNames))=='object'){return Object.keys(classNames).filter(function(className){return classNames[className];}).map(replace).join(' ');}return Array.prototype.map.call(arguments,replace).join(' ');}function replace(str){return str.replace(/\//g,'-');}module.exports=cx;
 
 /***/ },
-/* 291 */
+/* 290 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/DefaultDraftInlineStyle.js ***!
   \***************************************************/
@@ -10005,7 +10003,7 @@
 	 */'use strict';module.exports={BOLD:{fontWeight:'bold'},CODE:{fontFamily:'monospace',wordWrap:'break-word'},ITALIC:{fontStyle:'italic'},STRIKETHROUGH:{textDecoration:'line-through'},UNDERLINE:{textDecoration:'underline'}};
 
 /***/ },
-/* 292 */
+/* 291 */
 /*!*********************************************!*\
   !*** ./~/draft-js/lib/DraftEditor.react.js ***!
   \*********************************************/
@@ -10022,7 +10020,7 @@
 	 * @providesModule DraftEditor.react
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var DefaultDraftBlockRenderMap=__webpack_require__(/*! ./DefaultDraftBlockRenderMap */ 289);var DefaultDraftInlineStyle=__webpack_require__(/*! ./DefaultDraftInlineStyle */ 291);var DraftEditorCompositionHandler=__webpack_require__(/*! ./DraftEditorCompositionHandler */ 293);var DraftEditorContents=__webpack_require__(/*! ./DraftEditorContents.react */ 297);var DraftEditorDragHandler=__webpack_require__(/*! ./DraftEditorDragHandler */ 320);var DraftEditorEditHandler=__webpack_require__(/*! ./DraftEditorEditHandler */ 328);var DraftEditorPlaceholder=__webpack_require__(/*! ./DraftEditorPlaceholder.react */ 369);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var Scroll=__webpack_require__(/*! fbjs/lib/Scroll */ 311);var Style=__webpack_require__(/*! fbjs/lib/Style */ 312);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var cx=__webpack_require__(/*! fbjs/lib/cx */ 290);var emptyFunction=__webpack_require__(/*! fbjs/lib/emptyFunction */ 11);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var getDefaultKeyBinding=__webpack_require__(/*! ./getDefaultKeyBinding */ 370);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var getScrollPosition=__webpack_require__(/*! fbjs/lib/getScrollPosition */ 316);var isIE=UserAgent.isBrowser('IE');// IE does not support the `input` event on contentEditable, so we can't
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var DefaultDraftBlockRenderMap=__webpack_require__(/*! ./DefaultDraftBlockRenderMap */ 288);var DefaultDraftInlineStyle=__webpack_require__(/*! ./DefaultDraftInlineStyle */ 290);var DraftEditorCompositionHandler=__webpack_require__(/*! ./DraftEditorCompositionHandler */ 292);var DraftEditorContents=__webpack_require__(/*! ./DraftEditorContents.react */ 296);var DraftEditorDragHandler=__webpack_require__(/*! ./DraftEditorDragHandler */ 319);var DraftEditorEditHandler=__webpack_require__(/*! ./DraftEditorEditHandler */ 327);var DraftEditorPlaceholder=__webpack_require__(/*! ./DraftEditorPlaceholder.react */ 368);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var Scroll=__webpack_require__(/*! fbjs/lib/Scroll */ 310);var Style=__webpack_require__(/*! fbjs/lib/Style */ 311);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var cx=__webpack_require__(/*! fbjs/lib/cx */ 289);var emptyFunction=__webpack_require__(/*! fbjs/lib/emptyFunction */ 11);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var getDefaultKeyBinding=__webpack_require__(/*! ./getDefaultKeyBinding */ 369);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var getScrollPosition=__webpack_require__(/*! fbjs/lib/getScrollPosition */ 315);var isIE=UserAgent.isBrowser('IE');// IE does not support the `input` event on contentEditable, so we can't
 	// observe spellcheck behavior.
 	var allowSpellCheck=!isIE;// Define a set of handler objects to correspond to each possible `mode`
 	// of editor behavior.
@@ -10106,7 +10104,7 @@
 	   */DraftEditor.prototype._onDragLeave=function _onDragLeave(){this._dragCount--;if(this._dragCount===0){this.exitCurrentMode();}};return DraftEditor;}(React.Component);DraftEditor.defaultProps={blockRenderMap:DefaultDraftBlockRenderMap,blockRendererFn:emptyFunction.thatReturnsNull,blockStyleFn:emptyFunction.thatReturns(''),keyBindingFn:getDefaultKeyBinding,readOnly:false,spellCheck:false,stripPastedStyles:false};module.exports=DraftEditor;
 
 /***/ },
-/* 293 */
+/* 292 */
 /*!*********************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorCompositionHandler.js ***!
   \*********************************************************/
@@ -10122,7 +10120,7 @@
 	 *
 	 * @providesModule DraftEditorCompositionHandler
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var Keys=__webpack_require__(/*! fbjs/lib/Keys */ 294);var getEntityKeyForSelection=__webpack_require__(/*! ./getEntityKeyForSelection */ 295);var isSelectionAtLeafStart=__webpack_require__(/*! ./isSelectionAtLeafStart */ 296);/**
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var Keys=__webpack_require__(/*! fbjs/lib/Keys */ 293);var getEntityKeyForSelection=__webpack_require__(/*! ./getEntityKeyForSelection */ 294);var isSelectionAtLeafStart=__webpack_require__(/*! ./isSelectionAtLeafStart */ 295);/**
 	 * Millisecond delay to allow `compositionstart` to fire again upon
 	 * `compositionend`.
 	 *
@@ -10180,7 +10178,7 @@
 	var contentState=DraftModifier.replaceText(editorState.getCurrentContent(),editorState.getSelection(),composedChars,currentStyle,entityKey);this.update(EditorState.push(editorState,contentState,'insert-characters'));return;}if(mustReset){this.update(EditorState.set(editorState,{nativelyRenderedContent:null,forceSelection:true}));}}};module.exports=DraftEditorCompositionHandler;
 
 /***/ },
-/* 294 */
+/* 293 */
 /*!****************************!*\
   !*** ./~/fbjs/lib/Keys.js ***!
   \****************************/
@@ -10197,7 +10195,7 @@
 	 */module.exports={BACKSPACE:8,TAB:9,RETURN:13,ALT:18,ESC:27,SPACE:32,PAGE_UP:33,PAGE_DOWN:34,END:35,HOME:36,LEFT:37,UP:38,RIGHT:39,DOWN:40,DELETE:46,COMMA:188,PERIOD:190,A:65,Z:90,ZERO:48,NUMPAD_0:96,NUMPAD_9:105};
 
 /***/ },
-/* 295 */
+/* 294 */
 /*!****************************************************!*\
   !*** ./~/draft-js/lib/getEntityKeyForSelection.js ***!
   \****************************************************/
@@ -10214,7 +10212,7 @@
 	 * @providesModule getEntityKeyForSelection
 	 * @typechecks
 	 * 
-	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);/**
+	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);/**
 	 * Return the entity key that should be used when inserting text for the
 	 * specified target selection, only if the entity is `MUTABLE`. `IMMUTABLE`
 	 * and `SEGMENTED` entities should not be used for insertion behavior.
@@ -10224,7 +10222,7 @@
 	 */function filterKey(entityKey){if(entityKey){var entity=DraftEntity.get(entityKey);return entity.getMutability()==='MUTABLE'?entityKey:null;}return null;}module.exports=getEntityKeyForSelection;
 
 /***/ },
-/* 296 */
+/* 295 */
 /*!**************************************************!*\
   !*** ./~/draft-js/lib/isSelectionAtLeafStart.js ***!
   \**************************************************/
@@ -10244,7 +10242,7 @@
 	 */'use strict';function isSelectionAtLeafStart(editorState){var selection=editorState.getSelection();var anchorKey=selection.getAnchorKey();var blockTree=editorState.getBlockTree(anchorKey);var offset=selection.getStartOffset();var isAtStart=false;blockTree.some(function(leafSet){if(offset===leafSet.get('start')){isAtStart=true;return true;}if(offset<leafSet.get('end')){return leafSet.get('leaves').some(function(leaf){var leafStart=leaf.get('start');if(offset===leafStart){isAtStart=true;return true;}return false;});}return false;});return isAtStart;}module.exports=isSelectionAtLeafStart;
 
 /***/ },
-/* 297 */
+/* 296 */
 /*!*****************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorContents.react.js ***!
   \*****************************************************/
@@ -10261,7 +10259,7 @@
 	 * @providesModule DraftEditorContents.react
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var DraftEditorBlock=__webpack_require__(/*! ./DraftEditorBlock.react */ 298);var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 310);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var React=__webpack_require__(/*! react */ 1);var cx=__webpack_require__(/*! fbjs/lib/cx */ 290);var joinClasses=__webpack_require__(/*! fbjs/lib/joinClasses */ 319);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var DraftEditorBlock=__webpack_require__(/*! ./DraftEditorBlock.react */ 297);var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 309);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var React=__webpack_require__(/*! react */ 1);var cx=__webpack_require__(/*! fbjs/lib/cx */ 289);var joinClasses=__webpack_require__(/*! fbjs/lib/joinClasses */ 318);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);/**
 	 * `DraftEditorContents` is the container component for all block components
 	 * rendered for a `DraftEditor`. It is optimized to aggressively avoid
 	 * re-rendering blocks whenever possible.
@@ -10283,7 +10281,7 @@
 	 */function getListItemClasses(type,depth,shouldResetCount,direction){return cx({'public/DraftStyleDefault/unorderedListItem':type==='unordered-list-item','public/DraftStyleDefault/orderedListItem':type==='ordered-list-item','public/DraftStyleDefault/reset':shouldResetCount,'public/DraftStyleDefault/depth0':depth===0,'public/DraftStyleDefault/depth1':depth===1,'public/DraftStyleDefault/depth2':depth===2,'public/DraftStyleDefault/depth3':depth===3,'public/DraftStyleDefault/depth4':depth===4,'public/DraftStyleDefault/listLTR':direction==='LTR','public/DraftStyleDefault/listRTL':direction==='RTL'});}module.exports=DraftEditorContents;
 
 /***/ },
-/* 298 */
+/* 297 */
 /*!**************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorBlock.react.js ***!
   \**************************************************/
@@ -10300,7 +10298,7 @@
 	 * @providesModule DraftEditorBlock.react
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 258);var DraftEditorLeaf=__webpack_require__(/*! ./DraftEditorLeaf.react */ 299);var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 310);var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var Scroll=__webpack_require__(/*! fbjs/lib/Scroll */ 311);var SelectionState=__webpack_require__(/*! ./SelectionState */ 281);var Style=__webpack_require__(/*! fbjs/lib/Style */ 312);var UnicodeBidi=__webpack_require__(/*! fbjs/lib/UnicodeBidi */ 285);var UnicodeBidiDirection=__webpack_require__(/*! fbjs/lib/UnicodeBidiDirection */ 286);var cx=__webpack_require__(/*! fbjs/lib/cx */ 290);var getElementPosition=__webpack_require__(/*! fbjs/lib/getElementPosition */ 314);var getScrollPosition=__webpack_require__(/*! fbjs/lib/getScrollPosition */ 316);var getViewportDimensions=__webpack_require__(/*! fbjs/lib/getViewportDimensions */ 318);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var SCROLL_BUFFER=10;/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 257);var DraftEditorLeaf=__webpack_require__(/*! ./DraftEditorLeaf.react */ 298);var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 309);var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var Scroll=__webpack_require__(/*! fbjs/lib/Scroll */ 310);var SelectionState=__webpack_require__(/*! ./SelectionState */ 280);var Style=__webpack_require__(/*! fbjs/lib/Style */ 311);var UnicodeBidi=__webpack_require__(/*! fbjs/lib/UnicodeBidi */ 284);var UnicodeBidiDirection=__webpack_require__(/*! fbjs/lib/UnicodeBidiDirection */ 285);var cx=__webpack_require__(/*! fbjs/lib/cx */ 289);var getElementPosition=__webpack_require__(/*! fbjs/lib/getElementPosition */ 313);var getScrollPosition=__webpack_require__(/*! fbjs/lib/getScrollPosition */ 315);var getViewportDimensions=__webpack_require__(/*! fbjs/lib/getViewportDimensions */ 317);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var SCROLL_BUFFER=10;/**
 	 * The default block renderer for a `DraftEditor` component.
 	 *
 	 * A `DraftEditorBlock` is able to render a given `ContentBlock` to its
@@ -10323,7 +10321,7 @@
 	 */function isBlockOnSelectionEdge(selection,key){return selection.getAnchorKey()===key||selection.getFocusKey()===key;}module.exports=DraftEditorBlock;
 
 /***/ },
-/* 299 */
+/* 298 */
 /*!*************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorLeaf.react.js ***!
   \*************************************************/
@@ -10340,7 +10338,7 @@
 	 * @providesModule DraftEditorLeaf.react
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var DraftEditorTextNode=__webpack_require__(/*! ./DraftEditorTextNode.react */ 300);var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var SelectionState=__webpack_require__(/*! ./SelectionState */ 281);var setDraftEditorSelection=__webpack_require__(/*! ./setDraftEditorSelection */ 309);/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _assign=__webpack_require__(/*! object-assign */ 3);function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==='undefined'?'undefined':_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==='undefined'?'undefined':_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var DraftEditorTextNode=__webpack_require__(/*! ./DraftEditorTextNode.react */ 299);var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var SelectionState=__webpack_require__(/*! ./SelectionState */ 280);var setDraftEditorSelection=__webpack_require__(/*! ./setDraftEditorSelection */ 308);/**
 	 * All leaf nodes in the editor are spans with single text nodes. Leaf
 	 * elements are styled based on the merging of an optional custom style map
 	 * and a default style map.
@@ -10368,7 +10366,7 @@
 	mergedStyles.textDecoration=[map.textDecoration,style.textDecoration].join(' ').trim();}return _assign(map,style,mergedStyles);},{});if(customStyleFn){var newStyles=customStyleFn(styleSet);styleObj=_assign(styleObj,newStyles);}return React.createElement('span',{'data-offset-key':offsetKey,ref:'leaf',style:styleObj},React.createElement(DraftEditorTextNode,null,text));};return DraftEditorLeaf;}(React.Component);module.exports=DraftEditorLeaf;
 
 /***/ },
-/* 300 */
+/* 299 */
 /*!*****************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorTextNode.react.js ***!
   \*****************************************************/
@@ -10385,7 +10383,7 @@
 	 * @providesModule DraftEditorTextNode.react
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);// In IE, spans with <br> tags render as two newlines. By rendering a span
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var React=__webpack_require__(/*! react */ 1);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);// In IE, spans with <br> tags render as two newlines. By rendering a span
 	// with only a newline character, we can be sure to render a single line.
 	var useNewlineChar=UserAgent.isBrowser('IE <= 11');/**
 	 * Check whether the node should be considered a newline.
@@ -10410,7 +10408,7 @@
 	this._forceFlag=!this._forceFlag;};DraftEditorTextNode.prototype.render=function render(){if(this.props.children===''){return this._forceFlag?NEWLINE_A:NEWLINE_B;}return React.createElement('span',{key:this._forceFlag?'A':'B','data-text':'true'},this.props.children);};return DraftEditorTextNode;}(React.Component);module.exports=DraftEditorTextNode;
 
 /***/ },
-/* 301 */
+/* 300 */
 /*!*********************************!*\
   !*** ./~/fbjs/lib/UserAgent.js ***!
   \*********************************/
@@ -10424,7 +10422,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 */'use strict';var UserAgentData=__webpack_require__(/*! ./UserAgentData */ 302);var VersionRange=__webpack_require__(/*! ./VersionRange */ 307);var mapObject=__webpack_require__(/*! ./mapObject */ 308);var memoizeStringOnly=__webpack_require__(/*! ./memoizeStringOnly */ 102);/**
+	 */'use strict';var UserAgentData=__webpack_require__(/*! ./UserAgentData */ 301);var VersionRange=__webpack_require__(/*! ./VersionRange */ 306);var mapObject=__webpack_require__(/*! ./mapObject */ 307);var memoizeStringOnly=__webpack_require__(/*! ./memoizeStringOnly */ 102);/**
 	 * Checks to see whether `name` and `version` satisfy `query`.
 	 *
 	 * @param {string} name Name of the browser, device, engine or platform
@@ -10583,7 +10581,7 @@
 	   */isPlatformArchitecture:function isPlatformArchitecture(query){return compare(UserAgentData.platformArchitecture,null,query);}};module.exports=mapObject(UserAgent,memoizeStringOnly);
 
 /***/ },
-/* 302 */
+/* 301 */
 /*!*************************************!*\
   !*** ./~/fbjs/lib/UserAgentData.js ***!
   \*************************************/
@@ -10606,7 +10604,7 @@
 	 * library to do the heavy lifting and then make some adjustments as necessary.
 	 * It's likely there will be some differences. Some we can smooth over.
 	 * Others are going to be harder.
-	 */'use strict';var UAParser=__webpack_require__(/*! ua-parser-js */ 303);var UNKNOWN='Unknown';var PLATFORM_MAP={'Mac OS':'Mac OS X'};/**
+	 */'use strict';var UAParser=__webpack_require__(/*! ua-parser-js */ 302);var UNKNOWN='Unknown';var PLATFORM_MAP={'Mac OS':'Mac OS X'};/**
 	 * Convert from UAParser platform name to what we expect.
 	 */function convertPlatformName(name){return PLATFORM_MAP[name]||name;}/**
 	 * Get the version number in parts. This is very naive. We actually get major
@@ -10619,7 +10617,7 @@
 	var browserVersionData=getBrowserVersion(results.browser.version);var uaData={browserArchitecture:results.cpu.architecture||UNKNOWN,browserFullVersion:results.browser.version||UNKNOWN,browserMinorVersion:browserVersionData.minor||UNKNOWN,browserName:results.browser.name||UNKNOWN,browserVersion:results.browser.major||UNKNOWN,deviceName:results.device.model||UNKNOWN,engineName:results.engine.name||UNKNOWN,engineVersion:results.engine.version||UNKNOWN,platformArchitecture:results.cpu.architecture||UNKNOWN,platformName:convertPlatformName(results.os.name)||UNKNOWN,platformVersion:results.os.version||UNKNOWN,platformFullVersion:results.os.version||UNKNOWN};module.exports=uaData;
 
 /***/ },
-/* 303 */
+/* 302 */
 /*!*****************************************!*\
   !*** ./~/ua-parser-js/src/ua-parser.js ***!
   \*****************************************/
@@ -10986,17 +10984,17 @@
 	// check js environment
 	if(( false?'undefined':_typeof(exports))!==UNDEF_TYPE){// nodejs env
 	if(( false?'undefined':_typeof(module))!==UNDEF_TYPE&&module.exports){exports=module.exports=UAParser;}exports.UAParser=UAParser;}else{// requirejs env (optional)
-	if(( false?'undefined':_typeof(__webpack_require__(/*! !webpack amd define */ 305)))===FUNC_TYPE&&__webpack_require__(/*! !webpack amd options */ 306)){!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return UAParser;}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));}else{// browser env
+	if(( false?'undefined':_typeof(__webpack_require__(/*! !webpack amd define */ 304)))===FUNC_TYPE&&__webpack_require__(/*! !webpack amd options */ 305)){!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return UAParser;}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));}else{// browser env
 	window.UAParser=UAParser;}}// jQuery/Zepto specific (optional)
 	// Note:
 	//   In AMD env the global scope should be kept clean, but jQuery is an exception.
 	//   jQuery always exports to global scope, unless jQuery.noConflict(true) is used,
 	//   and we should catch that.
 	var $=window.jQuery||window.Zepto;if((typeof $==='undefined'?'undefined':_typeof($))!==UNDEF_TYPE){var parser=new UAParser();$.ua=parser.getResult();$.ua.get=function(){return parser.getUA();};$.ua.set=function(uastring){parser.setUA(uastring);var result=parser.getResult();for(var prop in result){$.ua[prop]=result[prop];}};}})((typeof window==='undefined'?'undefined':_typeof(window))==='object'?window:undefined);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 304)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 303)(module)))
 
 /***/ },
-/* 304 */
+/* 303 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -11006,7 +11004,7 @@
 	module.children=[];module.webpackPolyfill=1;}return module;};
 
 /***/ },
-/* 305 */
+/* 304 */
 /*!***************************************!*\
   !*** (webpack)/buildin/amd-define.js ***!
   \***************************************/
@@ -11016,7 +11014,7 @@
 
 
 /***/ },
-/* 306 */
+/* 305 */
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
   \****************************************/
@@ -11027,7 +11025,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 307 */
+/* 306 */
 /*!************************************!*\
   !*** ./~/fbjs/lib/VersionRange.js ***!
   \************************************/
@@ -11195,7 +11193,7 @@
 	   */contains:function contains(range,version){return checkOrExpression(range.trim(),version.trim());}};module.exports=VersionRange;
 
 /***/ },
-/* 308 */
+/* 307 */
 /*!*********************************!*\
   !*** ./~/fbjs/lib/mapObject.js ***!
   \*********************************/
@@ -11233,7 +11231,7 @@
 	 */function mapObject(object,callback,context){if(!object){return null;}var result={};for(var name in object){if(hasOwnProperty.call(object,name)){result[name]=callback.call(context,object[name],name,object);}}return result;}module.exports=mapObject;
 
 /***/ },
-/* 309 */
+/* 308 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/setDraftEditorSelection.js ***!
   \***************************************************/
@@ -11291,7 +11289,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 310 */
+/* 309 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/DraftOffsetKey.js ***!
   \******************************************/
@@ -11310,7 +11308,7 @@
 	 */'use strict';var KEY_DELIMITER='-';var DraftOffsetKey={encode:function encode(blockKey,decoratorKey,leafKey){return blockKey+KEY_DELIMITER+decoratorKey+KEY_DELIMITER+leafKey;},decode:function decode(offsetKey){var _offsetKey$split=offsetKey.split(KEY_DELIMITER);var blockKey=_offsetKey$split[0];var decoratorKey=_offsetKey$split[1];var leafKey=_offsetKey$split[2];return{blockKey:blockKey,decoratorKey:parseInt(decoratorKey,10),leafKey:parseInt(leafKey,10)};}};module.exports=DraftOffsetKey;
 
 /***/ },
-/* 311 */
+/* 310 */
 /*!******************************!*\
   !*** ./~/fbjs/lib/Scroll.js ***!
   \******************************/
@@ -11357,7 +11355,7 @@
 	   */setLeft:function setLeft(element,newLeft){var doc=element.ownerDocument;if(_isViewportScrollElement(element,doc)){doc.body.scrollLeft=doc.documentElement.scrollLeft=newLeft;}else{element.scrollLeft=newLeft;}}};module.exports=Scroll;
 
 /***/ },
-/* 312 */
+/* 311 */
 /*!*****************************!*\
   !*** ./~/fbjs/lib/Style.js ***!
   \*****************************/
@@ -11372,7 +11370,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 */var getStyleProperty=__webpack_require__(/*! ./getStyleProperty */ 313);/**
+	 */var getStyleProperty=__webpack_require__(/*! ./getStyleProperty */ 312);/**
 	 * @param {DOMNode} element [description]
 	 * @param {string} name Overflow style property name.
 	 * @return {boolean} True if the supplied ndoe is scrollable.
@@ -11395,7 +11393,7 @@
 	   */getScrollParent:function getScrollParent(node){if(!node){return null;}while(node&&node!==document.body){if(_isNodeScrollable(node,'overflow')||_isNodeScrollable(node,'overflowY')||_isNodeScrollable(node,'overflowX')){return node;}node=node.parentNode;}return window;}};module.exports=Style;
 
 /***/ },
-/* 313 */
+/* 312 */
 /*!****************************************!*\
   !*** ./~/fbjs/lib/getStyleProperty.js ***!
   \****************************************/
@@ -11418,7 +11416,7 @@
 	if(node.currentStyle){if(name==='float'){return asString(node.currentStyle.cssFloat||node.currentStyle.styleFloat);}return asString(node.currentStyle[camelize(name)]);}return asString(node.style&&node.style[camelize(name)]);}module.exports=getStyleProperty;
 
 /***/ },
-/* 314 */
+/* 313 */
 /*!******************************************!*\
   !*** ./~/fbjs/lib/getElementPosition.js ***!
   \******************************************/
@@ -11433,7 +11431,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 */var getElementRect=__webpack_require__(/*! ./getElementRect */ 315);/**
+	 */var getElementRect=__webpack_require__(/*! ./getElementRect */ 314);/**
 	 * Gets an element's position in pixels relative to the viewport. The returned
 	 * object represents the position of the element's top left corner.
 	 *
@@ -11442,7 +11440,7 @@
 	 */function getElementPosition(element){var rect=getElementRect(element);return{x:rect.left,y:rect.top,width:rect.right-rect.left,height:rect.bottom-rect.top};}module.exports=getElementPosition;
 
 /***/ },
-/* 315 */
+/* 314 */
 /*!**************************************!*\
   !*** ./~/fbjs/lib/getElementRect.js ***!
   \**************************************/
@@ -11471,7 +11469,7 @@
 	var rect=elem.getBoundingClientRect();return{left:Math.round(rect.left)-docElem.clientLeft,right:Math.round(rect.right)-docElem.clientLeft,top:Math.round(rect.top)-docElem.clientTop,bottom:Math.round(rect.bottom)-docElem.clientTop};}module.exports=getElementRect;
 
 /***/ },
-/* 316 */
+/* 315 */
 /*!*****************************************!*\
   !*** ./~/fbjs/lib/getScrollPosition.js ***!
   \*****************************************/
@@ -11486,7 +11484,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 */'use strict';var getDocumentScrollElement=__webpack_require__(/*! ./getDocumentScrollElement */ 317);var getUnboundedScrollPosition=__webpack_require__(/*! ./getUnboundedScrollPosition */ 143);/**
+	 */'use strict';var getDocumentScrollElement=__webpack_require__(/*! ./getDocumentScrollElement */ 316);var getUnboundedScrollPosition=__webpack_require__(/*! ./getUnboundedScrollPosition */ 143);/**
 	 * Gets the scroll position of the supplied element or window.
 	 *
 	 * The return values are bounded. This means that if the scroll position is
@@ -11500,7 +11498,7 @@
 	 */function getScrollPosition(scrollable){var documentScrollElement=getDocumentScrollElement();if(scrollable===window){scrollable=documentScrollElement;}var scrollPosition=getUnboundedScrollPosition(scrollable);var viewport=scrollable===documentScrollElement?document.documentElement:scrollable;var xMax=scrollable.scrollWidth-viewport.clientWidth;var yMax=scrollable.scrollHeight-viewport.clientHeight;scrollPosition.x=Math.max(0,Math.min(scrollPosition.x,xMax));scrollPosition.y=Math.max(0,Math.min(scrollPosition.y,yMax));return scrollPosition;}module.exports=getScrollPosition;
 
 /***/ },
-/* 317 */
+/* 316 */
 /*!************************************************!*\
   !*** ./~/fbjs/lib/getDocumentScrollElement.js ***!
   \************************************************/
@@ -11526,7 +11524,7 @@
 	 */function getDocumentScrollElement(doc){doc=doc||document;return!isWebkit&&doc.compatMode==='CSS1Compat'?doc.documentElement:doc.body;}module.exports=getDocumentScrollElement;
 
 /***/ },
-/* 318 */
+/* 317 */
 /*!*********************************************!*\
   !*** ./~/fbjs/lib/getViewportDimensions.js ***!
   \*********************************************/
@@ -11549,7 +11547,7 @@
 	 */getViewportDimensions.withoutScrollbars=function(){return{width:getViewportWidth(),height:getViewportHeight()};};module.exports=getViewportDimensions;
 
 /***/ },
-/* 319 */
+/* 318 */
 /*!***********************************!*\
   !*** ./~/fbjs/lib/joinClasses.js ***!
   \***********************************/
@@ -11573,7 +11571,7 @@
 	 */function joinClasses(className/*, ... */){if(!className){className='';}var nextClass=void 0;var argLength=arguments.length;if(argLength>1){for(var ii=1;ii<argLength;ii++){nextClass=arguments[ii];if(nextClass){className=(className?className+' ':'')+nextClass;}}}return className;}module.exports=joinClasses;
 
 /***/ },
-/* 320 */
+/* 319 */
 /*!**************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorDragHandler.js ***!
   \**************************************************/
@@ -11590,7 +11588,7 @@
 	 * @providesModule DraftEditorDragHandler
 	 * @typechecks
 	 * 
-	 */'use strict';var DataTransfer=__webpack_require__(/*! fbjs/lib/DataTransfer */ 321);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var findAncestorOffsetKey=__webpack_require__(/*! ./findAncestorOffsetKey */ 323);var getTextContentFromFiles=__webpack_require__(/*! ./getTextContentFromFiles */ 325);var getUpdatedSelectionState=__webpack_require__(/*! ./getUpdatedSelectionState */ 326);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 327);/**
+	 */'use strict';var DataTransfer=__webpack_require__(/*! fbjs/lib/DataTransfer */ 320);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var findAncestorOffsetKey=__webpack_require__(/*! ./findAncestorOffsetKey */ 322);var getTextContentFromFiles=__webpack_require__(/*! ./getTextContentFromFiles */ 324);var getUpdatedSelectionState=__webpack_require__(/*! ./getUpdatedSelectionState */ 325);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 326);/**
 	 * Get a SelectionState for the supplied mouse event.
 	 */function getSelectionForEvent(event,editorState){var node=null;var offset=null;if(typeof document.caretRangeFromPoint==='function'){var dropRange=document.caretRangeFromPoint(event.x,event.y);node=dropRange.startContainer;offset=dropRange.startOffset;}else if(event.rangeParent){node=event.rangeParent;offset=event.rangeOffset;}else{return null;}node=nullthrows(node);offset=nullthrows(offset);var offsetKey=nullthrows(findAncestorOffsetKey(node));return getUpdatedSelectionState(editorState,offsetKey,offset,offsetKey,offset);}var DraftEditorDragHandler={/**
 	   * Drag originating from input terminated.
@@ -11602,7 +11600,7 @@
 	 */function insertTextAtSelection(editorState,selection,text){var newContentState=DraftModifier.insertText(editorState.getCurrentContent(),selection,text,editorState.getCurrentInlineStyle());return EditorState.push(editorState,newContentState,'insert-fragment');}module.exports=DraftEditorDragHandler;
 
 /***/ },
-/* 321 */
+/* 320 */
 /*!************************************!*\
   !*** ./~/fbjs/lib/DataTransfer.js ***!
   \************************************/
@@ -11617,7 +11615,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 */var PhotosMimeType=__webpack_require__(/*! ./PhotosMimeType */ 322);var createArrayFromMixed=__webpack_require__(/*! ./createArrayFromMixed */ 89);var emptyFunction=__webpack_require__(/*! ./emptyFunction */ 11);var CR_LF_REGEX=new RegExp('\r\n','g');var LF_ONLY='\n';var RICH_TEXT_TYPES={'text/rtf':1,'text/html':1};/**
+	 */var PhotosMimeType=__webpack_require__(/*! ./PhotosMimeType */ 321);var createArrayFromMixed=__webpack_require__(/*! ./createArrayFromMixed */ 89);var emptyFunction=__webpack_require__(/*! ./emptyFunction */ 11);var CR_LF_REGEX=new RegExp('\r\n','g');var LF_ONLY='\n';var RICH_TEXT_TYPES={'text/rtf':1,'text/html':1};/**
 	 * If DataTransferItem is a file then return the Blob of data.
 	 *
 	 * @param {object} item
@@ -11669,7 +11667,7 @@
 	   */DataTransfer.prototype.hasFiles=function hasFiles(){return this.getFiles().length>0;};return DataTransfer;}();module.exports=DataTransfer;
 
 /***/ },
-/* 322 */
+/* 321 */
 /*!**************************************!*\
   !*** ./~/fbjs/lib/PhotosMimeType.js ***!
   \**************************************/
@@ -11687,7 +11685,7 @@
 	parts[1]==='jpeg'||parts[1]==='pjpeg');}};function getParts(mimeString){return mimeString.split('/');}module.exports=PhotosMimeType;
 
 /***/ },
-/* 323 */
+/* 322 */
 /*!*************************************************!*\
   !*** ./~/draft-js/lib/findAncestorOffsetKey.js ***!
   \*************************************************/
@@ -11704,12 +11702,12 @@
 	 * @providesModule findAncestorOffsetKey
 	 * @typechecks
 	 * 
-	 */'use strict';var getSelectionOffsetKeyForNode=__webpack_require__(/*! ./getSelectionOffsetKeyForNode */ 324);/**
+	 */'use strict';var getSelectionOffsetKeyForNode=__webpack_require__(/*! ./getSelectionOffsetKeyForNode */ 323);/**
 	 * Get the key from the node's nearest offset-aware ancestor.
 	 */function findAncestorOffsetKey(node){var searchNode=node;while(searchNode&&searchNode!==document.documentElement){var key=getSelectionOffsetKeyForNode(searchNode);if(key!=null){return key;}searchNode=searchNode.parentNode;}return null;}module.exports=findAncestorOffsetKey;
 
 /***/ },
-/* 324 */
+/* 323 */
 /*!********************************************************!*\
   !*** ./~/draft-js/lib/getSelectionOffsetKeyForNode.js ***!
   \********************************************************/
@@ -11732,7 +11730,7 @@
 	 */function getSelectionOffsetKeyForNode(node){if(node instanceof Element){var offsetKey=node.getAttribute('data-offset-key');if(offsetKey){return offsetKey;}for(var ii=0;ii<node.childNodes.length;ii++){var childOffsetKey=getSelectionOffsetKeyForNode(node.childNodes[ii]);if(childOffsetKey){return childOffsetKey;}}}return null;}module.exports=getSelectionOffsetKeyForNode;
 
 /***/ },
-/* 325 */
+/* 324 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/getTextContentFromFiles.js ***!
   \***************************************************/
@@ -11761,7 +11759,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 326 */
+/* 325 */
 /*!****************************************************!*\
   !*** ./~/draft-js/lib/getUpdatedSelectionState.js ***!
   \****************************************************/
@@ -11777,10 +11775,10 @@
 	 *
 	 * @providesModule getUpdatedSelectionState
 	 * 
-	 */'use strict';var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 310);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);function getUpdatedSelectionState(editorState,anchorKey,anchorOffset,focusKey,focusOffset){var selection=nullthrows(editorState.getSelection());if(true){if(!anchorKey||!focusKey){/*eslint-disable no-console */console.warn('Invalid selection state.',arguments,editorState.toJS());/*eslint-enable no-console */return selection;}}var anchorPath=DraftOffsetKey.decode(anchorKey);var anchorBlockKey=anchorPath.blockKey;var anchorLeaf=editorState.getBlockTree(anchorBlockKey).getIn([anchorPath.decoratorKey,'leaves',anchorPath.leafKey]);var focusPath=DraftOffsetKey.decode(focusKey);var focusBlockKey=focusPath.blockKey;var focusLeaf=editorState.getBlockTree(focusBlockKey).getIn([focusPath.decoratorKey,'leaves',focusPath.leafKey]);var anchorLeafStart=anchorLeaf.get('start');var focusLeafStart=focusLeaf.get('start');var anchorBlockOffset=anchorLeaf?anchorLeafStart+anchorOffset:null;var focusBlockOffset=focusLeaf?focusLeafStart+focusOffset:null;var areEqual=selection.getAnchorKey()===anchorBlockKey&&selection.getAnchorOffset()===anchorBlockOffset&&selection.getFocusKey()===focusBlockKey&&selection.getFocusOffset()===focusBlockOffset;if(areEqual){return selection;}var isBackward=false;if(anchorBlockKey===focusBlockKey){var anchorLeafEnd=anchorLeaf.get('end');var focusLeafEnd=focusLeaf.get('end');if(focusLeafStart===anchorLeafStart&&focusLeafEnd===anchorLeafEnd){isBackward=focusOffset<anchorOffset;}else{isBackward=focusLeafStart<anchorLeafStart;}}else{var startKey=editorState.getCurrentContent().getBlockMap().keySeq().skipUntil(function(v){return v===anchorBlockKey||v===focusBlockKey;}).first();isBackward=startKey===focusBlockKey;}return selection.merge({anchorKey:anchorBlockKey,anchorOffset:anchorBlockOffset,focusKey:focusBlockKey,focusOffset:focusBlockOffset,isBackward:isBackward});}module.exports=getUpdatedSelectionState;
+	 */'use strict';var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 309);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);function getUpdatedSelectionState(editorState,anchorKey,anchorOffset,focusKey,focusOffset){var selection=nullthrows(editorState.getSelection());if(true){if(!anchorKey||!focusKey){/*eslint-disable no-console */console.warn('Invalid selection state.',arguments,editorState.toJS());/*eslint-enable no-console */return selection;}}var anchorPath=DraftOffsetKey.decode(anchorKey);var anchorBlockKey=anchorPath.blockKey;var anchorLeaf=editorState.getBlockTree(anchorBlockKey).getIn([anchorPath.decoratorKey,'leaves',anchorPath.leafKey]);var focusPath=DraftOffsetKey.decode(focusKey);var focusBlockKey=focusPath.blockKey;var focusLeaf=editorState.getBlockTree(focusBlockKey).getIn([focusPath.decoratorKey,'leaves',focusPath.leafKey]);var anchorLeafStart=anchorLeaf.get('start');var focusLeafStart=focusLeaf.get('start');var anchorBlockOffset=anchorLeaf?anchorLeafStart+anchorOffset:null;var focusBlockOffset=focusLeaf?focusLeafStart+focusOffset:null;var areEqual=selection.getAnchorKey()===anchorBlockKey&&selection.getAnchorOffset()===anchorBlockOffset&&selection.getFocusKey()===focusBlockKey&&selection.getFocusOffset()===focusBlockOffset;if(areEqual){return selection;}var isBackward=false;if(anchorBlockKey===focusBlockKey){var anchorLeafEnd=anchorLeaf.get('end');var focusLeafEnd=focusLeaf.get('end');if(focusLeafStart===anchorLeafStart&&focusLeafEnd===anchorLeafEnd){isBackward=focusOffset<anchorOffset;}else{isBackward=focusLeafStart<anchorLeafStart;}}else{var startKey=editorState.getCurrentContent().getBlockMap().keySeq().skipUntil(function(v){return v===anchorBlockKey||v===focusBlockKey;}).first();isBackward=startKey===focusBlockKey;}return selection.merge({anchorKey:anchorBlockKey,anchorOffset:anchorBlockOffset,focusKey:focusBlockKey,focusOffset:focusBlockOffset,isBackward:isBackward});}module.exports=getUpdatedSelectionState;
 
 /***/ },
-/* 327 */
+/* 326 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/isEventHandled.js ***!
   \******************************************/
@@ -11803,7 +11801,7 @@
 	 */function isEventHandled(value){return value==='handled'||value===true;}module.exports=isEventHandled;
 
 /***/ },
-/* 328 */
+/* 327 */
 /*!**************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorEditHandler.js ***!
   \**************************************************/
@@ -11819,10 +11817,10 @@
 	 *
 	 * @providesModule DraftEditorEditHandler
 	 * 
-	 */'use strict';var onBeforeInput=__webpack_require__(/*! ./editOnBeforeInput */ 329);var onBlur=__webpack_require__(/*! ./editOnBlur */ 330);var onCompositionStart=__webpack_require__(/*! ./editOnCompositionStart */ 331);var onCopy=__webpack_require__(/*! ./editOnCopy */ 332);var onCut=__webpack_require__(/*! ./editOnCut */ 334);var onDragOver=__webpack_require__(/*! ./editOnDragOver */ 335);var onDragStart=__webpack_require__(/*! ./editOnDragStart */ 336);var onFocus=__webpack_require__(/*! ./editOnFocus */ 337);var onInput=__webpack_require__(/*! ./editOnInput */ 338);var onKeyDown=__webpack_require__(/*! ./editOnKeyDown */ 339);var onPaste=__webpack_require__(/*! ./editOnPaste */ 361);var onSelect=__webpack_require__(/*! ./editOnSelect */ 367);var DraftEditorEditHandler={onBeforeInput:onBeforeInput,onBlur:onBlur,onCompositionStart:onCompositionStart,onCopy:onCopy,onCut:onCut,onDragOver:onDragOver,onDragStart:onDragStart,onFocus:onFocus,onInput:onInput,onKeyDown:onKeyDown,onPaste:onPaste,onSelect:onSelect};module.exports=DraftEditorEditHandler;
+	 */'use strict';var onBeforeInput=__webpack_require__(/*! ./editOnBeforeInput */ 328);var onBlur=__webpack_require__(/*! ./editOnBlur */ 329);var onCompositionStart=__webpack_require__(/*! ./editOnCompositionStart */ 330);var onCopy=__webpack_require__(/*! ./editOnCopy */ 331);var onCut=__webpack_require__(/*! ./editOnCut */ 333);var onDragOver=__webpack_require__(/*! ./editOnDragOver */ 334);var onDragStart=__webpack_require__(/*! ./editOnDragStart */ 335);var onFocus=__webpack_require__(/*! ./editOnFocus */ 336);var onInput=__webpack_require__(/*! ./editOnInput */ 337);var onKeyDown=__webpack_require__(/*! ./editOnKeyDown */ 338);var onPaste=__webpack_require__(/*! ./editOnPaste */ 360);var onSelect=__webpack_require__(/*! ./editOnSelect */ 366);var DraftEditorEditHandler={onBeforeInput:onBeforeInput,onBlur:onBlur,onCompositionStart:onCompositionStart,onCopy:onCopy,onCut:onCut,onDragOver:onDragOver,onDragStart:onDragStart,onFocus:onFocus,onInput:onInput,onKeyDown:onKeyDown,onPaste:onPaste,onSelect:onSelect};module.exports=DraftEditorEditHandler;
 
 /***/ },
-/* 329 */
+/* 328 */
 /*!*********************************************!*\
   !*** ./~/draft-js/lib/editOnBeforeInput.js ***!
   \*********************************************/
@@ -11838,7 +11836,7 @@
 	 *
 	 * @providesModule editOnBeforeInput
 	 * 
-	 */'use strict';var BlockTree=__webpack_require__(/*! ./BlockTree */ 279);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var getEntityKeyForSelection=__webpack_require__(/*! ./getEntityKeyForSelection */ 295);var isSelectionAtLeafStart=__webpack_require__(/*! ./isSelectionAtLeafStart */ 296);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 327);// When nothing is focused, Firefox regards two characters, `'` and `/`, as
+	 */'use strict';var BlockTree=__webpack_require__(/*! ./BlockTree */ 278);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var getEntityKeyForSelection=__webpack_require__(/*! ./getEntityKeyForSelection */ 294);var isSelectionAtLeafStart=__webpack_require__(/*! ./isSelectionAtLeafStart */ 295);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 326);// When nothing is focused, Firefox regards two characters, `'` and `/`, as
 	// commands that should open and focus the "quickfind" search bar. This should
 	// *never* happen while a contenteditable is focused, but as of v28, it
 	// sometimes does, even when the keypress event target is the contenteditable.
@@ -11873,7 +11871,7 @@
 	newEditorState=EditorState.set(newEditorState,{nativelyRenderedContent:newEditorState.getCurrentContent()});}this.update(newEditorState);}module.exports=editOnBeforeInput;
 
 /***/ },
-/* 330 */
+/* 329 */
 /*!**************************************!*\
   !*** ./~/draft-js/lib/editOnBlur.js ***!
   \**************************************/
@@ -11889,7 +11887,7 @@
 	 *
 	 * @providesModule editOnBlur
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var getActiveElement=__webpack_require__(/*! fbjs/lib/getActiveElement */ 152);var isWebKit=UserAgent.isEngine('WebKit');function editOnBlur(e){// Webkit has a bug in which blurring a contenteditable by clicking on
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var getActiveElement=__webpack_require__(/*! fbjs/lib/getActiveElement */ 152);var isWebKit=UserAgent.isEngine('WebKit');function editOnBlur(e){// Webkit has a bug in which blurring a contenteditable by clicking on
 	// other active elements will trigger the `blur` event but will not remove
 	// the DOM selection from the contenteditable. We therefore force the
 	// issue to be certain, checking whether the active element is `body`
@@ -11899,7 +11897,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 331 */
+/* 330 */
 /*!**************************************************!*\
   !*** ./~/draft-js/lib/editOnCompositionStart.js ***!
   \**************************************************/
@@ -11915,13 +11913,13 @@
 	 *
 	 * @providesModule editOnCompositionStart
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);/**
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);/**
 	 * The user has begun using an IME input system. Switching to `composite` mode
 	 * allows handling composition input and disables other edit behavior.
 	 */function editOnCompositionStart(){this.setRenderGuard();this.setMode('composite');this.update(EditorState.set(this.props.editorState,{inCompositionMode:true}));}module.exports=editOnCompositionStart;
 
 /***/ },
-/* 332 */
+/* 331 */
 /*!**************************************!*\
   !*** ./~/draft-js/lib/editOnCopy.js ***!
   \**************************************/
@@ -11937,7 +11935,7 @@
 	 *
 	 * @providesModule editOnCopy
 	 * 
-	 */'use strict';var getFragmentFromSelection=__webpack_require__(/*! ./getFragmentFromSelection */ 333);/**
+	 */'use strict';var getFragmentFromSelection=__webpack_require__(/*! ./getFragmentFromSelection */ 332);/**
 	 * If we have a selection, create a ContentState fragment and store
 	 * it in our internal clipboard. Subsequent paste events will use this
 	 * fragment if no external clipboard data is supplied.
@@ -11945,7 +11943,7 @@
 	if(selection.isCollapsed()){e.preventDefault();return;}this.setClipboard(getFragmentFromSelection(this.props.editorState));}module.exports=editOnCopy;
 
 /***/ },
-/* 333 */
+/* 332 */
 /*!****************************************************!*\
   !*** ./~/draft-js/lib/getFragmentFromSelection.js ***!
   \****************************************************/
@@ -11961,10 +11959,10 @@
 	 *
 	 * @providesModule getFragmentFromSelection
 	 * 
-	 */'use strict';var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 269);function getFragmentFromSelection(editorState){var selectionState=editorState.getSelection();if(selectionState.isCollapsed()){return null;}return getContentStateFragment(editorState.getCurrentContent(),selectionState);}module.exports=getFragmentFromSelection;
+	 */'use strict';var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 268);function getFragmentFromSelection(editorState){var selectionState=editorState.getSelection();if(selectionState.isCollapsed()){return null;}return getContentStateFragment(editorState.getCurrentContent(),selectionState);}module.exports=getFragmentFromSelection;
 
 /***/ },
-/* 334 */
+/* 333 */
 /*!*************************************!*\
   !*** ./~/draft-js/lib/editOnCut.js ***!
   \*************************************/
@@ -11980,7 +11978,7 @@
 	 *
 	 * @providesModule editOnCut
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var Style=__webpack_require__(/*! fbjs/lib/Style */ 312);var getFragmentFromSelection=__webpack_require__(/*! ./getFragmentFromSelection */ 333);var getScrollPosition=__webpack_require__(/*! fbjs/lib/getScrollPosition */ 316);/**
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var Style=__webpack_require__(/*! fbjs/lib/Style */ 311);var getFragmentFromSelection=__webpack_require__(/*! ./getFragmentFromSelection */ 332);var getScrollPosition=__webpack_require__(/*! fbjs/lib/getScrollPosition */ 315);/**
 	 * On `cut` events, native behavior is allowed to occur so that the system
 	 * clipboard is set properly. This means that we need to take steps to recover
 	 * the editor DOM state after the `cut` has occurred in order to maintain
@@ -11996,7 +11994,7 @@
 	setTimeout(function(){_this.restoreEditorDOM({x:x,y:y});_this.removeRenderGuard();_this.exitCurrentMode();_this.update(removeFragment(editorState));},0);}function removeFragment(editorState){var newContent=DraftModifier.removeRange(editorState.getCurrentContent(),editorState.getSelection(),'forward');return EditorState.push(editorState,newContent,'remove-range');}module.exports=editOnCut;
 
 /***/ },
-/* 335 */
+/* 334 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/editOnDragOver.js ***!
   \******************************************/
@@ -12017,7 +12015,7 @@
 	 */function editOnDragOver(e){this._internalDrag=false;this.setMode('drag');e.preventDefault();}module.exports=editOnDragOver;
 
 /***/ },
-/* 336 */
+/* 335 */
 /*!*******************************************!*\
   !*** ./~/draft-js/lib/editOnDragStart.js ***!
   \*******************************************/
@@ -12038,7 +12036,7 @@
 	 */function editOnDragStart(){this._internalDrag=true;this.setMode('drag');}module.exports=editOnDragStart;
 
 /***/ },
-/* 337 */
+/* 336 */
 /*!***************************************!*\
   !*** ./~/draft-js/lib/editOnFocus.js ***!
   \***************************************/
@@ -12054,7 +12052,7 @@
 	 *
 	 * @providesModule editOnFocus
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);function editOnFocus(e){var editorState=this.props.editorState;var currentSelection=editorState.getSelection();if(currentSelection.getHasFocus()){return;}var selection=currentSelection.set('hasFocus',true);this.props.onFocus&&this.props.onFocus(e);// When the tab containing this text editor is hidden and the user does a
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);function editOnFocus(e){var editorState=this.props.editorState;var currentSelection=editorState.getSelection();if(currentSelection.getHasFocus()){return;}var selection=currentSelection.set('hasFocus',true);this.props.onFocus&&this.props.onFocus(e);// When the tab containing this text editor is hidden and the user does a
 	// find-in-page in a _different_ tab, Chrome on Mac likes to forget what the
 	// selection was right after sending this focus event and (if you let it)
 	// moves the cursor back to the beginning of the editor, so we force the
@@ -12063,7 +12061,7 @@
 	this.update(EditorState.forceSelection(editorState,selection));}module.exports=editOnFocus;
 
 /***/ },
-/* 338 */
+/* 337 */
 /*!***************************************!*\
   !*** ./~/draft-js/lib/editOnInput.js ***!
   \***************************************/
@@ -12079,7 +12077,7 @@
 	 *
 	 * @providesModule editOnInput
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 310);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var Entity=__webpack_require__(/*! ./DraftEntity */ 265);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var findAncestorOffsetKey=__webpack_require__(/*! ./findAncestorOffsetKey */ 323);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var isGecko=UserAgent.isEngine('Gecko');var DOUBLE_NEWLINE='\n\n';/**
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var DraftOffsetKey=__webpack_require__(/*! ./DraftOffsetKey */ 309);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var Entity=__webpack_require__(/*! ./DraftEntity */ 264);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var findAncestorOffsetKey=__webpack_require__(/*! ./findAncestorOffsetKey */ 322);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var isGecko=UserAgent.isEngine('Gecko');var DOUBLE_NEWLINE='\n\n';/**
 	 * This function is intended to handle spellcheck and autocorrect changes,
 	 * which occur in the DOM natively without any opportunity to observe or
 	 * interpret the changes before they occur.
@@ -12114,7 +12112,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 339 */
+/* 338 */
 /*!*****************************************!*\
   !*** ./~/draft-js/lib/editOnKeyDown.js ***!
   \*****************************************/
@@ -12130,7 +12128,7 @@
 	 *
 	 * @providesModule editOnKeyDown
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var KeyBindingUtil=__webpack_require__(/*! ./KeyBindingUtil */ 340);var Keys=__webpack_require__(/*! fbjs/lib/Keys */ 294);var SecondaryClipboard=__webpack_require__(/*! ./SecondaryClipboard */ 341);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var keyCommandBackspaceToStartOfLine=__webpack_require__(/*! ./keyCommandBackspaceToStartOfLine */ 342);var keyCommandBackspaceWord=__webpack_require__(/*! ./keyCommandBackspaceWord */ 349);var keyCommandDeleteWord=__webpack_require__(/*! ./keyCommandDeleteWord */ 352);var keyCommandInsertNewline=__webpack_require__(/*! ./keyCommandInsertNewline */ 354);var keyCommandPlainBackspace=__webpack_require__(/*! ./keyCommandPlainBackspace */ 355);var keyCommandPlainDelete=__webpack_require__(/*! ./keyCommandPlainDelete */ 356);var keyCommandMoveSelectionToEndOfBlock=__webpack_require__(/*! ./keyCommandMoveSelectionToEndOfBlock */ 357);var keyCommandMoveSelectionToStartOfBlock=__webpack_require__(/*! ./keyCommandMoveSelectionToStartOfBlock */ 358);var keyCommandTransposeCharacters=__webpack_require__(/*! ./keyCommandTransposeCharacters */ 359);var keyCommandUndo=__webpack_require__(/*! ./keyCommandUndo */ 360);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 327);var isOptionKeyCommand=KeyBindingUtil.isOptionKeyCommand;var isChrome=UserAgent.isBrowser('Chrome');/**
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var KeyBindingUtil=__webpack_require__(/*! ./KeyBindingUtil */ 339);var Keys=__webpack_require__(/*! fbjs/lib/Keys */ 293);var SecondaryClipboard=__webpack_require__(/*! ./SecondaryClipboard */ 340);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var keyCommandBackspaceToStartOfLine=__webpack_require__(/*! ./keyCommandBackspaceToStartOfLine */ 341);var keyCommandBackspaceWord=__webpack_require__(/*! ./keyCommandBackspaceWord */ 348);var keyCommandDeleteWord=__webpack_require__(/*! ./keyCommandDeleteWord */ 351);var keyCommandInsertNewline=__webpack_require__(/*! ./keyCommandInsertNewline */ 353);var keyCommandPlainBackspace=__webpack_require__(/*! ./keyCommandPlainBackspace */ 354);var keyCommandPlainDelete=__webpack_require__(/*! ./keyCommandPlainDelete */ 355);var keyCommandMoveSelectionToEndOfBlock=__webpack_require__(/*! ./keyCommandMoveSelectionToEndOfBlock */ 356);var keyCommandMoveSelectionToStartOfBlock=__webpack_require__(/*! ./keyCommandMoveSelectionToStartOfBlock */ 357);var keyCommandTransposeCharacters=__webpack_require__(/*! ./keyCommandTransposeCharacters */ 358);var keyCommandUndo=__webpack_require__(/*! ./keyCommandUndo */ 359);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 326);var isOptionKeyCommand=KeyBindingUtil.isOptionKeyCommand;var isChrome=UserAgent.isBrowser('Chrome');/**
 	 * Map a `DraftEditorCommand` command value to a corresponding function.
 	 */function onKeyCommand(command,editorState){switch(command){case'redo':return EditorState.redo(editorState);case'delete':return keyCommandPlainDelete(editorState);case'delete-word':return keyCommandDeleteWord(editorState);case'backspace':return keyCommandPlainBackspace(editorState);case'backspace-word':return keyCommandBackspaceWord(editorState);case'backspace-to-start-of-line':return keyCommandBackspaceToStartOfLine(editorState);case'split-block':return keyCommandInsertNewline(editorState);case'transpose-characters':return keyCommandTransposeCharacters(editorState);case'move-selection-to-start-of-block':return keyCommandMoveSelectionToStartOfBlock(editorState);case'move-selection-to-end-of-block':return keyCommandMoveSelectionToEndOfBlock(editorState);case'secondary-cut':return SecondaryClipboard.cut(editorState);case'secondary-paste':return SecondaryClipboard.paste(editorState);default:return editorState;}}/**
 	 * Intercept keydown behavior to handle keys and commands manually, if desired.
@@ -12153,7 +12151,7 @@
 	if(this.props.handleKeyCommand&&isEventHandled(this.props.handleKeyCommand(command))){return;}var newState=onKeyCommand(command,editorState);if(newState!==editorState){this.update(newState);}}module.exports=editOnKeyDown;
 
 /***/ },
-/* 340 */
+/* 339 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/KeyBindingUtil.js ***!
   \******************************************/
@@ -12170,14 +12168,14 @@
 	 * @providesModule KeyBindingUtil
 	 * @typechecks
 	 * 
-	 */'use strict';var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var isOSX=UserAgent.isPlatform('Mac OS X');var KeyBindingUtil={/**
+	 */'use strict';var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var isOSX=UserAgent.isPlatform('Mac OS X');var KeyBindingUtil={/**
 	   * Check whether the ctrlKey modifier is *not* being used in conjunction with
 	   * the altKey modifier. If they are combined, the result is an `altGraph`
 	   * key modifier, which should not be handled by this set of key bindings.
 	   */isCtrlKeyCommand:function isCtrlKeyCommand(e){return!!e.ctrlKey&&!e.altKey;},isOptionKeyCommand:function isOptionKeyCommand(e){return isOSX&&e.altKey;},hasCommandModifier:function hasCommandModifier(e){return isOSX?!!e.metaKey&&!e.altKey:KeyBindingUtil.isCtrlKeyCommand(e);}};module.exports=KeyBindingUtil;
 
 /***/ },
-/* 341 */
+/* 340 */
 /*!**********************************************!*\
   !*** ./~/draft-js/lib/SecondaryClipboard.js ***!
   \**********************************************/
@@ -12193,13 +12191,13 @@
 	 *
 	 * @providesModule SecondaryClipboard
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 269);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var clipboard=null;/**
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 268);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var clipboard=null;/**
 	 * Some systems offer a "secondary" clipboard to allow quick internal cut
 	 * and paste behavior. For instance, Ctrl+K (cut) and Ctrl+Y (paste).
 	 */var SecondaryClipboard={cut:function cut(editorState){var content=editorState.getCurrentContent();var selection=editorState.getSelection();var targetRange=null;if(selection.isCollapsed()){var anchorKey=selection.getAnchorKey();var blockEnd=content.getBlockForKey(anchorKey).getLength();if(blockEnd===selection.getAnchorOffset()){return editorState;}targetRange=selection.set('focusOffset',blockEnd);}else{targetRange=selection;}targetRange=nullthrows(targetRange);clipboard=getContentStateFragment(content,targetRange);var afterRemoval=DraftModifier.removeRange(content,targetRange,'forward');if(afterRemoval===content){return editorState;}return EditorState.push(editorState,afterRemoval,'remove-range');},paste:function paste(editorState){if(!clipboard){return editorState;}var newContent=DraftModifier.replaceWithFragment(editorState.getCurrentContent(),editorState.getSelection(),clipboard);return EditorState.push(editorState,newContent,'insert-fragment');}};module.exports=SecondaryClipboard;
 
 /***/ },
-/* 342 */
+/* 341 */
 /*!************************************************************!*\
   !*** ./~/draft-js/lib/keyCommandBackspaceToStartOfLine.js ***!
   \************************************************************/
@@ -12215,11 +12213,11 @@
 	 *
 	 * @providesModule keyCommandBackspaceToStartOfLine
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);var expandRangeToStartOfLine=__webpack_require__(/*! ./expandRangeToStartOfLine */ 343);var getDraftEditorSelectionWithNodes=__webpack_require__(/*! ./getDraftEditorSelectionWithNodes */ 346);var moveSelectionBackward=__webpack_require__(/*! ./moveSelectionBackward */ 347);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 348);function keyCommandBackspaceToStartOfLine(editorState){var afterRemoval=removeTextWithStrategy(editorState,function(strategyState){var selection=strategyState.getSelection();if(selection.isCollapsed()&&selection.getAnchorOffset()===0){return moveSelectionBackward(strategyState,1);}var domSelection=global.getSelection();var range=domSelection.getRangeAt(0);range=expandRangeToStartOfLine(range);return getDraftEditorSelectionWithNodes(strategyState,null,range.endContainer,range.endOffset,range.startContainer,range.startOffset).selectionState;},'backward');if(afterRemoval===editorState.getCurrentContent()){return editorState;}return EditorState.push(editorState,afterRemoval,'remove-range');}module.exports=keyCommandBackspaceToStartOfLine;
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);var expandRangeToStartOfLine=__webpack_require__(/*! ./expandRangeToStartOfLine */ 342);var getDraftEditorSelectionWithNodes=__webpack_require__(/*! ./getDraftEditorSelectionWithNodes */ 345);var moveSelectionBackward=__webpack_require__(/*! ./moveSelectionBackward */ 346);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 347);function keyCommandBackspaceToStartOfLine(editorState){var afterRemoval=removeTextWithStrategy(editorState,function(strategyState){var selection=strategyState.getSelection();if(selection.isCollapsed()&&selection.getAnchorOffset()===0){return moveSelectionBackward(strategyState,1);}var domSelection=global.getSelection();var range=domSelection.getRangeAt(0);range=expandRangeToStartOfLine(range);return getDraftEditorSelectionWithNodes(strategyState,null,range.endContainer,range.endOffset,range.startContainer,range.startOffset).selectionState;},'backward');if(afterRemoval===editorState.getCurrentContent()){return editorState;}return EditorState.push(editorState,afterRemoval,'remove-range');}module.exports=keyCommandBackspaceToStartOfLine;
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 343 */
+/* 342 */
 /*!****************************************************!*\
   !*** ./~/draft-js/lib/expandRangeToStartOfLine.js ***!
   \****************************************************/
@@ -12236,7 +12234,7 @@
 	 * @providesModule expandRangeToStartOfLine
 	 * @typechecks
 	 * 
-	 */var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 344);var getRangeClientRects=__webpack_require__(/*! ./getRangeClientRects */ 345);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);/**
+	 */var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 343);var getRangeClientRects=__webpack_require__(/*! ./getRangeClientRects */ 344);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);/**
 	 * Return the computed line height, in pixels, for the provided element.
 	 */function getLineHeightPx(element){var computed=getComputedStyle(element);var div=document.createElement('div');div.style.fontFamily=computed.fontFamily;div.style.fontSize=computed.fontSize;div.style.fontStyle=computed.fontStyle;div.style.fontWeight=computed.fontWeight;div.style.lineHeight=computed.lineHeight;div.style.position='absolute';div.textContent='M';// forced layout here
 	document.body.appendChild(div);var rect=div.getBoundingClientRect();document.body.removeChild(div);return rect.height;}/**
@@ -12294,7 +12292,7 @@
 	break;}currentContainer=currentContainer.childNodes[ii];maxIndexToConsider=getNodeLength(currentContainer);}while(true);range.setStart(bestContainer,bestOffset);return range;}module.exports=expandRangeToStartOfLine;
 
 /***/ },
-/* 344 */
+/* 343 */
 /*!************************************!*\
   !*** ./~/fbjs/lib/UnicodeUtils.js ***!
   \************************************/
@@ -12385,7 +12383,7 @@
 	 */function getCodePoints(str){var codePoints=[];for(var pos=0;pos<str.length;pos+=getUTF16Length(str,pos)){codePoints.push(str.codePointAt(pos));}return codePoints;}var UnicodeUtils={getCodePoints:getCodePoints,getUTF16Length:getUTF16Length,hasSurrogateUnit:hasSurrogateUnit,isCodeUnitInSurrogateRange:isCodeUnitInSurrogateRange,isSurrogatePair:isSurrogatePair,strlen:strlen,substring:substring,substr:substr};module.exports=UnicodeUtils;
 
 /***/ },
-/* 345 */
+/* 344 */
 /*!***********************************************!*\
   !*** ./~/draft-js/lib/getRangeClientRects.js ***!
   \***********************************************/
@@ -12402,7 +12400,7 @@
 	 * @providesModule getRangeClientRects
 	 * @typechecks
 	 * 
-	 */'use strict';var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var isChrome=UserAgent.isBrowser('Chrome');// In Chrome, the client rects will include the entire bounds of all nodes that
+	 */'use strict';var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var isChrome=UserAgent.isBrowser('Chrome');// In Chrome, the client rects will include the entire bounds of all nodes that
 	// begin (have a start tag) within the selection, even if the selection does
 	// not overlap the entire node. To resolve this, we split the range at each
 	// start tag and join the client rects together.
@@ -12414,7 +12412,7 @@
 	 */var getRangeClientRects=isChrome?getRangeClientRectsChrome:function(range){return Array.from(range.getClientRects());};module.exports=getRangeClientRects;
 
 /***/ },
-/* 346 */
+/* 345 */
 /*!************************************************************!*\
   !*** ./~/draft-js/lib/getDraftEditorSelectionWithNodes.js ***!
   \************************************************************/
@@ -12431,7 +12429,7 @@
 	 * @providesModule getDraftEditorSelectionWithNodes
 	 * @typechecks
 	 * 
-	 */'use strict';var findAncestorOffsetKey=__webpack_require__(/*! ./findAncestorOffsetKey */ 323);var getSelectionOffsetKeyForNode=__webpack_require__(/*! ./getSelectionOffsetKeyForNode */ 324);var getUpdatedSelectionState=__webpack_require__(/*! ./getUpdatedSelectionState */ 326);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);/**
+	 */'use strict';var findAncestorOffsetKey=__webpack_require__(/*! ./findAncestorOffsetKey */ 322);var getSelectionOffsetKeyForNode=__webpack_require__(/*! ./getSelectionOffsetKeyForNode */ 323);var getUpdatedSelectionState=__webpack_require__(/*! ./getUpdatedSelectionState */ 325);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);/**
 	 * Convert the current selection range to an anchor/focus pair of offset keys
 	 * and values that can be interpreted by components.
 	 */function getDraftEditorSelectionWithNodes(editorState,root,anchorNode,anchorOffset,focusNode,focusOffset){var anchorIsTextNode=anchorNode.nodeType===Node.TEXT_NODE;var focusIsTextNode=focusNode.nodeType===Node.TEXT_NODE;// If the selection range lies only on text nodes, the task is simple.
@@ -12481,7 +12479,7 @@
 	 */function getTextContentLength(node){var textContent=node.textContent;return textContent==='\n'?0:textContent.length;}module.exports=getDraftEditorSelectionWithNodes;
 
 /***/ },
-/* 347 */
+/* 346 */
 /*!*************************************************!*\
   !*** ./~/draft-js/lib/moveSelectionBackward.js ***!
   \*************************************************/
@@ -12507,7 +12505,7 @@
 	 */function moveSelectionBackward(editorState,maxDistance){var selection=editorState.getSelection();var content=editorState.getCurrentContent();var key=selection.getStartKey();var offset=selection.getStartOffset();var focusKey=key;var focusOffset=0;if(maxDistance>offset){var keyBefore=content.getKeyBefore(key);if(keyBefore==null){focusKey=key;}else{focusKey=keyBefore;var blockBefore=content.getBlockForKey(keyBefore);focusOffset=blockBefore.getText().length;}}else{focusOffset=offset-maxDistance;}return selection.merge({focusKey:focusKey,focusOffset:focusOffset,isBackward:true});}module.exports=moveSelectionBackward;
 
 /***/ },
-/* 348 */
+/* 347 */
 /*!**************************************************!*\
   !*** ./~/draft-js/lib/removeTextWithStrategy.js ***!
   \**************************************************/
@@ -12523,13 +12521,13 @@
 	 *
 	 * @providesModule removeTextWithStrategy
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);/**
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);/**
 	 * For a collapsed selection state, remove text based on the specified strategy.
 	 * If the selection state is not collapsed, remove the entire selected range.
 	 */function removeTextWithStrategy(editorState,strategy,direction){var selection=editorState.getSelection();var content=editorState.getCurrentContent();var target=selection;if(selection.isCollapsed()){if(direction==='forward'){if(editorState.isSelectionAtEndOfContent()){return content;}}else if(editorState.isSelectionAtStartOfContent()){return content;}target=strategy(editorState);if(target===selection){return content;}}return DraftModifier.removeRange(content,target,direction);}module.exports=removeTextWithStrategy;
 
 /***/ },
-/* 349 */
+/* 348 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/keyCommandBackspaceWord.js ***!
   \***************************************************/
@@ -12545,14 +12543,14 @@
 	 *
 	 * @providesModule keyCommandBackspaceWord
 	 * 
-	 */'use strict';var DraftRemovableWord=__webpack_require__(/*! ./DraftRemovableWord */ 350);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var moveSelectionBackward=__webpack_require__(/*! ./moveSelectionBackward */ 347);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 348);/**
+	 */'use strict';var DraftRemovableWord=__webpack_require__(/*! ./DraftRemovableWord */ 349);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var moveSelectionBackward=__webpack_require__(/*! ./moveSelectionBackward */ 346);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 347);/**
 	 * Delete the word that is left of the cursor, as well as any spaces or
 	 * punctuation after the word.
 	 */function keyCommandBackspaceWord(editorState){var afterRemoval=removeTextWithStrategy(editorState,function(strategyState){var selection=strategyState.getSelection();var offset=selection.getStartOffset();// If there are no words before the cursor, remove the preceding newline.
 	if(offset===0){return moveSelectionBackward(strategyState,1);}var key=selection.getStartKey();var content=strategyState.getCurrentContent();var text=content.getBlockForKey(key).getText().slice(0,offset);var toRemove=DraftRemovableWord.getBackward(text);return moveSelectionBackward(strategyState,toRemove.length||1);},'backward');if(afterRemoval===editorState.getCurrentContent()){return editorState;}return EditorState.push(editorState,afterRemoval,'remove-range');}module.exports=keyCommandBackspaceWord;
 
 /***/ },
-/* 350 */
+/* 349 */
 /*!**********************************************!*\
   !*** ./~/draft-js/lib/DraftRemovableWord.js ***!
   \**********************************************/
@@ -12569,7 +12567,7 @@
 	 * @providesModule DraftRemovableWord
 	 * @typechecks
 	 * 
-	 */'use strict';var TokenizeUtil=__webpack_require__(/*! fbjs/lib/TokenizeUtil */ 351);var punctuation=TokenizeUtil.getPunctuation();// The apostrophe and curly single quotes behave in a curious way: when
+	 */'use strict';var TokenizeUtil=__webpack_require__(/*! fbjs/lib/TokenizeUtil */ 350);var punctuation=TokenizeUtil.getPunctuation();// The apostrophe and curly single quotes behave in a curious way: when
 	// surrounded on both sides by word characters, they behave as word chars; when
 	// either neighbor is punctuation or an end of the string, they behave as
 	// punctuation.
@@ -12578,7 +12576,7 @@
 	var WHITESPACE_AND_PUNCTUATION='\\s|(?![_])'+punctuation;var DELETE_STRING='^'+'(?:'+WHITESPACE_AND_PUNCTUATION+')*'+'(?:'+CHAMELEON_CHARS+'|(?!'+WHITESPACE_AND_PUNCTUATION+').)*'+'(?:(?!'+WHITESPACE_AND_PUNCTUATION+').)';var DELETE_REGEX=new RegExp(DELETE_STRING);var BACKSPACE_STRING='(?:(?!'+WHITESPACE_AND_PUNCTUATION+').)'+'(?:'+CHAMELEON_CHARS+'|(?!'+WHITESPACE_AND_PUNCTUATION+').)*'+'(?:'+WHITESPACE_AND_PUNCTUATION+')*'+'$';var BACKSPACE_REGEX=new RegExp(BACKSPACE_STRING);function getRemovableWord(text,isBackward){var matches=isBackward?BACKSPACE_REGEX.exec(text):DELETE_REGEX.exec(text);return matches?matches[0]:text;}var DraftRemovableWord={getBackward:function getBackward(text){return getRemovableWord(text,true);},getForward:function getForward(text){return getRemovableWord(text,false);}};module.exports=DraftRemovableWord;
 
 /***/ },
-/* 351 */
+/* 350 */
 /*!************************************!*\
   !*** ./~/fbjs/lib/TokenizeUtil.js ***!
   \************************************/
@@ -12612,7 +12610,7 @@
 	var PUNCTUATION='[.,+*?$|#{}()\'\\^\\-\\[\\]\\\\\\/!@%"~=<>_:;'+'\u30FB\u3001\u3002\u3008-\u3011\u3014-\u301F\uFF1A-\uFF1F\uFF01-\uFF0F'+'\uFF3B-\uFF40\uFF5B-\uFF65\u2E2E\u061F\u066A-\u066C\u061B\u060C\u060D'+'\uFD3E\uFD3F\u1801\u0964\u104A\u104B\u2010-\u2027\u2030-\u205E'+'\xA1-\xB1\xB4-\xB8\xBA\xBB\xBF]';module.exports={getPunctuation:function getPunctuation(){return PUNCTUATION;}};
 
 /***/ },
-/* 352 */
+/* 351 */
 /*!************************************************!*\
   !*** ./~/draft-js/lib/keyCommandDeleteWord.js ***!
   \************************************************/
@@ -12628,14 +12626,14 @@
 	 *
 	 * @providesModule keyCommandDeleteWord
 	 * 
-	 */'use strict';var DraftRemovableWord=__webpack_require__(/*! ./DraftRemovableWord */ 350);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var moveSelectionForward=__webpack_require__(/*! ./moveSelectionForward */ 353);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 348);/**
+	 */'use strict';var DraftRemovableWord=__webpack_require__(/*! ./DraftRemovableWord */ 349);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var moveSelectionForward=__webpack_require__(/*! ./moveSelectionForward */ 352);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 347);/**
 	 * Delete the word that is right of the cursor, as well as any spaces or
 	 * punctuation before the word.
 	 */function keyCommandDeleteWord(editorState){var afterRemoval=removeTextWithStrategy(editorState,function(strategyState){var selection=strategyState.getSelection();var offset=selection.getStartOffset();var key=selection.getStartKey();var content=strategyState.getCurrentContent();var text=content.getBlockForKey(key).getText().slice(offset);var toRemove=DraftRemovableWord.getForward(text);// If there are no words in front of the cursor, remove the newline.
 	return moveSelectionForward(strategyState,toRemove.length||1);},'forward');if(afterRemoval===editorState.getCurrentContent()){return editorState;}return EditorState.push(editorState,afterRemoval,'remove-range');}module.exports=keyCommandDeleteWord;
 
 /***/ },
-/* 353 */
+/* 352 */
 /*!************************************************!*\
   !*** ./~/draft-js/lib/moveSelectionForward.js ***!
   \************************************************/
@@ -12661,7 +12659,7 @@
 	 */function moveSelectionForward(editorState,maxDistance){var selection=editorState.getSelection();var key=selection.getStartKey();var offset=selection.getStartOffset();var content=editorState.getCurrentContent();var focusKey=key;var focusOffset;var block=content.getBlockForKey(key);if(maxDistance>block.getText().length-offset){focusKey=content.getKeyAfter(key);focusOffset=0;}else{focusOffset=offset+maxDistance;}return selection.merge({focusKey:focusKey,focusOffset:focusOffset});}module.exports=moveSelectionForward;
 
 /***/ },
-/* 354 */
+/* 353 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/keyCommandInsertNewline.js ***!
   \***************************************************/
@@ -12677,10 +12675,10 @@
 	 *
 	 * @providesModule keyCommandInsertNewline
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);function keyCommandInsertNewline(editorState){var contentState=DraftModifier.splitBlock(editorState.getCurrentContent(),editorState.getSelection());return EditorState.push(editorState,contentState,'split-block');}module.exports=keyCommandInsertNewline;
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);function keyCommandInsertNewline(editorState){var contentState=DraftModifier.splitBlock(editorState.getCurrentContent(),editorState.getSelection());return EditorState.push(editorState,contentState,'split-block');}module.exports=keyCommandInsertNewline;
 
 /***/ },
-/* 355 */
+/* 354 */
 /*!****************************************************!*\
   !*** ./~/draft-js/lib/keyCommandPlainBackspace.js ***!
   \****************************************************/
@@ -12696,14 +12694,14 @@
 	 *
 	 * @providesModule keyCommandPlainBackspace
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 344);var moveSelectionBackward=__webpack_require__(/*! ./moveSelectionBackward */ 347);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 348);/**
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 343);var moveSelectionBackward=__webpack_require__(/*! ./moveSelectionBackward */ 346);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 347);/**
 	 * Remove the selected range. If the cursor is collapsed, remove the preceding
 	 * character. This operation is Unicode-aware, so removing a single character
 	 * will remove a surrogate pair properly as well.
 	 */function keyCommandPlainBackspace(editorState){var afterRemoval=removeTextWithStrategy(editorState,function(strategyState){var selection=strategyState.getSelection();var content=strategyState.getCurrentContent();var key=selection.getAnchorKey();var offset=selection.getAnchorOffset();var charBehind=content.getBlockForKey(key).getText()[offset-1];return moveSelectionBackward(strategyState,charBehind?UnicodeUtils.getUTF16Length(charBehind,0):1);},'backward');if(afterRemoval===editorState.getCurrentContent()){return editorState;}var selection=editorState.getSelection();return EditorState.push(editorState,afterRemoval.set('selectionBefore',selection),selection.isCollapsed()?'backspace-character':'remove-range');}module.exports=keyCommandPlainBackspace;
 
 /***/ },
-/* 356 */
+/* 355 */
 /*!*************************************************!*\
   !*** ./~/draft-js/lib/keyCommandPlainDelete.js ***!
   \*************************************************/
@@ -12719,14 +12717,14 @@
 	 *
 	 * @providesModule keyCommandPlainDelete
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 344);var moveSelectionForward=__webpack_require__(/*! ./moveSelectionForward */ 353);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 348);/**
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 343);var moveSelectionForward=__webpack_require__(/*! ./moveSelectionForward */ 352);var removeTextWithStrategy=__webpack_require__(/*! ./removeTextWithStrategy */ 347);/**
 	 * Remove the selected range. If the cursor is collapsed, remove the following
 	 * character. This operation is Unicode-aware, so removing a single character
 	 * will remove a surrogate pair properly as well.
 	 */function keyCommandPlainDelete(editorState){var afterRemoval=removeTextWithStrategy(editorState,function(strategyState){var selection=strategyState.getSelection();var content=strategyState.getCurrentContent();var key=selection.getAnchorKey();var offset=selection.getAnchorOffset();var charAhead=content.getBlockForKey(key).getText()[offset];return moveSelectionForward(strategyState,charAhead?UnicodeUtils.getUTF16Length(charAhead,0):1);},'forward');if(afterRemoval===editorState.getCurrentContent()){return editorState;}var selection=editorState.getSelection();return EditorState.push(editorState,afterRemoval.set('selectionBefore',selection),selection.isCollapsed()?'delete-character':'remove-range');}module.exports=keyCommandPlainDelete;
 
 /***/ },
-/* 357 */
+/* 356 */
 /*!***************************************************************!*\
   !*** ./~/draft-js/lib/keyCommandMoveSelectionToEndOfBlock.js ***!
   \***************************************************************/
@@ -12742,12 +12740,12 @@
 	 *
 	 * @providesModule keyCommandMoveSelectionToEndOfBlock
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);/**
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);/**
 	 * See comment for `moveSelectionToStartOfBlock`.
 	 */function keyCommandMoveSelectionToEndOfBlock(editorState){var selection=editorState.getSelection();var endKey=selection.getEndKey();var content=editorState.getCurrentContent();var textLength=content.getBlockForKey(endKey).getLength();return EditorState.set(editorState,{selection:selection.merge({anchorKey:endKey,anchorOffset:textLength,focusKey:endKey,focusOffset:textLength,isBackward:false}),forceSelection:true});}module.exports=keyCommandMoveSelectionToEndOfBlock;
 
 /***/ },
-/* 358 */
+/* 357 */
 /*!*****************************************************************!*\
   !*** ./~/draft-js/lib/keyCommandMoveSelectionToStartOfBlock.js ***!
   \*****************************************************************/
@@ -12763,14 +12761,14 @@
 	 *
 	 * @providesModule keyCommandMoveSelectionToStartOfBlock
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);/**
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);/**
 	 * Collapse selection at the start of the first selected block. This is used
 	 * for Firefox versions that attempt to navigate forward/backward instead of
 	 * moving the cursor. Other browsers are able to move the cursor natively.
 	 */function keyCommandMoveSelectionToStartOfBlock(editorState){var selection=editorState.getSelection();var startKey=selection.getStartKey();return EditorState.set(editorState,{selection:selection.merge({anchorKey:startKey,anchorOffset:0,focusKey:startKey,focusOffset:0,isBackward:false}),forceSelection:true});}module.exports=keyCommandMoveSelectionToStartOfBlock;
 
 /***/ },
-/* 359 */
+/* 358 */
 /*!*********************************************************!*\
   !*** ./~/draft-js/lib/keyCommandTransposeCharacters.js ***!
   \*********************************************************/
@@ -12786,7 +12784,7 @@
 	 *
 	 * @providesModule keyCommandTransposeCharacters
 	 * 
-	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 269);/**
+	 */'use strict';var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var getContentStateFragment=__webpack_require__(/*! ./getContentStateFragment */ 268);/**
 	 * Transpose the characters on either side of a collapsed cursor, or
 	 * if the cursor is at the end of the block, transpose the last two
 	 * characters.
@@ -12798,7 +12796,7 @@
 	var selectionAfter=afterRemoval.getSelectionAfter();var targetOffset=selectionAfter.getAnchorOffset()-1;var targetRange=selectionAfter.merge({anchorOffset:targetOffset,focusOffset:targetOffset});var afterInsert=DraftModifier.replaceWithFragment(afterRemoval,targetRange,movedFragment);var newEditorState=EditorState.push(editorState,afterInsert,'insert-fragment');return EditorState.acceptSelection(newEditorState,finalSelection);}module.exports=keyCommandTransposeCharacters;
 
 /***/ },
-/* 360 */
+/* 359 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/keyCommandUndo.js ***!
   \******************************************/
@@ -12814,7 +12812,7 @@
 	 *
 	 * @providesModule keyCommandUndo
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);function keyCommandUndo(e,editorState,updateFn){var undoneState=EditorState.undo(editorState);// If the last change to occur was a spellcheck change, allow the undo
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);function keyCommandUndo(e,editorState,updateFn){var undoneState=EditorState.undo(editorState);// If the last change to occur was a spellcheck change, allow the undo
 	// event to fall through to the browser. This allows the browser to record
 	// the unwanted change, which should soon lead it to learn not to suggest
 	// the correction again.
@@ -12826,7 +12824,7 @@
 	setTimeout(function(){updateFn(undoneState);},0);}module.exports=keyCommandUndo;
 
 /***/ },
-/* 361 */
+/* 360 */
 /*!***************************************!*\
   !*** ./~/draft-js/lib/editOnPaste.js ***!
   \***************************************/
@@ -12842,7 +12840,7 @@
 	 *
 	 * @providesModule editOnPaste
 	 * 
-	 */'use strict';var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 255);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var DataTransfer=__webpack_require__(/*! fbjs/lib/DataTransfer */ 321);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var DraftPasteProcessor=__webpack_require__(/*! ./DraftPasteProcessor */ 362);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var getEntityKeyForSelection=__webpack_require__(/*! ./getEntityKeyForSelection */ 295);var getTextContentFromFiles=__webpack_require__(/*! ./getTextContentFromFiles */ 325);var splitTextIntoTextBlocks=__webpack_require__(/*! ./splitTextIntoTextBlocks */ 366);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 327);/**
+	 */'use strict';var BlockMapBuilder=__webpack_require__(/*! ./BlockMapBuilder */ 254);var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var DataTransfer=__webpack_require__(/*! fbjs/lib/DataTransfer */ 320);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var DraftPasteProcessor=__webpack_require__(/*! ./DraftPasteProcessor */ 361);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var getEntityKeyForSelection=__webpack_require__(/*! ./getEntityKeyForSelection */ 294);var getTextContentFromFiles=__webpack_require__(/*! ./getTextContentFromFiles */ 324);var splitTextIntoTextBlocks=__webpack_require__(/*! ./splitTextIntoTextBlocks */ 365);var isEventHandled=__webpack_require__(/*! ./isEventHandled */ 326);/**
 	 * Paste content.
 	 */function editOnPaste(e){var _this=this;e.preventDefault();var data=new DataTransfer(e.clipboardData);// Get files, unless this is likely to be a string the user wants inline.
 	if(!data.isRichText()){var files=data.getFiles();var defaultFileText=data.getText();if(files.length>0){// Allow customized paste handling for images, etc. Otherwise, fall
@@ -12868,7 +12866,7 @@
 	this.setClipboard(null);}if(textBlocks){var editorState=this.props.editorState;var character=CharacterMetadata.create({style:editorState.getCurrentInlineStyle(),entity:getEntityKeyForSelection(editorState.getCurrentContent(),editorState.getSelection())});var textFragment=DraftPasteProcessor.processText(textBlocks,character);var textMap=BlockMapBuilder.createFromArray(textFragment);this.update(insertFragment(this.props.editorState,textMap));}}function insertFragment(editorState,fragment){var newContent=DraftModifier.replaceWithFragment(editorState.getCurrentContent(),editorState.getSelection(),fragment);return EditorState.push(editorState,newContent,'insert-fragment');}function areTextBlocksAndClipboardEqual(textBlocks,blockMap){return textBlocks.length===blockMap.size&&blockMap.valueSeq().every(function(block,ii){return block.getText()===textBlocks[ii];});}module.exports=editOnPaste;
 
 /***/ },
-/* 362 */
+/* 361 */
 /*!***********************************************!*\
   !*** ./~/draft-js/lib/DraftPasteProcessor.js ***!
   \***********************************************/
@@ -12885,10 +12883,10 @@
 	 * @providesModule DraftPasteProcessor
 	 * @typechecks
 	 * 
-	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 258);var Immutable=__webpack_require__(/*! immutable */ 256);var convertFromHTMLtoContentBlocks=__webpack_require__(/*! ./convertFromHTMLToContentBlocks */ 363);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var getSafeBodyFromHTML=__webpack_require__(/*! ./getSafeBodyFromHTML */ 365);var sanitizeDraftText=__webpack_require__(/*! ./sanitizeDraftText */ 282);var List=Immutable.List;var Repeat=Immutable.Repeat;var DraftPasteProcessor={processHTML:function processHTML(html,blockRenderMap){return convertFromHTMLtoContentBlocks(html,getSafeBodyFromHTML,blockRenderMap);},processText:function processText(textBlocks,character){return textBlocks.map(function(textLine){textLine=sanitizeDraftText(textLine);return new ContentBlock({key:generateRandomKey(),type:'unstyled',text:textLine,characterList:List(Repeat(character,textLine.length))});});}};module.exports=DraftPasteProcessor;
+	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 257);var Immutable=__webpack_require__(/*! immutable */ 255);var convertFromHTMLtoContentBlocks=__webpack_require__(/*! ./convertFromHTMLToContentBlocks */ 362);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var getSafeBodyFromHTML=__webpack_require__(/*! ./getSafeBodyFromHTML */ 364);var sanitizeDraftText=__webpack_require__(/*! ./sanitizeDraftText */ 281);var List=Immutable.List;var Repeat=Immutable.Repeat;var DraftPasteProcessor={processHTML:function processHTML(html,blockRenderMap){return convertFromHTMLtoContentBlocks(html,getSafeBodyFromHTML,blockRenderMap);},processText:function processText(textBlocks,character){return textBlocks.map(function(textLine){textLine=sanitizeDraftText(textLine);return new ContentBlock({key:generateRandomKey(),type:'unstyled',text:textLine,characterList:List(Repeat(character,textLine.length))});});}};module.exports=DraftPasteProcessor;
 
 /***/ },
-/* 363 */
+/* 362 */
 /*!**********************************************************!*\
   !*** ./~/draft-js/lib/convertFromHTMLToContentBlocks.js ***!
   \**********************************************************/
@@ -12905,7 +12903,7 @@
 	 * @providesModule convertFromHTMLToContentBlocks
 	 * @typechecks
 	 * 
-	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 258);var DefaultDraftBlockRenderMap=__webpack_require__(/*! ./DefaultDraftBlockRenderMap */ 289);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);var Immutable=__webpack_require__(/*! immutable */ 256);var URI=__webpack_require__(/*! fbjs/lib/URI */ 364);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var getSafeBodyFromHTML=__webpack_require__(/*! ./getSafeBodyFromHTML */ 365);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var sanitizeDraftText=__webpack_require__(/*! ./sanitizeDraftText */ 282);var List=Immutable.List;var OrderedSet=Immutable.OrderedSet;var NBSP='&nbsp;';var SPACE=' ';// Arbitrary max indent
+	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 257);var DefaultDraftBlockRenderMap=__webpack_require__(/*! ./DefaultDraftBlockRenderMap */ 288);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);var Immutable=__webpack_require__(/*! immutable */ 255);var URI=__webpack_require__(/*! fbjs/lib/URI */ 363);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var getSafeBodyFromHTML=__webpack_require__(/*! ./getSafeBodyFromHTML */ 364);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 7);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var sanitizeDraftText=__webpack_require__(/*! ./sanitizeDraftText */ 281);var List=Immutable.List;var OrderedSet=Immutable.OrderedSet;var NBSP='&nbsp;';var SPACE=' ';// Arbitrary max indent
 	var MAX_DEPTH=4;// used for replacing characters in HTML
 	var REGEX_CR=new RegExp('\r','g');var REGEX_LF=new RegExp('\n','g');var REGEX_NBSP=new RegExp(NBSP,'g');var REGEX_CARRIAGE=new RegExp('&#13;?','g');var REGEX_ZWS=new RegExp('&#8203;?','g');// https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
 	var boldValues=['bold','bolder','500','600','700','800','900'];var notBoldValues=['light','lighter','100','200','300','400'];// Block tag flow is different because LIs do not have
@@ -12949,7 +12947,7 @@
 	textBlock=sanitizeDraftText(textBlock);var end=start+textBlock.length;var inlines=nullthrows(chunk).inlines.slice(start,end);var entities=nullthrows(chunk).entities.slice(start,end);var characterList=List(inlines.map(function(style,ii){var data={style:style,entity:null};if(entities[ii]){data.entity=entities[ii];}return CharacterMetadata.create(data);}));start=end+1;return new ContentBlock({key:generateRandomKey(),type:nullthrows(chunk).blocks[ii].type,depth:nullthrows(chunk).blocks[ii].depth,text:textBlock,characterList:characterList});});}module.exports=convertFromHTMLtoContentBlocks;
 
 /***/ },
-/* 364 */
+/* 363 */
 /*!***************************!*\
   !*** ./~/fbjs/lib/URI.js ***!
   \***************************/
@@ -12967,7 +12965,7 @@
 	 */'use strict';function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var URI=function(){function URI(uri){_classCallCheck(this,URI);this._uri=uri;}URI.prototype.toString=function toString(){return this._uri;};return URI;}();module.exports=URI;
 
 /***/ },
-/* 365 */
+/* 364 */
 /*!***********************************************!*\
   !*** ./~/draft-js/lib/getSafeBodyFromHTML.js ***!
   \***********************************************/
@@ -12983,14 +12981,14 @@
 	 *
 	 * @providesModule getSafeBodyFromHTML
 	 * 
-	 */'use strict';var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var isOldIE=UserAgent.isBrowser('IE <= 9');// Provides a dom node that will not execute scripts
+	 */'use strict';var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var isOldIE=UserAgent.isBrowser('IE <= 9');// Provides a dom node that will not execute scripts
 	// https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation.createHTMLDocument
 	// https://developer.mozilla.org/en-US/Add-ons/Code_snippets/HTML_to_DOM
 	function getSafeBodyFromHTML(html){var doc;var root=null;// Provides a safe context
 	if(!isOldIE&&document.implementation&&document.implementation.createHTMLDocument){doc=document.implementation.createHTMLDocument('foo');doc.documentElement.innerHTML=html;root=doc.getElementsByTagName('body')[0];}return root;}module.exports=getSafeBodyFromHTML;
 
 /***/ },
-/* 366 */
+/* 365 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/splitTextIntoTextBlocks.js ***!
   \***************************************************/
@@ -13009,7 +13007,7 @@
 	 */'use strict';var NEWLINE_REGEX=/\r\n?|\n/g;function splitTextIntoTextBlocks(text){return text.split(NEWLINE_REGEX);}module.exports=splitTextIntoTextBlocks;
 
 /***/ },
-/* 367 */
+/* 366 */
 /*!****************************************!*\
   !*** ./~/draft-js/lib/editOnSelect.js ***!
   \****************************************/
@@ -13025,10 +13023,10 @@
 	 *
 	 * @providesModule editOnSelect
 	 * 
-	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 278);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var getDraftEditorSelection=__webpack_require__(/*! ./getDraftEditorSelection */ 368);function editOnSelect(){if(this._blockSelectEvents){return;}var editorState=this.props.editorState;var documentSelection=getDraftEditorSelection(editorState,ReactDOM.findDOMNode(this.refs.editorContainer).firstChild);var updatedSelectionState=documentSelection.selectionState;if(updatedSelectionState!==editorState.getSelection()){if(documentSelection.needsRecovery){editorState=EditorState.forceSelection(editorState,updatedSelectionState);}else{editorState=EditorState.acceptSelection(editorState,updatedSelectionState);}this.update(editorState);}}module.exports=editOnSelect;
+	 */'use strict';var EditorState=__webpack_require__(/*! ./EditorState */ 277);var ReactDOM=__webpack_require__(/*! react-dom */ 32);var getDraftEditorSelection=__webpack_require__(/*! ./getDraftEditorSelection */ 367);function editOnSelect(){if(this._blockSelectEvents){return;}var editorState=this.props.editorState;var documentSelection=getDraftEditorSelection(editorState,ReactDOM.findDOMNode(this.refs.editorContainer).firstChild);var updatedSelectionState=documentSelection.selectionState;if(updatedSelectionState!==editorState.getSelection()){if(documentSelection.needsRecovery){editorState=EditorState.forceSelection(editorState,updatedSelectionState);}else{editorState=EditorState.acceptSelection(editorState,updatedSelectionState);}this.update(editorState);}}module.exports=editOnSelect;
 
 /***/ },
-/* 368 */
+/* 367 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/getDraftEditorSelection.js ***!
   \***************************************************/
@@ -13045,7 +13043,7 @@
 	 * @providesModule getDraftEditorSelection
 	 * @typechecks
 	 * 
-	 */'use strict';var getDraftEditorSelectionWithNodes=__webpack_require__(/*! ./getDraftEditorSelectionWithNodes */ 346);/**
+	 */'use strict';var getDraftEditorSelectionWithNodes=__webpack_require__(/*! ./getDraftEditorSelectionWithNodes */ 345);/**
 	 * Convert the current selection range to an anchor/focus pair of offset keys
 	 * and values that can be interpreted by components.
 	 */function getDraftEditorSelection(editorState,root){var selection=global.getSelection();// No active selection.
@@ -13053,7 +13051,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 369 */
+/* 368 */
 /*!********************************************************!*\
   !*** ./~/draft-js/lib/DraftEditorPlaceholder.react.js ***!
   \********************************************************/
@@ -13070,7 +13068,7 @@
 	 * @providesModule DraftEditorPlaceholder.react
 	 * @typechecks
 	 * 
-	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var React=__webpack_require__(/*! react */ 1);var cx=__webpack_require__(/*! fbjs/lib/cx */ 290);/**
+	 */'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&((typeof call==="undefined"?"undefined":_typeof(call))==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+(typeof superClass==="undefined"?"undefined":_typeof(superClass)));}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var React=__webpack_require__(/*! react */ 1);var cx=__webpack_require__(/*! fbjs/lib/cx */ 289);/**
 	 * This component is responsible for rendering placeholder text for the
 	 * `DraftEditor` component.
 	 *
@@ -13078,7 +13076,7 @@
 	 */var DraftEditorPlaceholder=function(_React$Component){_inherits(DraftEditorPlaceholder,_React$Component);function DraftEditorPlaceholder(){_classCallCheck(this,DraftEditorPlaceholder);return _possibleConstructorReturn(this,_React$Component.apply(this,arguments));}DraftEditorPlaceholder.prototype.shouldComponentUpdate=function shouldComponentUpdate(nextProps){return this.props.text!==nextProps.text||this.props.editorState.getSelection().getHasFocus()!==nextProps.editorState.getSelection().getHasFocus();};DraftEditorPlaceholder.prototype.render=function render(){var hasFocus=this.props.editorState.getSelection().getHasFocus();var className=cx({'public/DraftEditorPlaceholder/root':true,'public/DraftEditorPlaceholder/hasFocus':hasFocus});return React.createElement('div',{className:className},React.createElement('div',{className:cx('public/DraftEditorPlaceholder/inner'),id:this.props.accessibilityID},this.props.text));};return DraftEditorPlaceholder;}(React.Component);module.exports=DraftEditorPlaceholder;
 
 /***/ },
-/* 370 */
+/* 369 */
 /*!************************************************!*\
   !*** ./~/draft-js/lib/getDefaultKeyBinding.js ***!
   \************************************************/
@@ -13095,7 +13093,7 @@
 	 * @providesModule getDefaultKeyBinding
 	 * @typechecks
 	 * 
-	 */'use strict';var KeyBindingUtil=__webpack_require__(/*! ./KeyBindingUtil */ 340);var Keys=__webpack_require__(/*! fbjs/lib/Keys */ 294);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 301);var isOSX=UserAgent.isPlatform('Mac OS X');var isWindows=UserAgent.isPlatform('Windows');// Firefox on OSX had a bug resulting in navigation instead of cursor movement.
+	 */'use strict';var KeyBindingUtil=__webpack_require__(/*! ./KeyBindingUtil */ 339);var Keys=__webpack_require__(/*! fbjs/lib/Keys */ 293);var UserAgent=__webpack_require__(/*! fbjs/lib/UserAgent */ 300);var isOSX=UserAgent.isPlatform('Mac OS X');var isWindows=UserAgent.isPlatform('Windows');// Firefox on OSX had a bug resulting in navigation instead of cursor movement.
 	// This bug was fixed in Firefox 29. Feature detection is virtually impossible
 	// so we just check the version number. See #342765.
 	var shouldFixFirefoxMovement=isOSX&&UserAgent.isBrowser('Firefox < 29');var hasCommandModifier=KeyBindingUtil.hasCommandModifier;var isCtrlKeyCommand=KeyBindingUtil.isCtrlKeyCommand;function shouldRemoveWord(e){return isOSX&&e.altKey||isCtrlKeyCommand(e);}/**
@@ -13120,7 +13118,7 @@
 	case Keys.LEFT:return shouldFixFirefoxMovement&&hasCommandModifier(e)?'move-selection-to-start-of-block':null;case Keys.RIGHT:return shouldFixFirefoxMovement&&hasCommandModifier(e)?'move-selection-to-end-of-block':null;default:return null;}}module.exports=getDefaultKeyBinding;
 
 /***/ },
-/* 371 */
+/* 370 */
 /*!**********************************************!*\
   !*** ./~/draft-js/lib/RichTextEditorUtil.js ***!
   \**********************************************/
@@ -13137,7 +13135,7 @@
 	 * @providesModule RichTextEditorUtil
 	 * @typechecks
 	 * 
-	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 260);var EditorState=__webpack_require__(/*! ./EditorState */ 278);var SelectionState=__webpack_require__(/*! ./SelectionState */ 281);var adjustBlockDepthForContentState=__webpack_require__(/*! ./adjustBlockDepthForContentState */ 372);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 287);var RichTextEditorUtil={currentBlockContainsLink:function currentBlockContainsLink(editorState){var selection=editorState.getSelection();return editorState.getCurrentContent().getBlockForKey(selection.getAnchorKey()).getCharacterList().slice(selection.getStartOffset(),selection.getEndOffset()).some(function(v){var entity=v.getEntity();return!!entity&&DraftEntity.get(entity).getType()==='LINK';});},getCurrentBlockType:function getCurrentBlockType(editorState){var selection=editorState.getSelection();return editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();},getDataObjectForLinkURL:function getDataObjectForLinkURL(uri){return{url:uri.toString()};},handleKeyCommand:function handleKeyCommand(editorState,command){switch(command){case'bold':return RichTextEditorUtil.toggleInlineStyle(editorState,'BOLD');case'italic':return RichTextEditorUtil.toggleInlineStyle(editorState,'ITALIC');case'underline':return RichTextEditorUtil.toggleInlineStyle(editorState,'UNDERLINE');case'code':return RichTextEditorUtil.toggleCode(editorState);case'backspace':case'backspace-word':case'backspace-to-start-of-line':return RichTextEditorUtil.onBackspace(editorState);case'delete':case'delete-word':case'delete-to-end-of-block':return RichTextEditorUtil.onDelete(editorState);default:return null;}},insertSoftNewline:function insertSoftNewline(editorState){var contentState=DraftModifier.insertText(editorState.getCurrentContent(),editorState.getSelection(),'\n',editorState.getCurrentInlineStyle(),null);var newEditorState=EditorState.push(editorState,contentState,'insert-characters');return EditorState.forceSelection(newEditorState,contentState.getSelectionAfter());},/**
+	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);var DraftModifier=__webpack_require__(/*! ./DraftModifier */ 259);var EditorState=__webpack_require__(/*! ./EditorState */ 277);var SelectionState=__webpack_require__(/*! ./SelectionState */ 280);var adjustBlockDepthForContentState=__webpack_require__(/*! ./adjustBlockDepthForContentState */ 371);var nullthrows=__webpack_require__(/*! fbjs/lib/nullthrows */ 286);var RichTextEditorUtil={currentBlockContainsLink:function currentBlockContainsLink(editorState){var selection=editorState.getSelection();return editorState.getCurrentContent().getBlockForKey(selection.getAnchorKey()).getCharacterList().slice(selection.getStartOffset(),selection.getEndOffset()).some(function(v){var entity=v.getEntity();return!!entity&&DraftEntity.get(entity).getType()==='LINK';});},getCurrentBlockType:function getCurrentBlockType(editorState){var selection=editorState.getSelection();return editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();},getDataObjectForLinkURL:function getDataObjectForLinkURL(uri){return{url:uri.toString()};},handleKeyCommand:function handleKeyCommand(editorState,command){switch(command){case'bold':return RichTextEditorUtil.toggleInlineStyle(editorState,'BOLD');case'italic':return RichTextEditorUtil.toggleInlineStyle(editorState,'ITALIC');case'underline':return RichTextEditorUtil.toggleInlineStyle(editorState,'UNDERLINE');case'code':return RichTextEditorUtil.toggleCode(editorState);case'backspace':case'backspace-word':case'backspace-to-start-of-line':return RichTextEditorUtil.onBackspace(editorState);case'delete':case'delete-word':case'delete-to-end-of-block':return RichTextEditorUtil.onDelete(editorState);default:return null;}},insertSoftNewline:function insertSoftNewline(editorState){var contentState=DraftModifier.insertText(editorState.getCurrentContent(),editorState.getSelection(),'\n',editorState.getCurrentInlineStyle(),null);var newEditorState=EditorState.push(editorState,contentState,'insert-characters');return EditorState.forceSelection(newEditorState,contentState.getSelectionAfter());},/**
 	   * For collapsed selections at the start of styled blocks, backspace should
 	   * just remove the existing style.
 	   */onBackspace:function onBackspace(editorState){var selection=editorState.getSelection();if(!selection.isCollapsed()||selection.getAnchorOffset()||selection.getFocusOffset()){return null;}// First, try to remove a preceding atomic block.
@@ -13168,7 +13166,7 @@
 	   */tryToRemoveBlockStyle:function tryToRemoveBlockStyle(editorState){var selection=editorState.getSelection();var offset=selection.getAnchorOffset();if(selection.isCollapsed()&&offset===0){var key=selection.getAnchorKey();var content=editorState.getCurrentContent();var block=content.getBlockForKey(key);if(block.getLength()>0){return null;}var type=block.getType();var blockBefore=content.getBlockBefore(key);if(type==='code-block'&&blockBefore&&blockBefore.getType()==='code-block'){return null;}if(type!=='unstyled'){return DraftModifier.setBlockType(content,selection,'unstyled');}}return null;}};module.exports=RichTextEditorUtil;
 
 /***/ },
-/* 372 */
+/* 371 */
 /*!***********************************************************!*\
   !*** ./~/draft-js/lib/adjustBlockDepthForContentState.js ***!
   \***********************************************************/
@@ -13188,7 +13186,7 @@
 	 */'use strict';function adjustBlockDepthForContentState(contentState,selectionState,adjustment,maxDepth){var startKey=selectionState.getStartKey();var endKey=selectionState.getEndKey();var blockMap=contentState.getBlockMap();var blocks=blockMap.toSeq().skipUntil(function(_,k){return k===startKey;}).takeUntil(function(_,k){return k===endKey;}).concat([[endKey,blockMap.get(endKey)]]).map(function(block){var depth=block.getDepth()+adjustment;depth=Math.max(0,Math.min(depth,maxDepth));return block.set('depth',depth);});blockMap=blockMap.merge(blocks);return contentState.merge({blockMap:blockMap,selectionBefore:selectionState,selectionAfter:selectionState});}module.exports=adjustBlockDepthForContentState;
 
 /***/ },
-/* 373 */
+/* 372 */
 /*!******************************************************!*\
   !*** ./~/draft-js/lib/convertFromDraftStateToRaw.js ***!
   \******************************************************/
@@ -13204,13 +13202,13 @@
 	 *
 	 * @providesModule convertFromDraftStateToRaw
 	 * 
-	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);var DraftStringKey=__webpack_require__(/*! ./DraftStringKey */ 374);var encodeEntityRanges=__webpack_require__(/*! ./encodeEntityRanges */ 375);var encodeInlineStyleRanges=__webpack_require__(/*! ./encodeInlineStyleRanges */ 376);function convertFromDraftStateToRaw(contentState){var entityStorageKey=0;var entityStorageMap={};var rawBlocks=[];contentState.getBlockMap().forEach(function(block,blockKey){block.findEntityRanges(function(character){return character.getEntity()!==null;},function(start){// Stringify to maintain order of otherwise numeric keys.
+	 */'use strict';var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);var DraftStringKey=__webpack_require__(/*! ./DraftStringKey */ 373);var encodeEntityRanges=__webpack_require__(/*! ./encodeEntityRanges */ 374);var encodeInlineStyleRanges=__webpack_require__(/*! ./encodeInlineStyleRanges */ 375);function convertFromDraftStateToRaw(contentState){var entityStorageKey=0;var entityStorageMap={};var rawBlocks=[];contentState.getBlockMap().forEach(function(block,blockKey){block.findEntityRanges(function(character){return character.getEntity()!==null;},function(start){// Stringify to maintain order of otherwise numeric keys.
 	var stringifiedEntityKey=DraftStringKey.stringify(block.getEntityAt(start));if(!entityStorageMap.hasOwnProperty(stringifiedEntityKey)){entityStorageMap[stringifiedEntityKey]=''+entityStorageKey++;}});rawBlocks.push({key:blockKey,text:block.getText(),type:block.getType(),depth:block.getDepth(),inlineStyleRanges:encodeInlineStyleRanges(block),entityRanges:encodeEntityRanges(block,entityStorageMap),data:block.getData().toObject()});});// Flip storage map so that our storage keys map to global
 	// DraftEntity keys.
 	var entityKeys=Object.keys(entityStorageMap);var flippedStorageMap={};entityKeys.forEach(function(key,jj){var entity=DraftEntity.get(DraftStringKey.unstringify(key));flippedStorageMap[jj]={type:entity.getType(),mutability:entity.getMutability(),data:entity.getData()};});return{entityMap:flippedStorageMap,blocks:rawBlocks};}module.exports=convertFromDraftStateToRaw;
 
 /***/ },
-/* 374 */
+/* 373 */
 /*!******************************************!*\
   !*** ./~/draft-js/lib/DraftStringKey.js ***!
   \******************************************/
@@ -13230,7 +13228,7 @@
 	 */'use strict';var DraftStringKey={stringify:function stringify(key){return'_'+String(key);},unstringify:function unstringify(key){return key.slice(1);}};module.exports=DraftStringKey;
 
 /***/ },
-/* 375 */
+/* 374 */
 /*!**********************************************!*\
   !*** ./~/draft-js/lib/encodeEntityRanges.js ***!
   \**********************************************/
@@ -13247,13 +13245,13 @@
 	 * @providesModule encodeEntityRanges
 	 * @typechecks
 	 * 
-	 */'use strict';var DraftStringKey=__webpack_require__(/*! ./DraftStringKey */ 374);var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 344);var strlen=UnicodeUtils.strlen;/**
+	 */'use strict';var DraftStringKey=__webpack_require__(/*! ./DraftStringKey */ 373);var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 343);var strlen=UnicodeUtils.strlen;/**
 	 * Convert to UTF-8 character counts for storage.
 	 */function encodeEntityRanges(block,storageMap){var encoded=[];block.findEntityRanges(function(character){return!!character.getEntity();},function(/*number*/start,/*number*/end){var text=block.getText();var key=block.getEntityAt(start);encoded.push({offset:strlen(text.slice(0,start)),length:strlen(text.slice(start,end)),// Encode the key as a number for range storage.
 	key:Number(storageMap[DraftStringKey.stringify(key)])});});return encoded;}module.exports=encodeEntityRanges;
 
 /***/ },
-/* 376 */
+/* 375 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/encodeInlineStyleRanges.js ***!
   \***************************************************/
@@ -13269,7 +13267,7 @@
 	 *
 	 * @providesModule encodeInlineStyleRanges
 	 * 
-	 */'use strict';var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 344);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 259);var areEqual=function areEqual(a,b){return a===b;};var isTruthy=function isTruthy(a){return!!a;};var EMPTY_ARRAY=[];/**
+	 */'use strict';var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 343);var findRangesImmutable=__webpack_require__(/*! ./findRangesImmutable */ 258);var areEqual=function areEqual(a,b){return a===b;};var isTruthy=function isTruthy(a){return!!a;};var EMPTY_ARRAY=[];/**
 	 * Helper function for getting encoded styles for each inline style. Convert
 	 * to UTF-8 character counts for storage.
 	 */function getEncodedInlinesForType(block,styleList,styleToEncode){var ranges=[];// Obtain an array with ranges for only the specified style.
@@ -13280,7 +13278,7 @@
 	 */function encodeInlineStyleRanges(block){var styleList=block.getCharacterList().map(function(c){return c.getStyle();}).toList();var ranges=styleList.flatten().toSet().map(function(style){return getEncodedInlinesForType(block,styleList,style);});return Array.prototype.concat.apply(EMPTY_ARRAY,ranges.toJS());}module.exports=encodeInlineStyleRanges;
 
 /***/ },
-/* 377 */
+/* 376 */
 /*!******************************************************!*\
   !*** ./~/draft-js/lib/convertFromRawToDraftState.js ***!
   \******************************************************/
@@ -13296,11 +13294,11 @@
 	 *
 	 * @providesModule convertFromRawToDraftState
 	 * 
-	 */'use strict';var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 258);var ContentState=__webpack_require__(/*! ./ContentState */ 280);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 265);var Immutable=__webpack_require__(/*! immutable */ 256);var createCharacterList=__webpack_require__(/*! ./createCharacterList */ 378);var decodeEntityRanges=__webpack_require__(/*! ./decodeEntityRanges */ 379);var decodeInlineStyleRanges=__webpack_require__(/*! ./decodeInlineStyleRanges */ 380);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 270);var Map=Immutable.Map;function convertFromRawToDraftState(rawState){var blocks=rawState.blocks;var entityMap=rawState.entityMap;var fromStorageToLocal={};Object.keys(entityMap).forEach(function(storageKey){var encodedEntity=entityMap[storageKey];var type=encodedEntity.type;var mutability=encodedEntity.mutability;var data=encodedEntity.data;var newKey=DraftEntity.create(type,mutability,data||{});fromStorageToLocal[storageKey]=newKey;});var contentBlocks=blocks.map(function(block){var key=block.key;var type=block.type;var text=block.text;var depth=block.depth;var inlineStyleRanges=block.inlineStyleRanges;var entityRanges=block.entityRanges;var data=block.data;key=key||generateRandomKey();depth=depth||0;inlineStyleRanges=inlineStyleRanges||[];entityRanges=entityRanges||[];data=Map(data);var inlineStyles=decodeInlineStyleRanges(text,inlineStyleRanges);// Translate entity range keys to the DraftEntity map.
+	 */'use strict';var _assign=__webpack_require__(/*! object-assign */ 3);var _extends=_assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var ContentBlock=__webpack_require__(/*! ./ContentBlock */ 257);var ContentState=__webpack_require__(/*! ./ContentState */ 279);var DraftEntity=__webpack_require__(/*! ./DraftEntity */ 264);var Immutable=__webpack_require__(/*! immutable */ 255);var createCharacterList=__webpack_require__(/*! ./createCharacterList */ 377);var decodeEntityRanges=__webpack_require__(/*! ./decodeEntityRanges */ 378);var decodeInlineStyleRanges=__webpack_require__(/*! ./decodeInlineStyleRanges */ 379);var generateRandomKey=__webpack_require__(/*! ./generateRandomKey */ 269);var Map=Immutable.Map;function convertFromRawToDraftState(rawState){var blocks=rawState.blocks;var entityMap=rawState.entityMap;var fromStorageToLocal={};Object.keys(entityMap).forEach(function(storageKey){var encodedEntity=entityMap[storageKey];var type=encodedEntity.type;var mutability=encodedEntity.mutability;var data=encodedEntity.data;var newKey=DraftEntity.create(type,mutability,data||{});fromStorageToLocal[storageKey]=newKey;});var contentBlocks=blocks.map(function(block){var key=block.key;var type=block.type;var text=block.text;var depth=block.depth;var inlineStyleRanges=block.inlineStyleRanges;var entityRanges=block.entityRanges;var data=block.data;key=key||generateRandomKey();depth=depth||0;inlineStyleRanges=inlineStyleRanges||[];entityRanges=entityRanges||[];data=Map(data);var inlineStyles=decodeInlineStyleRanges(text,inlineStyleRanges);// Translate entity range keys to the DraftEntity map.
 	var filteredEntityRanges=entityRanges.filter(function(range){return fromStorageToLocal.hasOwnProperty(range.key);}).map(function(range){return _extends({},range,{key:fromStorageToLocal[range.key]});});var entities=decodeEntityRanges(text,filteredEntityRanges);var characterList=createCharacterList(inlineStyles,entities);return new ContentBlock({key:key,type:type,text:text,depth:depth,characterList:characterList,data:data});});return ContentState.createFromBlockArray(contentBlocks);}module.exports=convertFromRawToDraftState;
 
 /***/ },
-/* 378 */
+/* 377 */
 /*!***********************************************!*\
   !*** ./~/draft-js/lib/createCharacterList.js ***!
   \***********************************************/
@@ -13317,10 +13315,10 @@
 	 * @providesModule createCharacterList
 	 * @typechecks
 	 * 
-	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 257);var Immutable=__webpack_require__(/*! immutable */ 256);var List=Immutable.List;function createCharacterList(inlineStyles,entities){var characterArray=inlineStyles.map(function(style,ii){var entity=entities[ii];return CharacterMetadata.create({style:style,entity:entity});});return List(characterArray);}module.exports=createCharacterList;
+	 */'use strict';var CharacterMetadata=__webpack_require__(/*! ./CharacterMetadata */ 256);var Immutable=__webpack_require__(/*! immutable */ 255);var List=Immutable.List;function createCharacterList(inlineStyles,entities){var characterArray=inlineStyles.map(function(style,ii){var entity=entities[ii];return CharacterMetadata.create({style:style,entity:entity});});return List(characterArray);}module.exports=createCharacterList;
 
 /***/ },
-/* 379 */
+/* 378 */
 /*!**********************************************!*\
   !*** ./~/draft-js/lib/decodeEntityRanges.js ***!
   \**********************************************/
@@ -13337,14 +13335,14 @@
 	 * @providesModule decodeEntityRanges
 	 * @typechecks
 	 * 
-	 */'use strict';var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 344);var substr=UnicodeUtils.substr;/**
+	 */'use strict';var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 343);var substr=UnicodeUtils.substr;/**
 	 * Convert to native JavaScript string lengths to determine ranges.
 	 */function decodeEntityRanges(text,ranges){var entities=Array(text.length).fill(null);if(ranges){ranges.forEach(function(range){// Using Unicode-enabled substrings converted to JavaScript lengths,
 	// fill the output array with entity keys.
 	var start=substr(text,0,range.offset).length;var end=start+substr(text,range.offset,range.length).length;for(var ii=start;ii<end;ii++){entities[ii]=range.key;}});}return entities;}module.exports=decodeEntityRanges;
 
 /***/ },
-/* 380 */
+/* 379 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/decodeInlineStyleRanges.js ***!
   \***************************************************/
@@ -13361,12 +13359,12 @@
 	 * @providesModule decodeInlineStyleRanges
 	 * @typechecks
 	 * 
-	 */'use strict';var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 344);var _require=__webpack_require__(/*! immutable */ 256);var OrderedSet=_require.OrderedSet;var substr=UnicodeUtils.substr;var EMPTY_SET=OrderedSet();/**
+	 */'use strict';var UnicodeUtils=__webpack_require__(/*! fbjs/lib/UnicodeUtils */ 343);var _require=__webpack_require__(/*! immutable */ 255);var OrderedSet=_require.OrderedSet;var substr=UnicodeUtils.substr;var EMPTY_SET=OrderedSet();/**
 	 * Convert to native JavaScript string lengths to determine ranges.
 	 */function decodeInlineStyleRanges(text,ranges){var styles=Array(text.length).fill(EMPTY_SET);if(ranges){ranges.forEach(function(/*object*/range){var cursor=substr(text,0,range.offset).length;var end=cursor+substr(text,range.offset,range.length).length;while(cursor<end){styles[cursor]=styles[cursor].add(range.style);cursor++;}});}return styles;}module.exports=decodeInlineStyleRanges;
 
 /***/ },
-/* 381 */
+/* 380 */
 /*!***************************************************!*\
   !*** ./~/draft-js/lib/getVisibleSelectionRect.js ***!
   \***************************************************/
@@ -13383,7 +13381,7 @@
 	 * @providesModule getVisibleSelectionRect
 	 * @typechecks
 	 * 
-	 */'use strict';var getRangeBoundingClientRect=__webpack_require__(/*! ./getRangeBoundingClientRect */ 382);/**
+	 */'use strict';var getRangeBoundingClientRect=__webpack_require__(/*! ./getRangeBoundingClientRect */ 381);/**
 	 * Return the bounding ClientRect for the visible DOM selection, if any.
 	 * In cases where there are no selected ranges or the bounding rect is
 	 * temporarily invalid, return null.
@@ -13393,7 +13391,7 @@
 	if(top===0&&right===0&&bottom===0&&left===0){return null;}return boundingRect;}module.exports=getVisibleSelectionRect;
 
 /***/ },
-/* 382 */
+/* 381 */
 /*!******************************************************!*\
   !*** ./~/draft-js/lib/getRangeBoundingClientRect.js ***!
   \******************************************************/
@@ -13410,7 +13408,7 @@
 	 * @providesModule getRangeBoundingClientRect
 	 * @typechecks
 	 * 
-	 */'use strict';var getRangeClientRects=__webpack_require__(/*! ./getRangeClientRects */ 345);/**
+	 */'use strict';var getRangeClientRects=__webpack_require__(/*! ./getRangeClientRects */ 344);/**
 	 * Like range.getBoundingClientRect() but normalizes for browser bugs.
 	 */function getRangeBoundingClientRect(range){// "Return a DOMRect object describing the smallest rectangle that includes
 	// the first rectangle in list and all of the remaining rectangles of which
@@ -13419,16 +13417,16 @@
 	var rects=getRangeClientRects(range);var top=0;var right=0;var bottom=0;var left=0;if(rects.length){var _rects$=rects[0];top=_rects$.top;right=_rects$.right;bottom=_rects$.bottom;left=_rects$.left;for(var ii=1;ii<rects.length;ii++){var rect=rects[ii];if(rect.height!==0||rect.width!==0){top=Math.min(top,rect.top);right=Math.max(right,rect.right);bottom=Math.max(bottom,rect.bottom);left=Math.min(left,rect.left);}}}return{top:top,right:right,bottom:bottom,left:left,width:right-left,height:bottom-top};}module.exports=getRangeBoundingClientRect;
 
 /***/ },
-/* 383 */
+/* 382 */
 /*!**************************************************************!*\
   !*** ./src/components/DisplaySavedNote/DisplaySavedNote.jsx ***!
   \**************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNote=__webpack_require__(/*! ./DisplaySavedNote.css */ 384);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplaySavedNote',render:function render(){return _react2.default.createElement('div',{className:'savedNoteContainer'},_react2.default.createElement('h5',null,'Display Saved Note'));}});
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNote=__webpack_require__(/*! ./DisplaySavedNote.css */ 383);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplaySavedNote',render:function render(){return _react2.default.createElement('div',{className:'savedNoteContainer'},_react2.default.createElement('h5',null,'Display Saved Note'));}});
 
 /***/ },
-/* 384 */
+/* 383 */
 /*!**************************************************************!*\
   !*** ./src/components/DisplaySavedNote/DisplaySavedNote.css ***!
   \**************************************************************/
@@ -13437,20 +13435,20 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 385 */
+/* 384 */
 /*!************************************************************!*\
   !*** ./src/components/NoteSnippetList/NoteSnippetList.jsx ***!
   \************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _NoteSnippetListCss=__webpack_require__(/*! ./NoteSnippetListCss.css */ 386);var _NoteSnippetListCss2=_interopRequireDefault(_NoteSnippetListCss);var _NoteSnippetItem=__webpack_require__(/*! ../NoteSnippetItem/NoteSnippetItem */ 387);var _NoteSnippetItem2=_interopRequireDefault(_NoteSnippetItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var NoteSnippetList=function(_React$Component){_inherits(NoteSnippetList,_React$Component);function NoteSnippetList(){_classCallCheck(this,NoteSnippetList);return _possibleConstructorReturn(this,(NoteSnippetList.__proto__||Object.getPrototypeOf(NoteSnippetList)).apply(this,arguments));}_createClass(NoteSnippetList,[{key:'showNotes',// export default class NoteSnippetList extends React.Component {
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _NoteSnippetListCss=__webpack_require__(/*! ./NoteSnippetListCss.css */ 385);var _NoteSnippetListCss2=_interopRequireDefault(_NoteSnippetListCss);var _NoteSnippetItem=__webpack_require__(/*! ../NoteSnippetItem/NoteSnippetItem */ 386);var _NoteSnippetItem2=_interopRequireDefault(_NoteSnippetItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var NoteSnippetList=function(_React$Component){_inherits(NoteSnippetList,_React$Component);function NoteSnippetList(){_classCallCheck(this,NoteSnippetList);return _possibleConstructorReturn(this,(NoteSnippetList.__proto__||Object.getPrototypeOf(NoteSnippetList)).apply(this,arguments));}_createClass(NoteSnippetList,[{key:'showNotes',// export default class NoteSnippetList extends React.Component {
 	// export default React.createClass({
-	value:function showNotes(notes){return this.props.notes.map(function(notes,key){return _react2.default.createElement(_NoteSnippetItem2.default,{key:key,title:notes.title});});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'noteListDiv'},_react2.default.createElement('h2',null,'Notes By Title'),_react2.default.createElement('div',{className:'allNotesContainer'},this.showNotes(this.props.notes)));}}]);return NoteSnippetList;}(_react2.default.Component);// {console.log('in noteSnippetList ', this.props.notes)}
+	value:function showNotes(notes){var _this2=this;return this.props.notes.map(function(notes,key){return _react2.default.createElement(_NoteSnippetItem2.default,{key:key,title:notes.title,note_id:notes.note_id,notes:_this2.props.notes});});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'noteListDiv'},_react2.default.createElement('h2',null,'Notes By Title'),_react2.default.createElement('div',{className:'allNotesContainer'},this.showNotes(this.props.notes)));}}]);return NoteSnippetList;}(_react2.default.Component);// {console.log('in noteSnippetList ', this.props.notes)}
 	// {this.props.children}
 	exports.default=NoteSnippetList;
 
 /***/ },
-/* 386 */
+/* 385 */
 /*!***************************************************************!*\
   !*** ./src/components/NoteSnippetList/NoteSnippetListCss.css ***!
   \***************************************************************/
@@ -13459,18 +13457,16 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 387 */
+/* 386 */
 /*!************************************************************!*\
   !*** ./src/components/NoteSnippetItem/NoteSnippetItem.jsx ***!
   \************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _NoteSnippetItemCss=__webpack_require__(/*! ./NoteSnippetItemCss.css */ 388);var _NoteSnippetItemCss2=_interopRequireDefault(_NoteSnippetItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}function clicker(e){var bttns=document.querySelectorAll('.noteButtons');// bttns.addEventListener('click', (console.log('event working')));
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _NoteSnippetItemCss=__webpack_require__(/*! ./NoteSnippetItemCss.css */ 387);var _NoteSnippetItemCss2=_interopRequireDefault(_NoteSnippetItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}function clicker(e){var bttns=document.querySelectorAll('.noteButtons');// bttns.addEventListener('click', (console.log('event working')));
 	// console.log(bttns);
 	// onClick(console.log("clicked!!!"));
-	}var NoteSnippetItem=function(_React$Component){_inherits(NoteSnippetItem,_React$Component);function NoteSnippetItem(){_classCallCheck(this,NoteSnippetItem);return _possibleConstructorReturn(this,(NoteSnippetItem.__proto__||Object.getPrototypeOf(NoteSnippetItem)).apply(this,arguments));}_createClass(NoteSnippetItem,[{key:'render',value:function render(){// console.log('in NoteSnippetItem ', this.props.title)
-	return _react2.default.createElement('div',{className:'noteSnippet'},_react2.default.createElement('button',{className:'noteButtons'// id={this.props.key}
-	,type:'button',value:this.props.title,onClick:clicker()},this.props.title));}}]);return NoteSnippetItem;}(_react2.default.Component);// const NoteSnippetItem = props => (
+	}var NoteSnippetItem=function(_React$Component){_inherits(NoteSnippetItem,_React$Component);function NoteSnippetItem(){_classCallCheck(this,NoteSnippetItem);return _possibleConstructorReturn(this,(NoteSnippetItem.__proto__||Object.getPrototypeOf(NoteSnippetItem)).apply(this,arguments));}_createClass(NoteSnippetItem,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:'noteSnippet'},_react2.default.createElement('p',null,this.props.title,' ',this.props.note_id));}}]);return NoteSnippetItem;}(_react2.default.Component);// const NoteSnippetItem = props => (
 	// export default React.createClass({
 	//   render() {
 	//     return(
@@ -13484,7 +13480,7 @@
 	exports.default=NoteSnippetItem;// export default TopicListItem;
 
 /***/ },
-/* 388 */
+/* 387 */
 /*!***************************************************************!*\
   !*** ./src/components/NoteSnippetItem/NoteSnippetItemCss.css ***!
   \***************************************************************/

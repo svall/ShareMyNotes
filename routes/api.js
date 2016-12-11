@@ -7,7 +7,7 @@ const { getAllTopics, getOneTopic } = require('../model/notes')
 // get all notes for one topic
 router.get('/:topicID', getOneTopic, (req, res) => {
   res.json(res.topic || []);
-  console.log('in routes for topic id ', res.topic);
+  // console.log('in routes for topic id ', res.topic);
 });
 
 

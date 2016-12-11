@@ -13,6 +13,8 @@ class NoteSnippetList extends React.Component {
       <NoteSnippetItem
         key={key}
         title={notes.title}
+        note_id={notes.note_id}
+        notes={this.props.notes}
       />
     )
   }

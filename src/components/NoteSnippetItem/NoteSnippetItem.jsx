@@ -16,14 +16,16 @@ class NoteSnippetItem extends React.Component {
     // console.log('in NoteSnippetItem ', this.props.title)
     return(
       <div className="noteSnippet">
-        <button
+        <p>{this.props.title} {this.props.note_id}</p>
+
+        {/*<button
           className="noteButtons"
           // id={this.props.key}
           type="button"
           value={this.props.title}
           onClick={clicker()}>
           {this.props.title}
-        </button>
+        </button>*/}
       </div>
     )
   }

@@ -4,6 +4,7 @@ function getAllTopics(req, res, next) {
   db.any('SELECT * FROM topics;')
   .then((topics) => {
     res.topics = topics;
+    // console.log('in model topics ===== ', res.topics)
     next();
   })
   .catch(error => next(error));
@@ -13,6 +14,7 @@ function getOneTopic(req, res, next) {
   const tID = Number.parseInt(req.params.topicID);
     db.any(`SELECT
       notes.title AS Title,
+      notes.id AS Note_ID,
       topics.name AS Topic_Name,
       topics.id AS Topic_ID,
       notes.content AS Note,
@@ -24,7 +26,7 @@ function getOneTopic(req, res, next) {
     `, tID)
   .then((tdata) => {
     res.topic = tdata;
-    console.log('in model one topic', tdata);
+    // console.log('in model one topic', tdata);
     next();
   })
   .catch(error => next(error));
