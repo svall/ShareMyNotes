@@ -59,6 +59,15 @@
   border: 2px solid red;
   width: 48%;
   height: 95%;
+  text-align: center;
+}
+
+.displaySavedNoteContent {
+  border: 1px solid black;
+  background: grey;
+  width: 90%;
+  margin: auto;
+  /*height: 90%;*/
 }
 .noteListDiv {
   background-color: lightgreen;

@@ -20,7 +20,8 @@ export default class App extends React.Component {
       selected_topic: '',
       notes: [],
       note_id: '',
-      selected_note: 0
+      selected_note: 0,
+      selected_note_content: ''
     };
   }
 
@@ -30,7 +31,7 @@ export default class App extends React.Component {
       selected_topic: this.state.topics[topicID],
       topic_id: this.state.topics[topicID].id,
     });
-    console.log('in app.jsx topic id ', this.state.topics[topicID].id);
+    // console.log('in app.jsx topic id ', this.state.topics[topicID].id);
     fetch(`/api/cohort/${this.state.topics[topicID].id}`)
     .then(r => r.json())
     .then((data) => {
@@ -42,7 +43,7 @@ export default class App extends React.Component {
     .catch(err => console.log(err));
     // console.log('in app.jsx selected topic:', this.state.selected_topic);
     // console.log('in app.jsx selected topic id:', this.state.topic_id);
-    console.log('in app.jsx notes:', this.state.notes);
+    // console.log('in app.jsx notes:', this.state.notes);
     // console.log('in app.jsx note id:', this.state.note_id);
   }
   // getAllTopics() displays all Topics for the Cohort
@@ -61,11 +62,14 @@ export default class App extends React.Component {
 
   selectNote(e) {
     let selectedNote = Number.parseInt(e.target.id);
-    console.log('testing target: ', selectedNote);
+    // console.log('testing target select note id: ', selectedNote);
     this.setState({
       selected_note: selectedNote,
+      selected_note_content: this.state.notes[selectedNote - 1],
     });
-    // console.log('in app.jsx selectedNoteId/// ', selectedNote);
+    console.log('notes array ', this.state.notes[selectedNote - 1])
+    console.log('selected notes num ', this.state.selected_note)
+    // console.log('in app.jsx selectedNoteId/// ', this.state.selected_note_content);
   }
 
   render(){
@@ -97,6 +101,7 @@ export default class App extends React.Component {
               notes={this.state.notes}
               note_id={this.state.note_id}
               selected_note={this.state.selected_note}
+              selected_note_content={this.state.selected_note_content}
             />
             <DisplayNewNote />
           </div>
