@@ -43,9 +43,9 @@
 }
 .topicListDiv {
   background-color: lightblue;
-  width: 100px;
+  /*width: 100px;*/
   display: inline-block;
-  height: 100px;
+  /*height: 100px;*/
 }
 .topicItemContainer {
   /*background-color: pink;*/
@@ -64,6 +64,17 @@
   background-color: lightgreen;
   width: 150px;
   display: inline-block;
+
+}
+
+.allNotesContainer {
+  overflow-y: scroll;
+  background-color: purple;
+  height: 200px;
+}
+.noteSnippet {
+  background-color: yellow;
+  border: 1px dotted black;
 }
 
 /*# sourceMappingURL=main.css.map*/

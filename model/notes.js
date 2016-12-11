@@ -15,6 +15,7 @@ function getOneTopic(req, res, next) {
       notes.title AS Title,
       topics.name AS Topic_Name,
       topics.id AS Topic_ID,
+      notes.content AS Note,
       notes.student_id AS Student
     FROM topics
     INNER JOIN notes

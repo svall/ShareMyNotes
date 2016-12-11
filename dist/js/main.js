@@ -47,7 +47,7 @@
   \*********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 241);var _App2=_interopRequireDefault(_App);var _TopicList=__webpack_require__(/*! ./components/TopicList/TopicList */ 242);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ./components/TopicListItem/TopicListItem.jsx */ 245);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import './components/favicon.ico';
+	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App/App.jsx */ 241);var _App2=_interopRequireDefault(_App);var _TopicList=__webpack_require__(/*! ./components/TopicList/TopicList */ 247);var _TopicList2=_interopRequireDefault(_TopicList);var _TopicListItem=__webpack_require__(/*! ./components/TopicListItem/TopicListItem.jsx */ 249);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import './components/favicon.ico';
 	// mount our App at #container
 	(0,_reactDom.render)(_react2.default.createElement(_reactRouter.Router,{history:_reactRouter.browserHistory},_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default})),document.querySelector('#container'));// import 'bootstrap/dist/css/bootstrap.css';
 	// import ReactDOM from 'react-dom';
@@ -8489,7 +8489,7 @@
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 243);var _NavLink2=_interopRequireDefault(_NavLink);var _AppCss=__webpack_require__(/*! ./AppCss.css */ 391);var _AppCss2=_interopRequireDefault(_AppCss);var _Header=__webpack_require__(/*! ../Header/Header */ 247);var _Header2=_interopRequireDefault(_Header);var _DisplayNoteContainer=__webpack_require__(/*! ../DisplayNoteContainer/DisplayNoteContainer */ 249);var _DisplayNoteContainer2=_interopRequireDefault(_DisplayNoteContainer);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 242);var _TopicList2=_interopRequireDefault(_TopicList);var _DisplayNewNote=__webpack_require__(/*! ../DisplayNewNote/DisplayNewNote */ 251);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);var _DisplaySavedNote=__webpack_require__(/*! ../DisplaySavedNote/DisplaySavedNote */ 383);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);var _NoteSnippetList=__webpack_require__(/*! ../NoteSnippetList/NoteSnippetList */ 387);var _NoteSnippetList2=_interopRequireDefault(_NoteSnippetList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import Aside from '../Aside/Aside'
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _AppCss=__webpack_require__(/*! ./AppCss.css */ 243);var _AppCss2=_interopRequireDefault(_AppCss);var _Header=__webpack_require__(/*! ../Header/Header */ 244);var _Header2=_interopRequireDefault(_Header);var _TopicList=__webpack_require__(/*! ../TopicList/TopicList */ 247);var _TopicList2=_interopRequireDefault(_TopicList);var _DisplayNewNote=__webpack_require__(/*! ../DisplayNewNote/DisplayNewNote */ 251);var _DisplayNewNote2=_interopRequireDefault(_DisplayNewNote);var _DisplaySavedNote=__webpack_require__(/*! ../DisplaySavedNote/DisplaySavedNote */ 383);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);var _NoteSnippetList=__webpack_require__(/*! ../NoteSnippetList/NoteSnippetList */ 385);var _NoteSnippetList2=_interopRequireDefault(_NoteSnippetList);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// import DisplayNoteContainer from '../DisplayNoteContainer/DisplayNoteContainer'
 	var App=function(_React$Component){_inherits(App,_React$Component);// export default React.createClass({
 	function App(props){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={topics:[],selected_topic:'',topic_id:'',notes:[]};return _this;}// getTopicNotes() displays the notes associated to a selected topic
 	_createClass(App,[{key:'getTopicNotes',value:function getTopicNotes(notes){var _this2=this;this.setState({selected_topic:this.state.topics[notes],topic_id:this.state.topics[notes].id});// console.log('in app.jsx topic id ', this.state.topics[notes].id);
@@ -8502,21 +8502,6 @@
 
 /***/ },
 /* 242 */
-/*!************************************************!*\
-  !*** ./src/components/TopicList/TopicList.jsx ***!
-  \************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 243);var _NavLink2=_interopRequireDefault(_NavLink);var _TopicListCss=__webpack_require__(/*! ./TopicListCss.css */ 392);var _TopicListCss2=_interopRequireDefault(_TopicListCss);var _TopicListItem=__webpack_require__(/*! ../TopicListItem/TopicListItem */ 245);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
-	var TopicList=function(_React$Component){_inherits(TopicList,_React$Component);function TopicList(){_classCallCheck(this,TopicList);return _possibleConstructorReturn(this,(TopicList.__proto__||Object.getPrototypeOf(TopicList)).apply(this,arguments));}_createClass(TopicList,[{key:'showTopics',value:function showTopics(topics){var _this2=this;// console.log('topic in toplicList ', topics[0]);
-	return topics.map(function(topic,index){return _react2.default.createElement('button',{key:index,onClick:function onClick(){return _this2.props.getTopicNotes(index);}},_react2.default.createElement(_TopicListItem2.default// key={index}
-	// onClick={() => this.props.getTopicNotes(index)}
-	,{id:topic.id,name:topic.name,cohort:topic.cohort_id}));});}},{key:'componentWillMount',value:function componentWillMount(){this.props.getAllTopics();}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'topicListDiv'},_react2.default.createElement('h2',null,'Topic List'),_react2.default.createElement('div',null,this.showTopics(this.props.topics)));}}]);return TopicList;}(_react2.default.Component);// {<TopicListItem />}
-	// {this.props.children}
-	exports.default=TopicList;
-
-/***/ },
-/* 243 */
 /*!********************************************!*\
   !*** ./src/components/NavLink/NavLink.jsx ***!
   \********************************************/
@@ -8525,30 +8510,22 @@
 	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'NavLink',render:function render(){return _react2.default.createElement(_reactRouter.Link,_extends({},this.props,{activeClassName:'active'}));}});
 
 /***/ },
-/* 244 */,
-/* 245 */
-/*!********************************************************!*\
-  !*** ./src/components/TopicListItem/TopicListItem.jsx ***!
-  \********************************************************/
-/***/ function(module, exports, __webpack_require__) {
+/* 243 */
+/*!***************************************!*\
+  !*** ./src/components/App/AppCss.css ***!
+  \***************************************/
+/***/ function(module, exports) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _TopicListItemCss=__webpack_require__(/*! ./TopicListItemCss.css */ 393);var _TopicListItemCss2=_interopRequireDefault(_TopicListItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default React.createClass({
-	var TopicListItem=function TopicListItem(props){return(// render() {
-	//   return(
-	_react2.default.createElement('div',{className:'topicItemContainer'},_react2.default.createElement('p',null,props.id,' ',props.name))//   )
-	// }
-	);};// })
-	exports.default=TopicListItem;// <button className="topicButton">{props.id} {props.name}</button>
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 246 */,
-/* 247 */
+/* 244 */
 /*!******************************************!*\
   !*** ./src/components/Header/Header.jsx ***!
   \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _Header=__webpack_require__(/*! ./Header.css */ 248);var _Header2=_interopRequireDefault(_Header);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default() {
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _Header=__webpack_require__(/*! ./Header.css */ 245);var _Header2=_interopRequireDefault(_Header);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default() {
 	// render() {
 	//     return(
 	//       <div>Header</div>
@@ -8558,7 +8535,7 @@
 	exports.default=_react2.default.createClass({displayName:'Header',render:function render(){return _react2.default.createElement('div',{className:'headerContainer'},_react2.default.createElement('h1',null,'My Notes!!!'),this.props.children);}});
 
 /***/ },
-/* 248 */
+/* 245 */
 /*!******************************************!*\
   !*** ./src/components/Header/Header.css ***!
   \******************************************/
@@ -8567,48 +8544,55 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 249 */
-/*!**********************************************************************!*\
-  !*** ./src/components/DisplayNoteContainer/DisplayNoteContainer.jsx ***!
-  \**********************************************************************/
-/***/ function(module, exports) {
+/* 246 */,
+/* 247 */
+/*!************************************************!*\
+  !*** ./src/components/TopicList/TopicList.jsx ***!
+  \************************************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	// import React from 'react'
-	// import ReactDOM from 'react-dom'
-	// // import { Editor, EditorState, RichUtils, convertFromRaw, convertToRaw } from 'draft-js'
-	// // import { Link } from 'react-router'
-	// // import NavLink from '../NavLink/NavLink'
-	// import DisplayNoteContainer from './DisplayNoteContainer.css'
-	// import DisplayNewNote from '../DisplayNewNote/DisplayNewNote'
-	// import DisplaySavedNote from '../DisplaySavedNote/DisplaySavedNote'
-	// export default React.createClass({
-	//   // constructor() {
-	//   //   super();
-	//   //   this.state = { editorState: EditorState.createEmpty()};
-	//   //   // console.log(this.state.editorState)
-	//   // }
-	//   render() {
-	//     return(
-	//       <div className="noteContainerDisplay">
-	//         <h2>Display Note Container</h2>
-	//         <div className="savedNewNoteContainer">
-	//           <DisplaySavedNote />
-	//           <DisplayNewNote />
-	//           {/*<Editor
-	//             onChange={(editorState) => { this.onChange(editorState) }}
-	//             editorState={this.state.editorState}
-	//             {/* placeholder="This is the editor"
-	//           />*/}
-	//         </div>
-	//         {this.props.children}
-	//       </div>
-	//     )
-	//   }
-	// })
-	"use strict";
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _TopicListCss=__webpack_require__(/*! ./TopicListCss.css */ 248);var _TopicListCss2=_interopRequireDefault(_TopicListCss);var _TopicListItem=__webpack_require__(/*! ../TopicListItem/TopicListItem */ 249);var _TopicListItem2=_interopRequireDefault(_TopicListItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
+	var TopicList=function(_React$Component){_inherits(TopicList,_React$Component);function TopicList(){_classCallCheck(this,TopicList);return _possibleConstructorReturn(this,(TopicList.__proto__||Object.getPrototypeOf(TopicList)).apply(this,arguments));}_createClass(TopicList,[{key:'showTopics',value:function showTopics(topics){var _this2=this;// console.log('topic in toplicList ', topics[0]);
+	return topics.map(function(topic,index){return _react2.default.createElement('button',{key:index,onClick:function onClick(){return _this2.props.getTopicNotes(index);}},_react2.default.createElement(_TopicListItem2.default// key={index}
+	// onClick={() => this.props.getTopicNotes(index)}
+	,{id:topic.id,name:topic.name,cohort:topic.cohort_id}));});}},{key:'componentWillMount',value:function componentWillMount(){this.props.getAllTopics();}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'topicListDiv'},_react2.default.createElement('h2',null,'Topic List'),_react2.default.createElement('div',null,this.showTopics(this.props.topics)));}}]);return TopicList;}(_react2.default.Component);// {<TopicListItem />}
+	// {this.props.children}
+	exports.default=TopicList;
 
 /***/ },
-/* 250 */,
+/* 248 */
+/*!***************************************************!*\
+  !*** ./src/components/TopicList/TopicListCss.css ***!
+  \***************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 249 */
+/*!********************************************************!*\
+  !*** ./src/components/TopicListItem/TopicListItem.jsx ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _TopicListItemCss=__webpack_require__(/*! ./TopicListItemCss.css */ 250);var _TopicListItemCss2=_interopRequireDefault(_TopicListItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// export default React.createClass({
+	var TopicListItem=function TopicListItem(props){return(// render() {
+	//   return(
+	_react2.default.createElement('div',{className:'topicItemContainer'},_react2.default.createElement('p',null,props.id,' ',props.name))//   )
+	// }
+	);};// })
+	exports.default=TopicListItem;// <button className="topicButton">{props.id} {props.name}</button>
+
+/***/ },
+/* 250 */
+/*!***********************************************************!*\
+  !*** ./src/components/TopicListItem/TopicListItemCss.css ***!
+  \***********************************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
 /* 251 */
 /*!**********************************************************!*\
   !*** ./src/components/DisplayNewNote/DisplayNewNote.jsx ***!
@@ -13453,75 +13437,20 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 385 */,
-/* 386 */,
-/* 387 */
+/* 385 */
 /*!************************************************************!*\
   !*** ./src/components/NoteSnippetList/NoteSnippetList.jsx ***!
   \************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 243);var _NavLink2=_interopRequireDefault(_NavLink);var _NoteSnippetListCss=__webpack_require__(/*! ./NoteSnippetListCss.css */ 394);var _NoteSnippetListCss2=_interopRequireDefault(_NoteSnippetListCss);var _NoteSnippetItem=__webpack_require__(/*! ../NoteSnippetItem/NoteSnippetItem */ 389);var _NoteSnippetItem2=_interopRequireDefault(_NoteSnippetItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var NoteSnippetList=function(_React$Component){_inherits(NoteSnippetList,_React$Component);function NoteSnippetList(){_classCallCheck(this,NoteSnippetList);return _possibleConstructorReturn(this,(NoteSnippetList.__proto__||Object.getPrototypeOf(NoteSnippetList)).apply(this,arguments));}_createClass(NoteSnippetList,[{key:'showNotes',// export default class NoteSnippetList extends React.Component {
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _NavLink=__webpack_require__(/*! ../NavLink/NavLink */ 242);var _NavLink2=_interopRequireDefault(_NavLink);var _NoteSnippetListCss=__webpack_require__(/*! ./NoteSnippetListCss.css */ 386);var _NoteSnippetListCss2=_interopRequireDefault(_NoteSnippetListCss);var _NoteSnippetItem=__webpack_require__(/*! ../NoteSnippetItem/NoteSnippetItem */ 387);var _NoteSnippetItem2=_interopRequireDefault(_NoteSnippetItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var NoteSnippetList=function(_React$Component){_inherits(NoteSnippetList,_React$Component);function NoteSnippetList(){_classCallCheck(this,NoteSnippetList);return _possibleConstructorReturn(this,(NoteSnippetList.__proto__||Object.getPrototypeOf(NoteSnippetList)).apply(this,arguments));}_createClass(NoteSnippetList,[{key:'showNotes',// export default class NoteSnippetList extends React.Component {
 	// export default React.createClass({
-	value:function showNotes(notes){return this.props.notes.map(function(notes,key){return _react2.default.createElement(_NoteSnippetItem2.default,{key:key,name:notes.title});});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'noteListDiv'},_react2.default.createElement('h2',null,'Note Snippet List'),_react2.default.createElement('div',null,this.showNotes(this.props.notes)));}}]);return NoteSnippetList;}(_react2.default.Component);// {this.props.children}
+	value:function showNotes(notes){return this.props.notes.map(function(notes,key){return _react2.default.createElement(_NoteSnippetItem2.default,{key:key,title:notes.title});});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:'noteListDiv'},_react2.default.createElement('h2',null,'Notes By Title'),_react2.default.createElement('div',{className:'allNotesContainer'},this.showNotes(this.props.notes)));}}]);return NoteSnippetList;}(_react2.default.Component);// {console.log('in noteSnippetList ', this.props.notes)}
+	// {this.props.children}
 	exports.default=NoteSnippetList;
 
 /***/ },
-/* 388 */,
-/* 389 */
-/*!************************************************************!*\
-  !*** ./src/components/NoteSnippetItem/NoteSnippetItem.jsx ***!
-  \************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _NoteSnippetItemCss=__webpack_require__(/*! ./NoteSnippetItemCss.css */ 395);var _NoteSnippetItemCss2=_interopRequireDefault(_NoteSnippetItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var NoteSnippetItem=function NoteSnippetItem(props){return(// export default React.createClass({
-	// render() {
-	//   return(
-	_react2.default.createElement('div',null,_react2.default.createElement('p',null,props.title))// )
-	// }
-	);};exports.default=NoteSnippetItem;//  const TopicListItem = props => (
-	//   // render() {
-	//   //   return(
-	//       <div className="topicItemContainer">
-	//         <p>{props.id} {props.name}</p>
-	//       </div>
-	//   //   )
-	//   // }
-	// )
-	// // })
-	// export default TopicListItem;
-	// <button className="topicButton">{props.id} {props.name}</button>
-
-/***/ },
-/* 390 */,
-/* 391 */
-/*!***************************************!*\
-  !*** ./src/components/App/AppCss.css ***!
-  \***************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 392 */
-/*!***************************************************!*\
-  !*** ./src/components/TopicList/TopicListCss.css ***!
-  \***************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 393 */
-/*!***********************************************************!*\
-  !*** ./src/components/TopicListItem/TopicListItemCss.css ***!
-  \***********************************************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 394 */
+/* 386 */
 /*!***************************************************************!*\
   !*** ./src/components/NoteSnippetList/NoteSnippetListCss.css ***!
   \***************************************************************/
@@ -13530,7 +13459,27 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 395 */
+/* 387 */
+/*!************************************************************!*\
+  !*** ./src/components/NoteSnippetItem/NoteSnippetItem.jsx ***!
+  \************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _NoteSnippetItemCss=__webpack_require__(/*! ./NoteSnippetItemCss.css */ 388);var _NoteSnippetItemCss2=_interopRequireDefault(_NoteSnippetItemCss);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var NoteSnippetItem=function(_React$Component){_inherits(NoteSnippetItem,_React$Component);function NoteSnippetItem(){_classCallCheck(this,NoteSnippetItem);return _possibleConstructorReturn(this,(NoteSnippetItem.__proto__||Object.getPrototypeOf(NoteSnippetItem)).apply(this,arguments));}_createClass(NoteSnippetItem,[{key:'render',value:function render(){console.log('in NoteSnippetItem ',this.props.title);return _react2.default.createElement('div',{className:'noteSnippet'},_react2.default.createElement('button',{type:'submit',value:this.props.title},this.props.title));}}]);return NoteSnippetItem;}(_react2.default.Component);// const NoteSnippetItem = props => (
+	// export default React.createClass({
+	//   render() {
+	//     return(
+	//       <div className="noteSnippet">
+	//         <h5>Note Name: {this.props.title}</h5>
+	//         <button type="submit" value={this.props.title}>{this.props.title}</button>
+	//       </div>
+	//     )
+	//   }
+	// })
+	exports.default=NoteSnippetItem;// export default TopicListItem;
+
+/***/ },
+/* 388 */
 /*!***************************************************************!*\
   !*** ./src/components/NoteSnippetItem/NoteSnippetItemCss.css ***!
   \***************************************************************/

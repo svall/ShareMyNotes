@@ -2,29 +2,30 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import NoteSnippetItemCss from './NoteSnippetItemCss.css'
 
-const NoteSnippetItem = props => (
-// export default React.createClass({
-  // render() {
-  //   return(
-      <div>
-        <p>{props.title}</p>
+
+class NoteSnippetItem extends React.Component {
+  render() {
+    console.log('in NoteSnippetItem ', this.props.title)
+    return(
+      <div className="noteSnippet">
+        <button type="submit" value={this.props.title}>{this.props.title}</button>
       </div>
-    // )
-  // }
-)
+    )
+  }
+}
+
+// const NoteSnippetItem = props => (
+// export default React.createClass({
+//   render() {
+//     return(
+//       <div className="noteSnippet">
+//         <h5>Note Name: {this.props.title}</h5>
+//         <button type="submit" value={this.props.title}>{this.props.title}</button>
+//       </div>
+//     )
+//   }
+// })
 
 export default NoteSnippetItem;
 
-//  const TopicListItem = props => (
-//   // render() {
-//   //   return(
-//       <div className="topicItemContainer">
-//         <p>{props.id} {props.name}</p>
-//       </div>
-//   //   )
-//   // }
-// )
-// // })
-
 // export default TopicListItem;
-        // <button className="topicButton">{props.id} {props.name}</button>
