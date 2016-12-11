@@ -3,12 +3,27 @@ import ReactDOM from 'react-dom'
 import NoteSnippetItemCss from './NoteSnippetItemCss.css'
 
 
+  function clicker(e) {
+    let bttns = document.querySelectorAll('.noteButtons');
+    // bttns.addEventListener('click', (console.log('event working')));
+    // console.log(bttns);
+    // onClick(console.log("clicked!!!"));
+  }
+
 class NoteSnippetItem extends React.Component {
+
   render() {
-    console.log('in NoteSnippetItem ', this.props.title)
+    // console.log('in NoteSnippetItem ', this.props.title)
     return(
       <div className="noteSnippet">
-        <button type="submit" value={this.props.title}>{this.props.title}</button>
+        <button
+          className="noteButtons"
+          // id={this.props.key}
+          type="button"
+          value={this.props.title}
+          onClick={clicker()}>
+          {this.props.title}
+        </button>
       </div>
     )
   }
