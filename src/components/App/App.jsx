@@ -40,8 +40,8 @@ export default class App extends React.Component {
       });
     })
     .catch(err => console.log(err));
-    console.log('in app.jsx selected topic:', this.state.selected_topic);
-    console.log('in app.jsx selected topic id:', this.state.topic_id);
+    // console.log('in app.jsx selected topic:', this.state.selected_topic);
+    // console.log('in app.jsx selected topic id:', this.state.topic_id);
     console.log('in app.jsx notes:', this.state.notes);
     // console.log('in app.jsx note id:', this.state.note_id);
   }
@@ -54,9 +54,18 @@ export default class App extends React.Component {
       this.setState({
         topics: data
       });
-      console.log('in app.jsx all data ==== ', data);
+      // console.log('in app.jsx all data ==== ', data);
     })
     .catch(err => console.log(err));
+  }
+
+  selectNote(e) {
+    let selectedNote = Number.parseInt(e.target.id);
+    console.log('testing target: ', selectedNote);
+    this.setState({
+      selected_note: selectedNote,
+    });
+    // console.log('in app.jsx selectedNoteId/// ', selectedNote);
   }
 
   render(){
@@ -80,6 +89,7 @@ export default class App extends React.Component {
               notes={this.state.notes}
               note_id={this.state.note_id}
               selected_note={this.state.selected_note}
+              selectNote={(event) => this.selectNote(event)}
             />
           </div>
           <div className="savedNewNoteContainer">

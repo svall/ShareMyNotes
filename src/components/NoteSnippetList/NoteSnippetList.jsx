@@ -15,6 +15,9 @@ class NoteSnippetList extends React.Component {
         title={notes.title}
         note_id={notes.note_id}
         notes={this.props.notes}
+        selected_note={this.props.selected_note}
+        selectNote={this.props.selectNote}
+        // onClick={() => this.props.selectNote(notes.note_id)}
       />
     )
   }
