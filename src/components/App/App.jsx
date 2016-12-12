@@ -18,13 +18,18 @@ export default class App extends React.Component {
       topics: [],
       topic_id: '',
       selected_topic: '',
+
       notes: [],
       note_id: '',
       selected_note: 0,
-      selected_note_content: '',
+      selected_note_object: {test: "test"},
+      selected_note_content: [],
+
       editor_note: {},
-      editor_save_note: []
+      editor_save_note: [],
     };
+
+    this.filterNote = this.filterNote.bind(this);
   }
 
   // getTopicNotes() displays the notes associated to a selected topic
@@ -62,25 +67,60 @@ export default class App extends React.Component {
     .catch(err => console.log(err));
   }
 
+  getNoteData(collection) {
+    // return collection.map((note, index) =>
+    //   )
+  }
+
+  // getNoteContent() {
+  //   let notesTimer = setTimeout(function() {
+  //     const objValues = Object.values(this.state.selected_note_object)[4];
+  //     // console.log('in app.jsx selectedNoteId/// ', Object.values(this.state.selected_note_object)[4]);
+  //     const noteInObj = Object.values(objValues)[0];
+  //     // console.log('obj in obj ', noteInObj);
+  //     this.setState({
+  //       selected_note_content: noteInObj
+  //     })
+  //     console.log('selected_note_content ==== ', this.state.selected_note_content);
+
+  //   }, 1000);
+  // }
+
+  filterNote(x) {
+    // console.log('topic in toplicList ', topics[0]);
+          // key={index}
+          // onClick={() => this.props.getTopicNotes(index)}
+          // content={topic.note[0].text}
+          // cohort={topic.cohort_id}
+    const noteContent = x;
+    console.log('note content ', noteContent.title);
+    // console.log('keys! ', Object.keys(noteContent));
+  }
+
   selectNote(e) {
     let selectedNote = Number.parseInt(e.target.id);
     // console.log('testing target select note id: ', selectedNote);
+
     this.setState({
       selected_note: selectedNote,
-      selected_note_content: this.state.notes[selectedNote - 1],
+      selected_note_object: this.state.notes[selectedNote - 1],
     });
+    console.log('selected note is ==> ', this.state.selected_note_object);
+    // console.log('note ID is ==> ', this.state.note_id);
     // console.log('notes array ', this.state.notes[selectedNote - 1])
     // console.log('selected notes num ', this.state.selected_note)
-    // console.log('in app.jsx selectedNoteId/// ', this.state.selected_note_content);
-  }
+    // const objValues = Object.values(this.state.selected_note_object)[4];
+    // // console.log('in app.jsx selectedNoteId/// ', Object.values(this.state.selected_note_object)[4]);
+    // const noteInObj = Object.values(objValues)[0];
+    // // console.log('obj in obj ', noteInObj);
 
-  // saveEditorNote(e){
-    // this.props.saveNewNote(editor_note);
-    // console.log('editor_note for SAVE is: ', this.state.editor_note);
     // this.setState({
-    //   editor_save_note: this.state.editor_note
+    //   selected_note_content: noteInObj
     // })
-  // }
+    // console.log('selected_note_content ==== ', this.state.selected_note_content);
+    // getNoteContent();
+    this.filterNote(this.state.selected_note_object);
+  }
 
   render(){
     return(
@@ -109,7 +149,9 @@ export default class App extends React.Component {
               notes={this.state.notes}
               note_id={this.state.note_id}
               selected_note={this.state.selected_note}
+              selected_note_object={this.state.selected_note_object}
               selected_note_content={this.state.selected_note_content}
+              // getNoteContent={this.getNoteContent.bind(this)}
             />
             <DisplayNewNote
               editor_note={this.state.editor_note}

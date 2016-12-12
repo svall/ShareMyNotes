@@ -36,8 +36,8 @@ function getOneTopic(req, res, next) {
 function saveNewNote(req, res, next) {
   // const topic = 2;
   // const content = 'this is the first note';
-  db.none(`INSERT INTO notes (content, topic_id)
-    VALUES ($/content/, $/topic_id/)
+  db.none(`INSERT INTO notes (title, content, topic_id)
+    VALUES ($/title/, $/content/, $/topic_id/)
     ;`, req.body)
   .then(() => {
     // res.newnote = newnote;
@@ -47,10 +47,25 @@ function saveNewNote(req, res, next) {
   .catch(error => next(error));
 }
 
+function getOneNote(req, res, next) {
+  const noteID = Number.parseInt(req.params.noteID);
+  db.one(`
+    SELECT *
+    FROM notes
+    WHERE id = $1
+    ;`, noteID)
+    .then((note) => {
+      res.note = note;
+      console.log('in model notes ===== ', res.note)
+      next();
+    })
+    .catch(error => next(error));
+}
+
 
 module.exports = {
   getAllTopics,
   getOneTopic,
-  // getLastNoteID,
+  getOneNote,
   saveNewNote
 };

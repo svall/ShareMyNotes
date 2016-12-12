@@ -10,7 +10,8 @@ export default class DisplayNewNote extends React.Component {
     this.state = {
       editorState: EditorState.createEmpty(),
       // contentState: ContentState,
-      new_note_id: 0
+      // new_note_id: 0
+      title: ''
     };
     // console.log(this.state.editorState)
   }
@@ -25,7 +26,13 @@ export default class DisplayNewNote extends React.Component {
     // console.log('editor_note is: ', this.state.editor_note);
   }
 
-  saveEditorNote(editor_note){
+  addTitle(e) {
+    this.setState({
+      title: e.target.value
+    })
+  }
+
+  saveEditorNote(e){
     // this.props.saveNewNote(editor_note);
     // console.log('clicked save note');
     // console.log('clicked SAVE note: ', this.state.editor_note);
@@ -40,6 +47,7 @@ export default class DisplayNewNote extends React.Component {
         content: thisraw,
         // content: this.state.editorState.toJS(),
         topic_id: this.props.topic_id,
+        title: this.state.title
       })
     })
     .then(this.setState({
@@ -113,9 +121,12 @@ export default class DisplayNewNote extends React.Component {
     return(
       <div className="newNoteContainer">
         {/*<button onClick={this.props.saveEditorNote.bind(this)}>SAVE!</button>*/}
+        <form>
         <button onClick={this.saveEditorNote.bind(this)}>SAVE!</button>
         <h5 id="newNoteHeader">Display New Note</h5>
         <h5 id="newNoteTopic">Topic: {this.props.topic_id}</h5>
+          <input type="text" name="title" placeholder="Enter Title" onChange={this.addTitle.bind(this)}/>
+        </form>
         {/*<h2>{this.props.params.repoName}</h2>*/}
         <div className="displayNewNoteContent">
           <button onClick={() => {this.makeBold();}}>B</button>
