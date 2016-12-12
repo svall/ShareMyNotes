@@ -7,13 +7,24 @@ import { Editor, EditorState, RichUtils, convertFromRaw, convertToRaw } from 'dr
 export default class DisplayNewNote extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { editorState: EditorState.createEmpty()};
+    this.state = {
+      editorState: EditorState.createEmpty()
+    };
     // console.log(this.state.editorState)
   }
 
   onChange(editorState) {
-    this.setState({editorState});
-    // console.log(this.state.editorState);
+    this.setState({
+      editorState,
+      editor_note: this.state.editorState.toJS().currentContent.blockMap
+    });
+    // console.log('on change ', this.state.editorState);
+    // console.log('editor_note is: ', this.state.editor_note);
+  }
+
+  saveEditorNote(editor_note){
+    this.props.saveNewNote(editor_note);
+    console.log('editor_note is: ', editor_note);
   }
 
   makeBold() {
@@ -39,7 +50,10 @@ export default class DisplayNewNote extends React.Component {
 
   render() {
     const current = this.state.editorState.toJS();
-    // console.log(current.currentContent.blockMap);
+    const editor_noteS = this.state.editor_note;
+    // console.log('editorState full is === ', current);
+    console.log('editorNOTE is === ', editor_noteS);
+    // console.log('Current Content each block ==== ', current.currentContent.blockMap);
     // const arr = [];
     // arr.push(current.currentContent.blockMap)
     // console.log(arr)
@@ -57,17 +71,18 @@ export default class DisplayNewNote extends React.Component {
           <button onClick={() => {this.makeBold();}}>B</button>
           <button onClick={() => {this.makeItalic();}}>I</button>
           <button onClick={() => {this.makeUnderline();}}>U</button>
-          <div className="editorContainer" style={{ backgroundColor: 'white', width: '98%', height: '100%', border: '1px solid black' }}>
+          <div className="editorContainer" style={{ backgroundColor: 'white', width: '100%', height: '100%', border: '1px solid black' }}>
             <Editor
               className="editorBox"
               onChange={(editorState) => { this.onChange(editorState) }}
               editorState={this.state.editorState}
+
               // placeholder="This is the editor"
             />
           </div>
         </div>
         <div>
-          {/*{jsonedRaw}*/}
+          {jsonedRaw}
         </div>
       </div>
     )

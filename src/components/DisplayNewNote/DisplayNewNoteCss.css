@@ -1,7 +1,7 @@
 .newNoteContainer {
   border: 2px solid green;
   width: 48%;
-  height: 93%;
+  /*height: 93%;*/
   padding-top: 10px;
   /*text-align: center;*/
 }

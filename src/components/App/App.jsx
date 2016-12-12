@@ -21,7 +21,8 @@ export default class App extends React.Component {
       notes: [],
       note_id: '',
       selected_note: 0,
-      selected_note_content: ''
+      selected_note_content: '',
+      editor_note: []
     };
   }
 
@@ -67,10 +68,16 @@ export default class App extends React.Component {
       selected_note: selectedNote,
       selected_note_content: this.state.notes[selectedNote - 1],
     });
-    console.log('notes array ', this.state.notes[selectedNote - 1])
-    console.log('selected notes num ', this.state.selected_note)
+    // console.log('notes array ', this.state.notes[selectedNote - 1])
+    // console.log('selected notes num ', this.state.selected_note)
     // console.log('in app.jsx selectedNoteId/// ', this.state.selected_note_content);
   }
+
+  // saveNewNote(e) {
+  //   this.setState({
+  //     editor_note:
+  //   })
+  // }
 
   render(){
     return(
@@ -84,8 +91,6 @@ export default class App extends React.Component {
               getAllTopics={this.getAllTopics.bind(this)}
               topics={this.state.topics}
               getTopicNotes={this.getTopicNotes.bind(this)}
-              /*<div><NavLink to="/topic">Topic List</NavLink></div>*/
-              /*<li><Link to="/topicItem" activeStyle={{ color: 'red' }}>Topic Items</Link></li>*/
             />
             <NoteSnippetList
               topics={this.state.topics}
@@ -103,7 +108,9 @@ export default class App extends React.Component {
               selected_note={this.state.selected_note}
               selected_note_content={this.state.selected_note_content}
             />
-            <DisplayNewNote />
+            <DisplayNewNote
+              editor_note={this.state.editor_note}
+            />
           </div>
         </div>
         {this.props.children}
@@ -111,7 +118,4 @@ export default class App extends React.Component {
     )
   }
 }
-          // <DisplayNoteContainer
-            /*<div><NavLink to="/oldNote">Saved Note</NavLink></div>*/
-            /*<div><NavLink to="/newNote">New Note</NavLink></div>*/
-          // />
+
