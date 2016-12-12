@@ -34,12 +34,14 @@ function getOneTopic(req, res, next) {
 
 
 function saveNewNote(req, res, next) {
-  const topic = 2;
-  const content = 'this is the first note';
+  // const topic = 2;
+  // const content = 'this is the first note';
   db.none(`INSERT INTO notes (content, topic_id)
-    VALUES ($1, $2)
-    ;`, [content, topic])
+    VALUES ($/content/, $/topic_id/)
+    ;`, req.body)
   .then(() => {
+    // res.newnote = newnote;
+    console.log('this is the post ', req.body);
     next();
   })
   .catch(error => next(error));

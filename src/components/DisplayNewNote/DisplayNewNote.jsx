@@ -17,7 +17,8 @@ export default class DisplayNewNote extends React.Component {
   onChange(editorState) {
     this.setState({
       editorState,
-      editor_note: this.state.editorState.toJS().currentContent.blockMap
+      editor_note: this.state.editorState.toJS().currentContent.blockMap,
+      // editor_note: this.state.editorState.toJS()
     });
     // console.log('on change ', this.state.editorState);
     // console.log('editor_note is: ', this.state.editor_note);
@@ -26,7 +27,7 @@ export default class DisplayNewNote extends React.Component {
   saveEditorNote(editor_note){
     // this.props.saveNewNote(editor_note);
     // console.log('clicked save note');
-    console.log('clicked SAVE note: ', this.state.editor_note);
+    // console.log('clicked SAVE note: ', this.state.editor_note);
 
     fetch(`/api/cohort/newnote`, {
       headers: {
@@ -39,10 +40,11 @@ export default class DisplayNewNote extends React.Component {
       })
     })
     .then(this.setState({
-        editorState: EditorState.createEmpty(),
+        // editorState: EditorState.createEmpty(),
     }))
     // .then(this.getAllGardens())
     .catch(err => console.log(err));
+    console.log('clicked SAVE note: ', this.state.editor_note)
   }
 
 

@@ -23,7 +23,7 @@ CREATE TABLE topics (
 CREATE TABLE notes (
   id SERIAL PRIMARY KEY,
   title VARCHAR,
-  content TEXT,
+  content JSON,
   topic_id INT NOT NULL,
   student_id INT,
   teacher_id INT,

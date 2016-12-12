@@ -22,7 +22,7 @@ export default class App extends React.Component {
       note_id: '',
       selected_note: 0,
       selected_note_content: '',
-      editor_note: [],
+      editor_note: {},
       editor_save_note: []
     };
   }
