@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import DisplayNewNoteCss from './DisplayNewNoteCss.css'
-import { Editor, EditorState, RichUtils, convertFromRaw, convertToRaw } from 'draft-js'
+import { Editor, EditorState, RichUtils, convertFromRaw, Entity, convertToRaw, ContentState, DefaultDraftBlockRenderMap, Modifier } from 'draft-js'
 
 // export default React.createClass({
 export default class DisplayNewNote extends React.Component {
@@ -9,6 +9,7 @@ export default class DisplayNewNote extends React.Component {
     super(props);
     this.state = {
       editorState: EditorState.createEmpty(),
+      // contentState: ContentState,
       new_note_id: 0
     };
     // console.log(this.state.editorState)
@@ -17,10 +18,10 @@ export default class DisplayNewNote extends React.Component {
   onChange(editorState) {
     this.setState({
       editorState,
-      editor_note: this.state.editorState.toJS().currentContent.blockMap,
-      // editor_note: this.state.editorState.toJS()
+      // editor_note: this.state.editorState.toJS().currentContent.blockMap,
+      // editor_note: this.state.editorState
     });
-    // console.log('on change ', this.state.editorState);
+    // console.log('basic editorState: ', this.state.editorState);
     // console.log('editor_note is: ', this.state.editor_note);
   }
 
@@ -28,14 +29,16 @@ export default class DisplayNewNote extends React.Component {
     // this.props.saveNewNote(editor_note);
     // console.log('clicked save note');
     // console.log('clicked SAVE note: ', this.state.editor_note);
-
+    const thisraw = convertToRaw(this.state.editorState.getCurrentContent());
+    // const toJSData = this.state.editorState.toJS();
     fetch(`/api/cohort/newnote`, {
       headers: {
         'Content-Type': 'application/json'
       },
       method: 'POST',
       body: JSON.stringify({
-        content: this.props.editor_note,
+        content: thisraw,
+        // content: this.state.editorState.toJS(),
         topic_id: this.props.topic_id,
       })
     })
@@ -44,7 +47,7 @@ export default class DisplayNewNote extends React.Component {
     }))
     // .then(this.getAllGardens())
     .catch(err => console.log(err));
-    console.log('clicked SAVE note: ', this.state.editor_note)
+    // console.log('clicked SAVE note: ', this.state.editorState)
   }
 
 
@@ -75,17 +78,35 @@ export default class DisplayNewNote extends React.Component {
 
 
   render() {
-    const current = this.state.editorState.toJS();
-    const editor_noteS = this.state.editor_note;
-    // console.log('editorState full is === ', current);
-    console.log('editorNOTE is === ', editor_noteS);
+    const toJSData = this.state.editorState.toJS();
+    const newJS = JSON.stringify(toJSData);
+    // console.log('toJS() editorState full is === ', newJS);
+
+    // const thisraw = convertToRaw(this.state.editorState.getCurrentContent());
+    // console.log('TO raw conversion ', thisraw);
+
+    // const fromRaw = convertFromRaw(this.state.editorState.getCurrentContent());
+    // console.log('FROM raw conversion ', fromRaw);
+
+    const jsObject = JSON.parse(newJS);
+    // console.log('jsObject ', jsObject);
+    // const contentState = new ContentState(jsObject);
+
+    // console.log('content state ', contentState);
+    // console.log('contentState ', contentState);
+
+    // const toRawData = this.state.editorState.convertToRaw();
+    // console.log('toRAW() editorState full is === ', toRawData);
+
+    // const editor_noteS = this.state.editor_note;
+    // console.log('editorNOTE is === ', editor_noteS);
     // console.log('Current Content each block ==== ', current.currentContent.blockMap);
     // const arr = [];
     // arr.push(current.currentContent.blockMap)
     // console.log(arr)
-    const raw = convertToRaw(this.state.editorState.getCurrentContent());
+    // const raw = convertToRaw(this.state.editorState.getCurrentContent());
     // console.log(this.state.editorState.getCurrentContent());
-    const jsonedRaw = JSON.stringify(raw);
+    // const jsonedRaw = JSON.stringify(raw);
     // console.log(this.state.editorState);
     // console.log(jsonedRaw);
 

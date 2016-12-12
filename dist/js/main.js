@@ -8613,22 +8613,40 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplayNewNoteCss=__webpack_require__(/*! ./DisplayNewNoteCss.css */ 251);var _DisplayNewNoteCss2=_interopRequireDefault(_DisplayNewNoteCss);var _draftJs=__webpack_require__(/*! draft-js */ 252);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
-	var DisplayNewNote=function(_React$Component){_inherits(DisplayNewNote,_React$Component);function DisplayNewNote(props){_classCallCheck(this,DisplayNewNote);var _this=_possibleConstructorReturn(this,(DisplayNewNote.__proto__||Object.getPrototypeOf(DisplayNewNote)).call(this,props));_this.state={editorState:_draftJs.EditorState.createEmpty(),new_note_id:0};// console.log(this.state.editorState)
-	return _this;}_createClass(DisplayNewNote,[{key:'onChange',value:function onChange(editorState){this.setState({editorState:editorState,editor_note:this.state.editorState.toJS().currentContent.blockMap});// console.log('on change ', this.state.editorState);
+	var DisplayNewNote=function(_React$Component){_inherits(DisplayNewNote,_React$Component);function DisplayNewNote(props){_classCallCheck(this,DisplayNewNote);var _this=_possibleConstructorReturn(this,(DisplayNewNote.__proto__||Object.getPrototypeOf(DisplayNewNote)).call(this,props));_this.state={editorState:_draftJs.EditorState.createEmpty(),// contentState: ContentState,
+	new_note_id:0};// console.log(this.state.editorState)
+	return _this;}_createClass(DisplayNewNote,[{key:'onChange',value:function onChange(editorState){this.setState({editorState:editorState});// console.log('basic editorState: ', this.state.editorState);
 	// console.log('editor_note is: ', this.state.editor_note);
 	}},{key:'saveEditorNote',value:function saveEditorNote(editor_note){// this.props.saveNewNote(editor_note);
 	// console.log('clicked save note');
 	// console.log('clicked SAVE note: ', this.state.editor_note);
-	fetch('/api/cohort/newnote',{headers:{'Content-Type':'application/json'},method:'POST',body:JSON.stringify({content:this.props.editor_note,topic_id:this.props.topic_id})}).then(this.setState({// editorState: EditorState.createEmpty(),
+	var thisraw=(0,_draftJs.convertToRaw)(this.state.editorState.getCurrentContent());// const toJSData = this.state.editorState.toJS();
+	fetch('/api/cohort/newnote',{headers:{'Content-Type':'application/json'},method:'POST',body:JSON.stringify({content:thisraw,// content: this.state.editorState.toJS(),
+	topic_id:this.props.topic_id})}).then(this.setState({// editorState: EditorState.createEmpty(),
 	}))// .then(this.getAllGardens())
-	.catch(function(err){return console.log(err);});console.log('clicked SAVE note: ',this.state.editor_note);}// ========= TEXT STYLING BUTTONS ==========
-	},{key:'makeBold',value:function makeBold(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'BOLD'));}},{key:'makeItalic',value:function makeItalic(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'ITALIC'));}},{key:'makeUnderline',value:function makeUnderline(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'UNDERLINE'));}},{key:'render',value:function render(){var _this2=this;var current=this.state.editorState.toJS();var editor_noteS=this.state.editor_note;// console.log('editorState full is === ', current);
-	console.log('editorNOTE is === ',editor_noteS);// console.log('Current Content each block ==== ', current.currentContent.blockMap);
+	.catch(function(err){return console.log(err);});// console.log('clicked SAVE note: ', this.state.editorState)
+	}// ========= TEXT STYLING BUTTONS ==========
+	},{key:'makeBold',value:function makeBold(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'BOLD'));}},{key:'makeItalic',value:function makeItalic(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'ITALIC'));}},{key:'makeUnderline',value:function makeUnderline(){this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState,'UNDERLINE'));}},{key:'render',value:function render(){var _this2=this;var toJSData=this.state.editorState.toJS();var newJS=JSON.stringify(toJSData);// console.log('toJS() editorState full is === ', newJS);
+	// const thisraw = convertToRaw(this.state.editorState.getCurrentContent());
+	// console.log('TO raw conversion ', thisraw);
+	// const fromRaw = convertFromRaw(this.state.editorState.getCurrentContent());
+	// console.log('FROM raw conversion ', fromRaw);
+	var jsObject=JSON.parse(newJS);// console.log('jsObject ', jsObject);
+	// const contentState = new ContentState(jsObject);
+	// console.log('content state ', contentState);
+	// console.log('contentState ', contentState);
+	// const toRawData = this.state.editorState.convertToRaw();
+	// console.log('toRAW() editorState full is === ', toRawData);
+	// const editor_noteS = this.state.editor_note;
+	// console.log('editorNOTE is === ', editor_noteS);
+	// console.log('Current Content each block ==== ', current.currentContent.blockMap);
 	// const arr = [];
 	// arr.push(current.currentContent.blockMap)
 	// console.log(arr)
-	var raw=(0,_draftJs.convertToRaw)(this.state.editorState.getCurrentContent());// console.log(this.state.editorState.getCurrentContent());
-	var jsonedRaw=JSON.stringify(raw);// console.log(this.state.editorState);
+	// const raw = convertToRaw(this.state.editorState.getCurrentContent());
+	// console.log(this.state.editorState.getCurrentContent());
+	// const jsonedRaw = JSON.stringify(raw);
+	// console.log(this.state.editorState);
 	// console.log(jsonedRaw);
 	return _react2.default.createElement('div',{className:'newNoteContainer'},_react2.default.createElement('button',{onClick:this.saveEditorNote.bind(this)},'SAVE!'),_react2.default.createElement('h5',{id:'newNoteHeader'},'Display New Note'),_react2.default.createElement('h5',{id:'newNoteTopic'},'Topic: ',this.props.topic_id),_react2.default.createElement('div',{className:'displayNewNoteContent'},_react2.default.createElement('button',{onClick:function onClick(){_this2.makeBold();}},'B'),_react2.default.createElement('button',{onClick:function onClick(){_this2.makeItalic();}},'I'),_react2.default.createElement('button',{onClick:function onClick(){_this2.makeUnderline();}},'U'),_react2.default.createElement('div',{className:'editorContainer',style:{backgroundColor:'white',width:'100%',height:'100%',border:'1px solid black',overloadY:'scroll'}},_react2.default.createElement(_draftJs.Editor,{className:'editorBox',onChange:function onChange(editorState){_this2.onChange(editorState);},editorState:this.state.editorState// placeholder="Type notes here..."
 	}))),_react2.default.createElement('div',null));}}]);return DisplayNewNote;}(_react2.default.Component);exports.default=DisplayNewNote;

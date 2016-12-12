@@ -27,6 +27,6 @@ VALUES
 
 INSERT INTO notes(title, content, topic_id, student_id)
 VALUES
-  ('Bobby Ruby calss', 'This are the notes from Bobbys first Ruby class', 1, 1),
-  ('10/2 Ruby calss 1', 'First ruby notes', 1, 2),
-  ('Javascript 101', 'JS and jquery', 2, 2);
+  ('Bobby Ruby calss', '{"BobbyClass": "This are the notes from Bobbys first Ruby class"}', 1, 1),
+  ('10/2 Ruby calss 1', '{"keyofnote": "First ruby notes"}', 1, 2),
+  ('Javascript 101', '{"keytwo": "JS and jquery"}', 2, 2);
