@@ -22,7 +22,8 @@ export default class App extends React.Component {
       note_id: '',
       selected_note: 0,
       selected_note_content: '',
-      editor_note: []
+      editor_note: [],
+      editor_save_note: []
     };
   }
 
@@ -73,10 +74,12 @@ export default class App extends React.Component {
     // console.log('in app.jsx selectedNoteId/// ', this.state.selected_note_content);
   }
 
-  // saveNewNote(e) {
-  //   this.setState({
-  //     editor_note:
-  //   })
+  // saveEditorNote(e){
+    // this.props.saveNewNote(editor_note);
+    // console.log('editor_note for SAVE is: ', this.state.editor_note);
+    // this.setState({
+    //   editor_save_note: this.state.editor_note
+    // })
   // }
 
   render(){
@@ -110,6 +113,8 @@ export default class App extends React.Component {
             />
             <DisplayNewNote
               editor_note={this.state.editor_note}
+              topic_id={this.state.topic_id}
+              // saveEditorNote={this.saveEditorNote.bind(this)}
             />
           </div>
         </div>

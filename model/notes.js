@@ -33,8 +33,22 @@ function getOneTopic(req, res, next) {
 }
 
 
+function saveNewNote(req, res, next) {
+  const topic = 2;
+  const content = 'this is the first note';
+  db.none(`INSERT INTO notes (content, topic_id)
+    VALUES ($1, $2)
+    ;`, [content, topic])
+  .then(() => {
+    next();
+  })
+  .catch(error => next(error));
+}
+
 
 module.exports = {
   getAllTopics,
   getOneTopic,
+  // getLastNoteID,
+  saveNewNote
 };

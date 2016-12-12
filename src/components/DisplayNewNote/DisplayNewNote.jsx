@@ -8,7 +8,8 @@ export default class DisplayNewNote extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      editorState: EditorState.createEmpty()
+      editorState: EditorState.createEmpty(),
+      new_note_id: 0
     };
     // console.log(this.state.editorState)
   }
@@ -23,10 +24,31 @@ export default class DisplayNewNote extends React.Component {
   }
 
   saveEditorNote(editor_note){
-    this.props.saveNewNote(editor_note);
-    console.log('editor_note is: ', editor_note);
+    // this.props.saveNewNote(editor_note);
+    // console.log('clicked save note');
+    console.log('clicked SAVE note: ', this.state.editor_note);
+
+    fetch(`/api/cohort/newnote`, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify({
+        content: this.props.editor_note,
+        topic_id: this.props.topic_id,
+      })
+    })
+    .then(this.setState({
+        editorState: EditorState.createEmpty(),
+    }))
+    // .then(this.getAllGardens())
+    .catch(err => console.log(err));
   }
 
+
+
+
+  // ========= TEXT STYLING BUTTONS ==========
   makeBold() {
     this.onChange(RichUtils.toggleInlineStyle(
       this.state.editorState,
@@ -48,6 +70,8 @@ export default class DisplayNewNote extends React.Component {
     ));
   }
 
+
+
   render() {
     const current = this.state.editorState.toJS();
     const editor_noteS = this.state.editor_note;
@@ -65,24 +89,26 @@ export default class DisplayNewNote extends React.Component {
 
     return(
       <div className="newNoteContainer">
+        {/*<button onClick={this.props.saveEditorNote.bind(this)}>SAVE!</button>*/}
+        <button onClick={this.saveEditorNote.bind(this)}>SAVE!</button>
         <h5 id="newNoteHeader">Display New Note</h5>
+        <h5 id="newNoteTopic">Topic: {this.props.topic_id}</h5>
         {/*<h2>{this.props.params.repoName}</h2>*/}
         <div className="displayNewNoteContent">
           <button onClick={() => {this.makeBold();}}>B</button>
           <button onClick={() => {this.makeItalic();}}>I</button>
           <button onClick={() => {this.makeUnderline();}}>U</button>
-          <div className="editorContainer" style={{ backgroundColor: 'white', width: '100%', height: '100%', border: '1px solid black' }}>
+          <div className="editorContainer" style={{ backgroundColor: 'white', width: '100%', height: '100%', border: '1px solid black', overloadY: 'scroll' }}>
             <Editor
               className="editorBox"
               onChange={(editorState) => { this.onChange(editorState) }}
               editorState={this.state.editorState}
-
-              // placeholder="This is the editor"
+              // placeholder="Type notes here..."
             />
           </div>
         </div>
         <div>
-          {jsonedRaw}
+          {/*{jsonedRaw}*/}
         </div>
       </div>
     )
