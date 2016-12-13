@@ -53,9 +53,9 @@ export default class DisplaySavedNote extends React.Component {
           title: data.title
         })
       console.log('fetch editor ', data)
-      const translated = (thisFROMraw);
+      // const translated = (thisFROMraw);
       // console.log('converted from ', translated)
-      const contentStateDisp = data.content;
+      // const contentStateDisp = data.content;
       // console.log('contentState ', contentStateDisp)
       })
       .catch(err => console.log(err));

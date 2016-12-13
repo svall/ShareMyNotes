@@ -13504,8 +13504,10 @@
 	// console.log('clicked SAVE note: ', this.state.editor_note);
 	// const thisFROMraw = convertFROMRaw(this.state.editorState.getCurrentContent());
 	// const toJSData = this.state.editorState.toJS();
-	fetch('/api/cohort/notes/'+this.props.selected_note).then(function(r){return r.json();}).then(function(data){var contentState=(0,_draftJs.convertFromRaw)(data.content);_this2.setState({editorState:_draftJs.EditorState.createWithContent(contentState),title:data.title});console.log('fetch editor ',data);var translated=thisFROMraw;// console.log('converted from ', translated)
-	var contentStateDisp=data.content;// console.log('contentState ', contentStateDisp)
+	fetch('/api/cohort/notes/'+this.props.selected_note).then(function(r){return r.json();}).then(function(data){var contentState=(0,_draftJs.convertFromRaw)(data.content);_this2.setState({editorState:_draftJs.EditorState.createWithContent(contentState),title:data.title});console.log('fetch editor ',data);// const translated = (thisFROMraw);
+	// console.log('converted from ', translated)
+	// const contentStateDisp = data.content;
+	// console.log('contentState ', contentStateDisp)
 	}).catch(function(err){return console.log(err);});// //           // console.log('selected_note_content ', this.props.selected_note_content)
 	// //         savedNoteArr.push(data);
 	// //         console.log('data from note fetch ', savedNoteArr)
