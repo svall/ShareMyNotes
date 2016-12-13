@@ -29,7 +29,7 @@ export default class App extends React.Component {
       editor_save_note: [],
     };
 
-    this.filterNote = this.filterNote.bind(this);
+    // this.filterNote = this.filterNote.bind(this);
   }
 
   // getTopicNotes() displays the notes associated to a selected topic

@@ -10,6 +10,9 @@ import type {RawDraftEntity} from 'RawDraftEntity';
 //   blocks: Array<RawDraftContentBlock>,
 //   entityMap: {[key: string]: RawDraftEntity},
 // };
+const divStyle = {
+  color: 'red',
+};
 
 export default class DisplaySavedNote extends React.Component {
   constructor(props) {
@@ -109,12 +112,14 @@ export default class DisplaySavedNote extends React.Component {
     return(
       <div className="savedNoteContainer">
         <h5 id="savedNoteHeader">Display Existing Note</h5><hr />
+        <div className="savedWrapper">
+          <label className="newNoteTitle">Note selected: #{this.props.selected_note}</label>
+        </div>
         <div className="titleButtonSaved">
           {/*<button onClick={this.props.saveEditorNote.bind(this)}>SAVE!</button>*/}
           <button className="displayNoteButton" onClick={this.getEditorNote.bind(this)}>SHOW NOTE</button><br /><br />
           {/*<h5 id="newNoteHeader">Display Saved Note</h5>*/}
-          {/*<h5 id="newNoteTopic">Id: {this.props.selected_note}</h5>*/}
-          <label id="newNoteHeader">Title: {this.state.title}</label><br /><br />
+          <label className="newNoteTitle" id="savedNoteTitle">Title: {this.state.title}</div></label><br /><br />
           {/*<h2>{this.props.params.repoName}</h2>*/}
         </div>
         <div className="displaySavedNoteContent">

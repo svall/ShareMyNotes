@@ -8,7 +8,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 550px;
+  height: 87vh;
 }
 
 .asideContainer {
@@ -78,7 +78,7 @@
 
 .displayNewNoteContent {
   /*background-color: purple;*/
-  height: 80%;
+  height: 75%;
   overflow-y: scroll;
 }
 .wrapperHeaderNewNote {
@@ -117,9 +117,9 @@
   margin-top: 5px;
 }
 
-.newNoteTopic {
-  /*margin: -10px 0;*/
-}
+
+
+
 .savedNoteContainer {
   /*border: 2px solid red;*/
   width: 47%;
@@ -135,25 +135,39 @@
   /*width: 80%;*/
   /*margin: auto;*/
   /*overflow-y: scroll;*/
-  height: 80%;
+  height: 75%;
   overflow-y: scroll;
   /*height: 90%;*/
 }
 .titleButtonSaved {
   /*background-color: pink;*/
-  padding: 10px 0;
+  /*padding: 1px 0;*/
   text-align: center;
+  margin: 0 0 -3px 0;
   /*margin-bottom: 6px;*/
 }
 .displayNoteButton {
   font-size: 13px;
-  margin: 10px;
+  margin-top: 10px;
+  /*margin-bottom: 5px;*/
 }
 
 #savedNoteHeader {
   margin-top: 2px;
   margin-bottom: 5px;
   font-size: 20px;
+}
+
+#savedNoteTitle {
+  font-size: 20px;
+}
+
+.newNoteTitle {
+  /*margin: -10px 0;*/
+}
+.savedWrapper {
+  /*background-color: green;*/
+  padding: 5px 8px 10px 8px;
 }
 .noteListDiv {
   /*background-color: lightblue;*/

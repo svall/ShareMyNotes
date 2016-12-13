@@ -23,7 +23,7 @@ class NoteSnippetItem extends React.Component {
           value={this.props.note_id}
           onClick={(e) => this.props.selectNote(e)}
           // onMouseDown={'style={{ backgroundColor: 'red'}}'}
-          >{this.props.index} - {this.props.title}
+          >#{this.props.note_id} - {this.props.title}
         </p>
 
         {/*<button

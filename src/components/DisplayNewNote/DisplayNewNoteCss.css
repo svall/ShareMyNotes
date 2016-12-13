@@ -11,7 +11,7 @@
 
 .displayNewNoteContent {
   /*background-color: purple;*/
-  height: 80%;
+  height: 75%;
   overflow-y: scroll;
 }
 .wrapperHeaderNewNote {
@@ -50,6 +50,6 @@
   margin-top: 5px;
 }
 
-.newNoteTopic {
-  /*margin: -10px 0;*/
-}
+
+
+

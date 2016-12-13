@@ -5,10 +5,10 @@ import { Editor, EditorState, RichUtils, convertFromRaw, Entity, convertToRaw, C
 import type {RawDraftContentBlock} from 'RawDraftContentBlock';
 import type {RawDraftEntity} from 'RawDraftEntity';
 
-export type RawDraftContentState = {
-  blocks: Array<RawDraftContentBlock>,
-  entityMap: {[key: string]: RawDraftEntity},
-};
+// export type RawDraftContentState = {
+//   blocks: Array<RawDraftContentBlock>,
+//   entityMap: {[key: string]: RawDraftEntity},
+// };
 
 
 // export default React.createClass({
@@ -157,7 +157,7 @@ export default class DisplayNewNote extends React.Component {
               className="editorBox"
               onChange={(editorState) => { this.onChange(editorState) }}
               editorState={this.state.editorState}
-              // placeholder="Type notes here..."
+              placeholder='Start typing here...'
             />
           </div>
         </div>
