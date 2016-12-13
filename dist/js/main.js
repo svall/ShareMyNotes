@@ -8519,9 +8519,13 @@
 	// onClick={() => this.props.getTopicNotes(index)}
 	// content={topic.note[0].text}
 	// cohort={topic.cohort_id}
-	var noteContent=x;console.log('note content ',noteContent.title);// console.log('keys! ', Object.keys(noteContent));
+	// const noteContent = x;
+	// console.log('noteContent ', noteContent)
+	// console.log('note content ', noteContent.title);
+	// console.log('keys! ', Object.keys(noteContent));
 	}},{key:'selectNote',value:function selectNote(e){var selectedNote=Number.parseInt(e.target.id);// console.log('testing target select note id: ', selectedNote);
-	this.setState({selected_note:selectedNote,selected_note_object:this.state.notes[selectedNote-1]});console.log('selected note is ==> ',this.state.selected_note_object);// console.log('note ID is ==> ', this.state.note_id);
+	this.setState({selected_note:selectedNote});// console.log('selected note is ==> ', this.state.selected_note_object);
+	// console.log('note ID is ==> ', this.state.note_id);
 	// console.log('notes array ', this.state.notes[selectedNote - 1])
 	// console.log('selected notes num ', this.state.selected_note)
 	// const objValues = Object.values(this.state.selected_note_object)[4];
@@ -8533,7 +8537,8 @@
 	// })
 	// console.log('selected_note_content ==== ', this.state.selected_note_content);
 	// getNoteContent();
-	this.filterNote(this.state.selected_note_object);}},{key:'render',value:function render(){var _this4=this;return _react2.default.createElement('container',null,_react2.default.createElement('div',{role:'nav'},_react2.default.createElement(_Header2.default,null)),_react2.default.createElement('div',{className:'appContainer'},_react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement(_TopicList2.default,{getAllTopics:this.getAllTopics.bind(this),topics:this.state.topics,getTopicNotes:this.getTopicNotes.bind(this)}),_react2.default.createElement(_NoteSnippetList2.default,{topics:this.state.topics,topic_id:this.state.topic_id,notes:this.state.notes,note_id:this.state.note_id,selected_note:this.state.selected_note,selectNote:function selectNote(event){return _this4.selectNote(event);}})),_react2.default.createElement('div',{className:'savedNewNoteContainer'},_react2.default.createElement(_DisplaySavedNote2.default,{notes:this.state.notes,note_id:this.state.note_id,selected_note:this.state.selected_note,selected_note_object:this.state.selected_note_object,selected_note_content:this.state.selected_note_content// getNoteContent={this.getNoteContent.bind(this)}
+	// this.filterNote(this.state.selected_note_object);
+	}},{key:'render',value:function render(){var _this4=this;return _react2.default.createElement('container',null,_react2.default.createElement('div',{role:'nav'},_react2.default.createElement(_Header2.default,null)),_react2.default.createElement('div',{className:'appContainer'},_react2.default.createElement('div',{className:'asideContainer'},_react2.default.createElement(_TopicList2.default,{getAllTopics:this.getAllTopics.bind(this),topics:this.state.topics,getTopicNotes:this.getTopicNotes.bind(this)}),_react2.default.createElement(_NoteSnippetList2.default,{topics:this.state.topics,topic_id:this.state.topic_id,notes:this.state.notes,note_id:this.state.note_id,selected_note:this.state.selected_note,selectNote:function selectNote(event){return _this4.selectNote(event);}})),_react2.default.createElement('div',{className:'savedNewNoteContainer'},_react2.default.createElement(_DisplaySavedNote2.default,{notes:this.state.notes,note_id:this.state.note_id,selected_note:this.state.selected_note,selected_note_object:this.state.selected_note_object,selected_note_content:this.state.selected_note_content// getNoteContent={this.getNoteContent.bind(this)}
 	}),_react2.default.createElement(_DisplayNewNote2.default,{editor_note:this.state.editor_note,topic_id:this.state.topic_id// saveEditorNote={this.saveEditorNote.bind(this)}
 	}))),this.props.children);}}]);return App;}(_react2.default.Component);exports.default=App;
 
@@ -13488,17 +13493,25 @@
   \**************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNote=__webpack_require__(/*! ./DisplaySavedNote.css */ 387);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_react2.default.createClass({displayName:'DisplaySavedNote',// getNoteContent() {
-	//   fetch(`/api/cohort/notes/${this.props.selected_note}`)
-	//     .then(r => r.json())
-	//     .then((data) => {
-	//       this.setState({
-	//         selected_note_content: data[0].id,
-	//       });
-	//     })
-	//     .catch(err => console.log(err));
-	// }
-	// showNote(note) {
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNote=__webpack_require__(/*! ./DisplaySavedNote.css */ 387);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// function getNoteContent() {
+	//   console.log('entered click to fetch');
+	//   const savedNoteArr = [];
+	//   const savedContent = [];
+	//     fetch(`/api/cohort/notes/12`)
+	//       .then(r => r.json())
+	//       .then((data) => {
+	//         // this.props.setState({
+	//         //   selected_note_content: data,
+	//         // });
+	//       savedNoteArr.push(data);
+	//       console.log('data from note fetch ', savedNoteArr)
+	//       savedContent.push(Object.values(data)[2]);
+	//       console.log('data digged => ', savedContent[0]);
+	//       console.log('title??? ', savedNoteArr[0].title)
+	//       })
+	//       .catch(err => console.log(err));
+	//   }
+	exports.default=_react2.default.createClass({displayName:'DisplaySavedNote',// showNote(note) {
 	//   // console.log('topic in toplicList ', topics[0]);
 	//         // key={index}
 	//         // onClick={() => this.props.getTopicNotes(index)}
@@ -13509,7 +13522,27 @@
 	//     </p>
 	//   )
 	// }
-	render:function render(){return _react2.default.createElement('div',{className:'savedNoteContainer'},_react2.default.createElement('h5',null,'Display Saved Note'),_react2.default.createElement('div',{className:'displaySavedNoteContent'},_react2.default.createElement('h3',null,this.props.selected_note),_react2.default.createElement('p',null,'Title: ',this.props.selected_note_object.title),_react2.default.createElement('p',null,'Topic: ',this.props.selected_note_object.topic_name)));}// {this.props.selected_note_object.title}
+	// getNoteContent() {
+	// fetch(`/api/cohort/notes/12`)
+	//   .then(r => r.json())
+	//   .then((data) => {
+	//     // this.setState({
+	//     //   selected_note_content: data,
+	//     // });
+	//   console.log('data from note fetch ', data)
+	//   })
+	//   .catch(err => console.log(err));
+	// }
+	render:function render(){var savedNoteArr=[];var savedContent=[];var objKeys=[];var objValues=[];function getNoteContent(){console.log('entered click to fetch');fetch('/api/cohort/notes/12').then(function(r){return r.json();}).then(function(data){// this.setState({
+	//   selected_note_content: data,
+	// });
+	// console.log('selected_note_content ', this.props.selected_note_content)
+	savedNoteArr.push(data);console.log('data from note fetch ',savedNoteArr);savedContent.push(Object.values(data)[2]);console.log('data digged Values!!!=> ',savedContent[0]);// console.log('title??? ', savedNoteArr[0].title)
+	objKeys.push(Object.keys(data));console.log('keys!!! ',objKeys);}).catch(function(err){return console.log(err);});}function mappingObject(){}return _react2.default.createElement('div',{className:'savedNoteContainer'},_react2.default.createElement('h5',null,'Display Saved Note'),_react2.default.createElement('div',{className:'displaySavedNoteContent'},_react2.default.createElement('h3',null,this.props.selected_note),_react2.default.createElement('p',null,'Hi')),_react2.default.createElement('button',{onClick:getNoteContent},'GET!'));}// <h3>{this.savedNoteArr[0].title}</h3>
+	// <p>{this.props.notes[this.props.selected_note]}</p>
+	// <p>Topic: {this.props.selected_note_object.topic_name}</p>
+	// <p>Title: {this.props.selected_note_object.title}</p>
+	// {this.props.selected_note_object.title}
 	// <p>{this.props.selected_note_content}</p>
 	});
 

@@ -92,8 +92,9 @@ export default class App extends React.Component {
           // onClick={() => this.props.getTopicNotes(index)}
           // content={topic.note[0].text}
           // cohort={topic.cohort_id}
-    const noteContent = x;
-    console.log('note content ', noteContent.title);
+    // const noteContent = x;
+    // console.log('noteContent ', noteContent)
+    // console.log('note content ', noteContent.title);
     // console.log('keys! ', Object.keys(noteContent));
   }
 
@@ -103,9 +104,9 @@ export default class App extends React.Component {
 
     this.setState({
       selected_note: selectedNote,
-      selected_note_object: this.state.notes[selectedNote - 1],
+      // selected_note_object: this.state.notes[selectedNote - 1],
     });
-    console.log('selected note is ==> ', this.state.selected_note_object);
+    // console.log('selected note is ==> ', this.state.selected_note_object);
     // console.log('note ID is ==> ', this.state.note_id);
     // console.log('notes array ', this.state.notes[selectedNote - 1])
     // console.log('selected notes num ', this.state.selected_note)
@@ -119,7 +120,7 @@ export default class App extends React.Component {
     // })
     // console.log('selected_note_content ==== ', this.state.selected_note_content);
     // getNoteContent();
-    this.filterNote(this.state.selected_note_object);
+    // this.filterNote(this.state.selected_note_object);
   }
 
   render(){
