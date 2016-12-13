@@ -49,6 +49,9 @@
     "html-webpack-template": "^5.4.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-router": "^2.0.0",
+    "draft-js": "^0.9.1",
+    "draft-js-editor": "^1.8.5",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.3",
@@ -57,16 +60,10 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
-    "draft-js": "^0.9.1",
-    "draft-js-editor": "^1.8.5",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "node-fetch": "^1.6.3",
     "path": "^0.12.7",
-    "pg-promise": "^5.3.5",
-    "react": "^15.4.0",
-    "react-dom": "^15.4.0",
-    "react-router": "^2.0.0",
-    "redraft": "^0.7.0"
+    "pg-promise": "^5.3.5"
   }
 }
