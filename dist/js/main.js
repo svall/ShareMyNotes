@@ -13650,18 +13650,7 @@
 	// console.log(bttns);
 	// onClick(console.log("clicked!!!"));
 	}var NoteSnippetItem=function(_React$Component){_inherits(NoteSnippetItem,_React$Component);function NoteSnippetItem(){_classCallCheck(this,NoteSnippetItem);return _possibleConstructorReturn(this,(NoteSnippetItem.__proto__||Object.getPrototypeOf(NoteSnippetItem)).apply(this,arguments));}_createClass(NoteSnippetItem,[{key:'render',value:function render(){var _this2=this;return _react2.default.createElement('div',{className:'noteSnippet'},_react2.default.createElement('p',{className:'snippetTitle',id:this.props.note_id,value:this.props.note_id,onClick:function onClick(e){return _this2.props.selectNote(e);}// onMouseDown={'style={{ backgroundColor: 'red'}}'}
-	},'#',this.props.note_id,' - ',this.props.title));}}]);return NoteSnippetItem;}(_react2.default.Component);// const NoteSnippetItem = props => (
-	// export default React.createClass({
-	//   render() {
-	//     return(
-	//       <div className="noteSnippet">
-	//         <h5>Note Name: {this.props.title}</h5>
-	//         <button type="submit" value={this.props.title}>{this.props.title}</button>
-	//       </div>
-	//     )
-	//   }
-	// })
-	exports.default=NoteSnippetItem;// export default TopicListItem;
+	},'#',this.props.note_id,' - ',this.props.title));}}]);return NoteSnippetItem;}(_react2.default.Component);exports.default=NoteSnippetItem;
 
 /***/ },
 /* 387 */
