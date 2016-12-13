@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import DisplaySavedNoteCss from './DisplaySavedNoteCss.css'
+// import { Editor } from 'draft-js-editor'
 import { Editor, EditorState, RichUtils, convertFromRaw, Entity, convertToRaw, ContentState, DefaultDraftBlockRenderMap, Modifier } from 'draft-js'
 import type {RawDraftContentBlock} from 'RawDraftContentBlock';
 import type {RawDraftEntity} from 'RawDraftEntity';
@@ -15,9 +16,10 @@ export default class DisplaySavedNote extends React.Component {
     super(props);
     this.state = {
       editorState: EditorState.createEmpty(),
+      // editorState: EditorState.createWithContent(),
       // contentState: ContentState,
       // new_note_id: 0
-      // title: 'None'
+      title: ''
     };
     console.log(this.state.editorState)
   }
@@ -30,6 +32,7 @@ export default class DisplaySavedNote extends React.Component {
     });
     // console.log('basic editorState: ', this.state.editorState.toJS().currentContent.blockMap);
     console.log('basic editorState: ', this.state.editorState);
+    console.log('basic GetCurrentContent: ', this.state.editorState.getCurrentContent());
 
     // console.log('editor_note is: ', this.state.editor_note);
   }
@@ -43,15 +46,17 @@ export default class DisplaySavedNote extends React.Component {
     fetch(`/api/cohort/notes/${this.props.selected_note}`)
       .then(r => r.json())
       .then((data) => {
-        const thisFROMraw = data;
-        // this.setState({
-        //   editorState: data.toJS()
-        // })
+        const contentState = convertFromRaw(data.content);
+
+        this.setState({
+          editorState: EditorState.createWithContent(contentState),
+          title: data.title
+        })
       console.log('fetch editor ', data)
       const translated = (thisFROMraw);
-      console.log('converted from ', translated)
+      // console.log('converted from ', translated)
       const contentStateDisp = data.content;
-      console.log('contentState ', contentStateDisp)
+      // console.log('contentState ', contentStateDisp)
       })
       .catch(err => console.log(err));
 // //           // console.log('selected_note_content ', this.props.selected_note_content)
@@ -107,6 +112,7 @@ export default class DisplaySavedNote extends React.Component {
         <button onClick={this.getEditorNote.bind(this)}>GET!</button>
         <h5 id="newNoteHeader">Display New Note</h5>
         <h5 id="newNoteTopic">Id: {this.props.selected_note}</h5>
+        <h5 id="newNoteTopic">Title: {this.state.title}</h5>
         {/*<h2>{this.props.params.repoName}</h2>*/}
         <div className="displayNewNoteContent">
 

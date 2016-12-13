@@ -54,6 +54,7 @@
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
     "draft-js": "^0.9.1",
+    "draft-js-editor": "^1.8.5",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "node-fetch": "^1.6.3",
@@ -61,6 +62,7 @@
     "pg-promise": "^5.3.5",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "react-router": "^2.0.0"
+    "react-router": "^2.0.0",
+    "redraft": "^0.7.0"
   }
 }
