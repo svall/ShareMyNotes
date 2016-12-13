@@ -9,9 +9,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "watch": "webpack -d --progress --watch",
-    "heroku-prebuild": "scripts/deployment_react.sh",
-    "heroku-postbuild": "scripts/deployment_cleanup.sh",
-    "clean": "rm -rf dist && rm -rf node_modules"
+    "clean": "rm -rf dist && rm -rf node_modules",
+    "heroku-prebuild": "bash ./scripts/deployment_react.sh",
+    "heroku-postbuild": "bash ./scripts/deployment_cleanup.sh",
+    "rebuild": "webpack -d --progress --colors"
   },
   "repository": {
     "type": "git",
