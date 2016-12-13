@@ -10,6 +10,7 @@ import NoteSnippetItemCss from './NoteSnippetItemCss.css'
     // onClick(console.log("clicked!!!"));
   }
 
+
 class NoteSnippetItem extends React.Component {
 
   render() {
@@ -21,7 +22,8 @@ class NoteSnippetItem extends React.Component {
           id={this.props.note_id}
           value={this.props.note_id}
           onClick={(e) => this.props.selectNote(e)}
-          >{this.props.title} {this.props.note_id}
+          // onMouseDown={'style={{ backgroundColor: 'red'}}'}
+          >{this.props.index} - {this.props.title}
         </p>
 
         {/*<button

@@ -3,12 +3,12 @@
 }
 
 .appContainer {
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 500px;
+  height: 550px;
 }
 
 .asideContainer {
@@ -19,19 +19,12 @@
   width: 150px;
 }
 
-/*.noteContainerDisplay {
-  display: inline-block;
-  width: 350px;
-  height: 400px;
-  /*margin-left: 100px;*/
-/*  background-color: lightgreen;
-}*/
-
 .savedNewNoteContainer {
   /*background-color: orange;*/
   height: 100%;
-  width: 70%;
+  width: 78%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
 }

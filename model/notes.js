@@ -1,7 +1,11 @@
 const db = require('../lib/dbConnect');
 
 function getAllTopics(req, res, next) {
-  db.any('SELECT * FROM topics;')
+  // const cID = Number.parseInt(req.params.cohortID);
+  db.any(`
+    SELECT *
+    FROM topics;
+    `)
   .then((topics) => {
     res.topics = topics;
     // console.log('in model topics ===== ', res.topics)

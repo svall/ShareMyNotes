@@ -12,7 +12,7 @@ router.get('/:topicID', getOneTopic, (req, res) => {
 
 router.get('/notes/:noteID', getOneNote, (req, res) => {
   res.json(res.note || []);
-  console.log('in routes for topic id ', res.note);
+  // console.log('in routes for topic id ', res.note);
 });
 
 router.post('/newnote', saveNewNote, (req, res) => {

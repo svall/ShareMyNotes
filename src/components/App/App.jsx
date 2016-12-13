@@ -157,6 +157,7 @@ export default class App extends React.Component {
             <DisplayNewNote
               editor_note={this.state.editor_note}
               topic_id={this.state.topic_id}
+              topics={this.state.topics}
               // saveEditorNote={this.saveEditorNote.bind(this)}
             />
           </div>

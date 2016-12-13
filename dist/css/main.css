@@ -3,12 +3,12 @@
 }
 
 .appContainer {
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 500px;
+  height: 550px;
 }
 
 .asideContainer {
@@ -19,81 +19,148 @@
   width: 150px;
 }
 
-/*.noteContainerDisplay {
-  display: inline-block;
-  width: 350px;
-  height: 400px;
-  /*margin-left: 100px;*/
-/*  background-color: lightgreen;
-}*/
-
 .savedNewNoteContainer {
   /*background-color: orange;*/
   height: 100%;
-  width: 70%;
+  width: 78%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 .headerContainer {
-  background-color: lightgrey;
+  background-color: grey;
+  margin-top: -20px;
+  padding-left: 8px;
   /*height: 50px;*/
   /*width: 100px;*/
   /*display: inline-block;*/
 }
+
+#appHeader {
+  font-size: 40px;
+  color: white;
+}
 .topicListDiv {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   border: 1px solid black;
   /*width: 100px;*/
   display: inline-block;
+  text-align: center;
+  padding: 2px;
   /*height: 100px;*/
 }
-.topicItemContainer {
-  /*background-color: pink;*/
+
+.topicHeader {
+  /*margin-top: -10px;*/
+}
+
+.buttonTopics {
+  /*background-color: blue;*/
+  font-size: 11px;
+  /*margin: 0.2px;*/
+
+}
+
+.buttonTopics:active {
+  /*background-color: lightgreen;*/
 }
 .newNoteContainer {
-  border: 2px solid green;
-  width: 48%;
+  /*border: 2px solid green;*/
+  width: 47%;
+  margin: 0 0 0 15px;
+  padding: 0 2px;
   /*height: 93%;*/
-  padding-top: 10px;
+  /*padding-top: 10px;*/
+  /*overflow-y: scroll;*/
   /*text-align: center;*/
 }
 
 .displayNewNoteContent {
   /*background-color: purple;*/
   height: 80%;
+  overflow-y: scroll;
+}
+.wrapperHeaderNewNote {
+  /*background-color: blue;*/
+  margin-bottom: 10px;
+  padding: 5px 8px 0px 8px;
 }
 
 .editorBox {
   /*height: 200px;*/
   /*width: 20px;*/
 }
+.saveButton {
+  font-size: 13px;
+  margin: 13px 0 3px 0;
+  /*text-align: center;*/
+}
+
+#buttonDiv {
+  text-align: center;
+  margin: auto;
+}
 
 #newNoteHeader {
-  /*margin: auto;*/
-  text-align:center;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+ #titleInput {
+  font-size: 13px;
+  margin-left: 3px;
+  margin-bottom: 8px;
+ }
+
+#topicIdSave {
   margin-top: 5px;
 }
+
+.newNoteTopic {
+  /*margin: -10px 0;*/
+}
 .savedNoteContainer {
-  border: 2px solid red;
-  width: 48%;
+  /*border: 2px solid red;*/
+  width: 47%;
   /*height: 95%;*/
-  text-align: center;
+  /*text-align: center;*/
+  margin: 0 15px 0 0;
+  padding: 0 2px;
 }
 
 .displaySavedNoteContent {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   background: white;
-  width: 90%;
-  margin: auto;
+  /*width: 80%;*/
+  /*margin: auto;*/
+  /*overflow-y: scroll;*/
+  height: 80%;
+  overflow-y: scroll;
   /*height: 90%;*/
 }
+.titleButtonSaved {
+  /*background-color: pink;*/
+  padding: 10px 0;
+  text-align: center;
+  /*margin-bottom: 6px;*/
+}
+.displayNoteButton {
+  font-size: 13px;
+  margin: 10px;
+}
 
+#savedNoteHeader {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
 .noteListDiv {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   border: 1px solid black;
   width: 150px;
   display: inline-block;
+  text-align: center;
 
 }
 
@@ -103,8 +170,9 @@
   height: 200px;
 }
 .noteSnippet {
-  background-color: white;
-  border: 1px dotted black;
+  background-color: lightgrey;
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
   /*height: 18px;*/
   /*width: 30px;*/
   text-align: center;
@@ -112,7 +180,15 @@
 
 .snippetTitle {
   height: 15px;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.noteSnippet:hover {
+  background-color: rgb(254,250,180);
+}
+
+.noteSnippet:active {
+  background-color: lightgreen;
 }
 
 /*# sourceMappingURL=main.css.map*/

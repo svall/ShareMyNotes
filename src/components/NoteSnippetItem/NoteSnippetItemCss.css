@@ -1,6 +1,7 @@
 .noteSnippet {
-  background-color: white;
-  border: 1px dotted black;
+  background-color: lightgrey;
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
   /*height: 18px;*/
   /*width: 30px;*/
   text-align: center;
@@ -8,5 +9,13 @@
 
 .snippetTitle {
   height: 15px;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.noteSnippet:hover {
+  background-color: rgb(254,250,180);
+}
+
+.noteSnippet:active {
+  background-color: lightgreen;
 }

@@ -12,6 +12,7 @@ class NoteSnippetList extends React.Component {
     return this.props.notes.map((notes, key) =>
       <NoteSnippetItem
         key={key}
+        index={key + 1}
         title={notes.title}
         note_id={notes.note_id}
         notes={this.props.notes}
@@ -25,7 +26,7 @@ class NoteSnippetList extends React.Component {
   render() {
     return(
       <div className="noteListDiv">
-        <h2>Notes By Title</h2>
+        <h3>NOTES</h3>
         <div className="allNotesContainer">
           {this.showNotes(this.props.notes)}
         </div>

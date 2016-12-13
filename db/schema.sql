@@ -10,6 +10,7 @@ CREATE TABLE cohorts (
   id SERIAL PRIMARY KEY,
   name VARCHAR NOT NULL,
   admin VARCHAR NOT NULL,
+  password VARCHAR NOT NULL,
   date_created TIMESTAMP NOT NULL DEFAULT NOW()
 );
 

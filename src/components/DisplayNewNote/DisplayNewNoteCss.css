@@ -1,23 +1,55 @@
 .newNoteContainer {
-  border: 2px solid green;
-  width: 48%;
+  /*border: 2px solid green;*/
+  width: 47%;
+  margin: 0 0 0 15px;
+  padding: 0 2px;
   /*height: 93%;*/
-  padding-top: 10px;
+  /*padding-top: 10px;*/
+  /*overflow-y: scroll;*/
   /*text-align: center;*/
 }
 
 .displayNewNoteContent {
   /*background-color: purple;*/
   height: 80%;
+  overflow-y: scroll;
+}
+.wrapperHeaderNewNote {
+  /*background-color: blue;*/
+  margin-bottom: 10px;
+  padding: 5px 8px 0px 8px;
 }
 
 .editorBox {
   /*height: 200px;*/
   /*width: 20px;*/
 }
+.saveButton {
+  font-size: 13px;
+  margin: 13px 0 3px 0;
+  /*text-align: center;*/
+}
+
+#buttonDiv {
+  text-align: center;
+  margin: auto;
+}
 
 #newNoteHeader {
-  /*margin: auto;*/
-  text-align:center;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+ #titleInput {
+  font-size: 13px;
+  margin-left: 3px;
+  margin-bottom: 8px;
+ }
+
+#topicIdSave {
   margin-top: 5px;
+}
+
+.newNoteTopic {
+  /*margin: -10px 0;*/
 }

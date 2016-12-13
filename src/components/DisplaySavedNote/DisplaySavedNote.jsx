@@ -6,10 +6,10 @@ import { Editor, EditorState, RichUtils, convertFromRaw, Entity, convertToRaw, C
 import type {RawDraftContentBlock} from 'RawDraftContentBlock';
 import type {RawDraftEntity} from 'RawDraftEntity';
 
-export type RawDraftContentState = {
-  blocks: Array<RawDraftContentBlock>,
-  entityMap: {[key: string]: RawDraftEntity},
-};
+// export type RawDraftContentState = {
+//   blocks: Array<RawDraftContentBlock>,
+//   entityMap: {[key: string]: RawDraftEntity},
+// };
 
 export default class DisplaySavedNote extends React.Component {
   constructor(props) {
@@ -107,17 +107,20 @@ export default class DisplaySavedNote extends React.Component {
     // console.log(jsonedRaw);
 
     return(
-      <div className="newNoteContainer">
-        {/*<button onClick={this.props.saveEditorNote.bind(this)}>SAVE!</button>*/}
-        <button onClick={this.getEditorNote.bind(this)}>GET!</button>
-        <h5 id="newNoteHeader">Display New Note</h5>
-        <h5 id="newNoteTopic">Id: {this.props.selected_note}</h5>
-        <h5 id="newNoteTopic">Title: {this.state.title}</h5>
-        {/*<h2>{this.props.params.repoName}</h2>*/}
-        <div className="displayNewNoteContent">
-
-          <div className="editorContainer" style={{ backgroundColor: 'white', width: '100%', height: '100%', border: '1px solid black', overloadY: 'scroll' }}>
+      <div className="savedNoteContainer">
+        <h5 id="savedNoteHeader">Display Existing Note</h5><hr />
+        <div className="titleButtonSaved">
+          {/*<button onClick={this.props.saveEditorNote.bind(this)}>SAVE!</button>*/}
+          <button className="displayNoteButton" onClick={this.getEditorNote.bind(this)}>SHOW NOTE</button><br /><br />
+          {/*<h5 id="newNoteHeader">Display Saved Note</h5>*/}
+          {/*<h5 id="newNoteTopic">Id: {this.props.selected_note}</h5>*/}
+          <label id="newNoteHeader">Title: {this.state.title}</label><br /><br />
+          {/*<h2>{this.props.params.repoName}</h2>*/}
+        </div>
+        <div className="displaySavedNoteContent">
+          <div className="editorContainer" style={{ backgroundColor: 'white', width: '99.2%', border: '1px solid black' }}>
             <Editor
+              // style={{padding: '5px'}}
               className="editorBox"
               onChange={(editorState) => { this.onChange(editorState) }}
               editorState={this.state.editorState}

@@ -1,7 +1,24 @@
 .topicListDiv {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   border: 1px solid black;
   /*width: 100px;*/
   display: inline-block;
+  text-align: center;
+  padding: 2px;
   /*height: 100px;*/
+}
+
+.topicHeader {
+  /*margin-top: -10px;*/
+}
+
+.buttonTopics {
+  /*background-color: blue;*/
+  font-size: 11px;
+  /*margin: 0.2px;*/
+
+}
+
+.buttonTopics:active {
+  /*background-color: lightgreen;*/
 }

@@ -62,7 +62,10 @@ export default class DisplayNewNote extends React.Component {
         // editorState: EditorState.createEmpty(),
     }))
     // .then(this.getAllGardens())
-    .catch(err => console.log(err));
+    // .throw(alert('no id!'))
+    .catch((err) => {
+      console.log(err);
+    });
     // console.log('clicked SAVE note: ', this.state.editorState)
   }
 
@@ -129,18 +132,27 @@ export default class DisplayNewNote extends React.Component {
     return(
       <div className="newNoteContainer">
         {/*<button onClick={this.props.saveEditorNote.bind(this)}>SAVE!</button>*/}
-        <form>
-        <button onClick={this.saveEditorNote.bind(this)}>SAVE!</button>
-        <h5 id="newNoteHeader">Display New Note</h5>
-        <h5 id="newNoteTopic">Topic: {this.props.topic_id}</h5>
-          <input type="text" name="title" placeholder="Enter Title" onChange={this.addTitle.bind(this)}/>
-        </form>
+        <h5 id="newNoteHeader">Create New Note</h5><hr />
+
+        <div className="wrapperHeaderNewNote">
+          <form>
+            <label className="newNoteTopic">Note Title:
+              <input id="titleInput" type="text" name="title" placeholder="Enter Title" onChange={this.addTitle.bind(this)}/>
+            </label><br />
+            <label className="newNoteTopic" id="topicIdSave">Topic # (select Topic buttons): {this.props.topic_id}</label><br />
+            <div id="buttonDiv">
+              <button className="saveButton" onClick={this.saveEditorNote.bind(this)}>SAVE NOTE</button>
+            </div>
+          </form>
+        </div>
         {/*<h2>{this.props.params.repoName}</h2>*/}
-        <div className="displayNewNoteContent">
+        <div className="stylebuttons">
           <button onClick={() => {this.makeBold();}}>B</button>
           <button onClick={() => {this.makeItalic();}}>I</button>
           <button onClick={() => {this.makeUnderline();}}>U</button>
-          <div className="editorContainer" style={{ backgroundColor: 'white', width: '100%', height: '100%', border: '1px solid black', overloadY: 'scroll' }}>
+        </div>
+        <div className="displayNewNoteContent">
+          <div className="editorContainer" style={{ backgroundColor: 'rgb(254,250,180)', width: '99.2%', border: '1px solid black' }}>
             <Editor
               className="editorBox"
               onChange={(editorState) => { this.onChange(editorState) }}

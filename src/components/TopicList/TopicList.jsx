@@ -11,7 +11,7 @@ export default class TopicList extends React.Component {
   showTopics(topics) {
     // console.log('topic in toplicList ', topics[0]);
     return topics.map((topic, index) =>
-      <button key={index} onClick={() => this.props.getTopicNotes(index)}>
+      <button className="buttonTopics" key={index} onClick={() => this.props.getTopicNotes(index)}>
         <TopicListItem
           // key={index}
           // onClick={() => this.props.getTopicNotes(index)}
@@ -30,7 +30,7 @@ export default class TopicList extends React.Component {
   render() {
     return(
       <div className="topicListDiv">
-        <h2>Topic List</h2>
+        <h3 className="topicHeader">TOPICS</h3>
         <div>
           {this.showTopics(this.props.topics)}
         </div>

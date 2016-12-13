@@ -15,7 +15,7 @@ export default React.createClass({
   render() {
     return(
       <div className="headerContainer">
-        <h1>My Notes!!!</h1>
+        <h1 id="appHeader">DIAMONDS COHORT</h1>
         {this.props.children}
       </div>
     )
