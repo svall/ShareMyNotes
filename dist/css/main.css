@@ -43,7 +43,9 @@
 }
 .topicListDiv {
   /*background-color: lightblue;*/
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
   /*width: 100px;*/
   display: inline-block;
   text-align: center;
@@ -58,7 +60,7 @@
 .buttonTopics {
   /*background-color: blue;*/
   font-size: 11px;
-  /*margin: 0.2px;*/
+  margin: 0.5px;
 
 }
 
@@ -88,8 +90,7 @@
 }
 
 .editorBox {
-  /*height: 200px;*/
-  /*width: 20px;*/
+  /*padding: 20px;*/
 }
 .saveButton {
   font-size: 13px;
@@ -111,10 +112,15 @@
   font-size: 13px;
   margin-left: 3px;
   margin-bottom: 8px;
+  width: 180px;
  }
 
 #topicIdSave {
   margin-top: 5px;
+}
+
+#styleDiv {
+  display: inline;
 }
 
 
@@ -162,6 +168,10 @@
   font-size: 20px;
 }
 
+#styleDiv {
+  display: inline;
+}
+
 .newNoteTitle {
   /*margin: -10px 0;*/
 }
@@ -185,8 +195,8 @@
 }
 .noteSnippet {
   background-color: lightgrey;
-  border-top: 0.5px solid black;
-  border-bottom: 0.5px solid black;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
   /*height: 18px;*/
   /*width: 30px;*/
   text-align: center;
@@ -198,7 +208,7 @@
 }
 
 .noteSnippet:hover {
-  background-color: rgb(254,250,180);
+  background-color: #f6f6f6;
 }
 
 .noteSnippet:active {

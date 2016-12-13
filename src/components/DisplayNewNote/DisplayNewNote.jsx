@@ -9,7 +9,10 @@ import type {RawDraftEntity} from 'RawDraftEntity';
 //   blocks: Array<RawDraftContentBlock>,
 //   entityMap: {[key: string]: RawDraftEntity},
 // };
-
+const divStyle = {
+  color: 'red',
+  fontWeight: 'bold',
+};
 
 // export default React.createClass({
 export default class DisplayNewNote extends React.Component {
@@ -136,10 +139,10 @@ export default class DisplayNewNote extends React.Component {
 
         <div className="wrapperHeaderNewNote">
           <form>
-            <label className="newNoteTopic">Note Title:
-              <input id="titleInput" type="text" name="title" placeholder="Enter Title" onChange={this.addTitle.bind(this)}/>
+            <label className="newNoteTopic">Title:
+              <input id="titleInput" type="text" name="title" placeholder="Enter Note Title" onChange={this.addTitle.bind(this)}/>
             </label><br />
-            <label className="newNoteTopic" id="topicIdSave">Topic # (select Topic buttons): {this.props.topic_id}</label><br />
+            <label className="newNoteTopic" id="topicIdSave">Topic{/*(select Topic buttons):*/}: # <div id="styleDiv" style={divStyle}>{this.props.topic_id}</div></label><br />
             <div id="buttonDiv">
               <button className="saveButton" onClick={this.saveEditorNote.bind(this)}>SAVE NOTE</button>
             </div>
@@ -152,7 +155,7 @@ export default class DisplayNewNote extends React.Component {
           <button onClick={() => {this.makeUnderline();}}>U</button>
         </div>
         <div className="displayNewNoteContent">
-          <div className="editorContainer" style={{ backgroundColor: 'rgb(254,250,180)', width: '99.2%', border: '1px solid black' }}>
+          <div className="editorContainer" style={{ backgroundColor: 'rgb(254,250,180)', width: '99.2%', border: '1px solid rgba(0, 0, 0, 0.5)' }}>
             <Editor
               className="editorBox"
               onChange={(editorState) => { this.onChange(editorState) }}

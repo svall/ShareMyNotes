@@ -1,6 +1,8 @@
 .topicListDiv {
   /*background-color: lightblue;*/
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
   /*width: 100px;*/
   display: inline-block;
   text-align: center;
@@ -15,7 +17,7 @@
 .buttonTopics {
   /*background-color: blue;*/
   font-size: 11px;
-  /*margin: 0.2px;*/
+  margin: 0.5px;
 
 }
 

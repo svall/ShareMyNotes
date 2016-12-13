@@ -12,6 +12,7 @@ import type {RawDraftEntity} from 'RawDraftEntity';
 // };
 const divStyle = {
   color: 'red',
+  fontWeight: 'bold',
 };
 
 export default class DisplaySavedNote extends React.Component {
@@ -113,17 +114,17 @@ export default class DisplaySavedNote extends React.Component {
       <div className="savedNoteContainer">
         <h5 id="savedNoteHeader">Display Existing Note</h5><hr />
         <div className="savedWrapper">
-          <label className="newNoteTitle">Note selected: #{this.props.selected_note}</label>
+          <label className="newNoteTitle">Note selected: # <div id="styleDiv" style={divStyle}>{this.props.selected_note}</div></label>
         </div>
         <div className="titleButtonSaved">
           {/*<button onClick={this.props.saveEditorNote.bind(this)}>SAVE!</button>*/}
           <button className="displayNoteButton" onClick={this.getEditorNote.bind(this)}>SHOW NOTE</button><br /><br />
           {/*<h5 id="newNoteHeader">Display Saved Note</h5>*/}
-          <label className="newNoteTitle" id="savedNoteTitle">Title: {this.state.title}</div></label><br /><br />
+          <label className="newNoteTitle" id="savedNoteTitle">Title: {this.state.title}</label><br /><br />
           {/*<h2>{this.props.params.repoName}</h2>*/}
         </div>
         <div className="displaySavedNoteContent">
-          <div className="editorContainer" style={{ backgroundColor: 'white', width: '99.2%', border: '1px solid black' }}>
+          <div className="editorContainer" style={{ backgroundColor: 'white', width: '99.2%', border: '1px solid rgba(0, 0, 0, 0.5)' }}>
             <Editor
               // style={{padding: '5px'}}
               className="editorBox"

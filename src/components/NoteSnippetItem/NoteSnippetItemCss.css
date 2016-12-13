@@ -1,7 +1,7 @@
 .noteSnippet {
   background-color: lightgrey;
-  border-top: 0.5px solid black;
-  border-bottom: 0.5px solid black;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
   /*height: 18px;*/
   /*width: 30px;*/
   text-align: center;
@@ -13,7 +13,7 @@
 }
 
 .noteSnippet:hover {
-  background-color: rgb(254,250,180);
+  background-color: #f6f6f6;
 }
 
 .noteSnippet:active {

@@ -21,8 +21,7 @@
 }
 
 .editorBox {
-  /*height: 200px;*/
-  /*width: 20px;*/
+  /*padding: 20px;*/
 }
 .saveButton {
   font-size: 13px;
@@ -44,10 +43,15 @@
   font-size: 13px;
   margin-left: 3px;
   margin-bottom: 8px;
+  width: 180px;
  }
 
 #topicIdSave {
   margin-top: 5px;
+}
+
+#styleDiv {
+  display: inline;
 }
 
 
