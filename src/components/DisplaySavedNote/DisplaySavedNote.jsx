@@ -2,6 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import DisplaySavedNoteCss from './DisplaySavedNoteCss.css'
 import { Editor, EditorState, RichUtils, convertFromRaw, Entity, convertToRaw, ContentState, DefaultDraftBlockRenderMap, Modifier } from 'draft-js'
+import type {RawDraftContentBlock} from 'RawDraftContentBlock';
+import type {RawDraftEntity} from 'RawDraftEntity';
+
+export type RawDraftContentState = {
+  blocks: Array<RawDraftContentBlock>,
+  entityMap: {[key: string]: RawDraftEntity},
+};
 
 export default class DisplaySavedNote extends React.Component {
   constructor(props) {
@@ -43,6 +50,8 @@ export default class DisplaySavedNote extends React.Component {
       console.log('fetch editor ', data)
       const translated = (thisFROMraw);
       console.log('converted from ', translated)
+      const contentStateDisp = data.content;
+      console.log('contentState ', contentStateDisp)
       })
       .catch(err => console.log(err));
 // //           // console.log('selected_note_content ', this.props.selected_note_content)

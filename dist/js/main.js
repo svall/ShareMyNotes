@@ -13503,7 +13503,7 @@
 	fetch('/api/cohort/notes/'+this.props.selected_note).then(function(r){return r.json();}).then(function(data){var thisFROMraw=data;// this.setState({
 	//   editorState: data.toJS()
 	// })
-	console.log('fetch editor ',data);var translated=thisFROMraw;console.log('converted from ',translated);}).catch(function(err){return console.log(err);});// //           // console.log('selected_note_content ', this.props.selected_note_content)
+	console.log('fetch editor ',data);var translated=thisFROMraw;console.log('converted from ',translated);var contentStateDisp=data.content;console.log('contentState ',contentStateDisp);}).catch(function(err){return console.log(err);});// //           // console.log('selected_note_content ', this.props.selected_note_content)
 	// //         savedNoteArr.push(data);
 	// //         console.log('data from note fetch ', savedNoteArr)
 	// //         savedContent.push(Object.values(data)[2]);

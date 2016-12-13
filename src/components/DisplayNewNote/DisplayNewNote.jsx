@@ -2,6 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import DisplayNewNoteCss from './DisplayNewNoteCss.css'
 import { Editor, EditorState, RichUtils, convertFromRaw, Entity, convertToRaw, ContentState, DefaultDraftBlockRenderMap, Modifier } from 'draft-js'
+import type {RawDraftContentBlock} from 'RawDraftContentBlock';
+import type {RawDraftEntity} from 'RawDraftEntity';
+
+export type RawDraftContentState = {
+  blocks: Array<RawDraftContentBlock>,
+  entityMap: {[key: string]: RawDraftEntity},
+};
+
 
 // export default React.createClass({
 export default class DisplayNewNote extends React.Component {
