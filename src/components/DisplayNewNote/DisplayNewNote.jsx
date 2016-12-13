@@ -11,7 +11,7 @@ export default class DisplayNewNote extends React.Component {
       editorState: EditorState.createEmpty(),
       // contentState: ContentState,
       // new_note_id: 0
-      title: ''
+      title: 'None'
     };
     // console.log(this.state.editorState)
   }

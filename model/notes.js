@@ -56,7 +56,7 @@ function getOneNote(req, res, next) {
     ;`, noteID)
     .then((note) => {
       res.note = note;
-      console.log('in model notes ===== ', res.note)
+      // console.log('in model notes ===== ', res.note)
       next();
     })
     .catch(error => next(error));

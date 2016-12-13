@@ -8643,7 +8643,7 @@
 	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplayNewNoteCss=__webpack_require__(/*! ./DisplayNewNoteCss.css */ 251);var _DisplayNewNoteCss2=_interopRequireDefault(_DisplayNewNoteCss);var _draftJs=__webpack_require__(/*! draft-js */ 252);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// export default React.createClass({
 	var DisplayNewNote=function(_React$Component){_inherits(DisplayNewNote,_React$Component);function DisplayNewNote(props){_classCallCheck(this,DisplayNewNote);var _this=_possibleConstructorReturn(this,(DisplayNewNote.__proto__||Object.getPrototypeOf(DisplayNewNote)).call(this,props));_this.state={editorState:_draftJs.EditorState.createEmpty(),// contentState: ContentState,
 	// new_note_id: 0
-	title:''};// console.log(this.state.editorState)
+	title:'None'};// console.log(this.state.editorState)
 	return _this;}_createClass(DisplayNewNote,[{key:'onChange',value:function onChange(editorState){this.setState({editorState:editorState});// console.log('basic editorState: ', this.state.editorState);
 	// console.log('editor_note is: ', this.state.editor_note);
 	}},{key:'addTitle',value:function addTitle(e){this.setState({title:e.target.value});}},{key:'saveEditorNote',value:function saveEditorNote(e){// this.props.saveNewNote(editor_note);
@@ -13493,25 +13493,30 @@
   \**************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNote=__webpack_require__(/*! ./DisplaySavedNote.css */ 387);var _DisplaySavedNote2=_interopRequireDefault(_DisplaySavedNote);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// function getNoteContent() {
-	//   console.log('entered click to fetch');
-	//   const savedNoteArr = [];
-	//   const savedContent = [];
-	//     fetch(`/api/cohort/notes/12`)
-	//       .then(r => r.json())
-	//       .then((data) => {
-	//         // this.props.setState({
-	//         //   selected_note_content: data,
-	//         // });
-	//       savedNoteArr.push(data);
-	//       console.log('data from note fetch ', savedNoteArr)
-	//       savedContent.push(Object.values(data)[2]);
-	//       console.log('data digged => ', savedContent[0]);
-	//       console.log('title??? ', savedNoteArr[0].title)
-	//       })
-	//       .catch(err => console.log(err));
-	//   }
-	exports.default=_react2.default.createClass({displayName:'DisplaySavedNote',// showNote(note) {
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(/*! react-dom */ 32);var _reactDom2=_interopRequireDefault(_reactDom);var _DisplaySavedNoteCss=__webpack_require__(/*! ./DisplaySavedNoteCss.css */ 388);var _DisplaySavedNoteCss2=_interopRequireDefault(_DisplaySavedNoteCss);var _draftJs=__webpack_require__(/*! draft-js */ 252);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var DisplaySavedNote=function(_React$Component){_inherits(DisplaySavedNote,_React$Component);function DisplaySavedNote(props){_classCallCheck(this,DisplaySavedNote);var _this=_possibleConstructorReturn(this,(DisplaySavedNote.__proto__||Object.getPrototypeOf(DisplaySavedNote)).call(this,props));_this.state={editorState:_draftJs.EditorState.createEmpty()};console.log(_this.state.editorState);return _this;}_createClass(DisplaySavedNote,[{key:'onChange',value:function onChange(editorState){this.setState({editorState:editorState});// console.log('basic editorState: ', this.state.editorState.toJS().currentContent.blockMap);
+	console.log('basic editorState: ',this.state.editorState);// console.log('editor_note is: ', this.state.editor_note);
+	}},{key:'getEditorNote',value:function getEditorNote(e){// this.props.saveNewNote(editor_note);
+	// console.log('clicked save note');
+	// console.log('clicked SAVE note: ', this.state.editor_note);
+	// const thisFROMraw = convertFROMRaw(this.state.editorState.getCurrentContent());
+	// const toJSData = this.state.editorState.toJS();
+	fetch('/api/cohort/notes/'+this.props.selected_note).then(function(r){return r.json();}).then(function(data){var thisFROMraw=data;// this.setState({
+	//   editorState: data.toJS()
+	// })
+	console.log('fetch editor ',data);var translated=thisFROMraw;console.log('converted from ',translated);}).catch(function(err){return console.log(err);});// //           // console.log('selected_note_content ', this.props.selected_note_content)
+	// //         savedNoteArr.push(data);
+	// //         console.log('data from note fetch ', savedNoteArr)
+	// //         savedContent.push(Object.values(data)[2]);
+	// //         console.log('data digged Values!!!=> ', savedContent[0]);
+	// //         // console.log('title??? ', savedNoteArr[0].title)
+	// //         objKeys.push(Object.keys(data));
+	// //         console.log('keys!!! ', objKeys);
+	//     // .then(this.getAllGardens())
+	// console.log('clicked SAVE note: ', this.state.editorState)
+	}},{key:'render',value:function render(){var _this2=this;return _react2.default.createElement('div',{className:'newNoteContainer'},_react2.default.createElement('button',{onClick:this.getEditorNote.bind(this)},'GET!'),_react2.default.createElement('h5',{id:'newNoteHeader'},'Display New Note'),_react2.default.createElement('h5',{id:'newNoteTopic'},'Id: ',this.props.selected_note),_react2.default.createElement('div',{className:'displayNewNoteContent'},_react2.default.createElement('div',{className:'editorContainer',style:{backgroundColor:'white',width:'100%',height:'100%',border:'1px solid black',overloadY:'scroll'}},_react2.default.createElement(_draftJs.Editor,{className:'editorBox',onChange:function onChange(editorState){_this2.onChange(editorState);},editorState:this.state.editorState// placeholder="Type notes here..."
+	}))),_react2.default.createElement('div',null));}}]);return DisplaySavedNote;}(_react2.default.Component);// ======================================
+	// export default React.createClass({
+	// showNote(note) {
 	//   // console.log('topic in toplicList ', topics[0]);
 	//         // key={index}
 	//         // onClick={() => this.props.getTopicNotes(index)}
@@ -13533,18 +13538,53 @@
 	//   })
 	//   .catch(err => console.log(err));
 	// }
-	render:function render(){var savedNoteArr=[];var savedContent=[];var objKeys=[];var objValues=[];function getNoteContent(){console.log('entered click to fetch');fetch('/api/cohort/notes/12').then(function(r){return r.json();}).then(function(data){// this.setState({
-	//   selected_note_content: data,
-	// });
-	// console.log('selected_note_content ', this.props.selected_note_content)
-	savedNoteArr.push(data);console.log('data from note fetch ',savedNoteArr);savedContent.push(Object.values(data)[2]);console.log('data digged Values!!!=> ',savedContent[0]);// console.log('title??? ', savedNoteArr[0].title)
-	objKeys.push(Object.keys(data));console.log('keys!!! ',objKeys);}).catch(function(err){return console.log(err);});}function mappingObject(){}return _react2.default.createElement('div',{className:'savedNoteContainer'},_react2.default.createElement('h5',null,'Display Saved Note'),_react2.default.createElement('div',{className:'displaySavedNoteContent'},_react2.default.createElement('h3',null,this.props.selected_note),_react2.default.createElement('p',null,'Hi')),_react2.default.createElement('button',{onClick:getNoteContent},'GET!'));}// <h3>{this.savedNoteArr[0].title}</h3>
+	// render() {
+	//   const savedNoteArr = [];
+	//   const savedContent = [];
+	//   const objKeys = [];
+	//   const objValues = [];
+	//   // const noteID = parseInt(document.getElementById('noteID').textContent);
+	//   // console.log('id is ', noteID);
+	//   function getNoteContent() {
+	//     console.log('entered click to fetch');
+	//       fetch(`/api/cohort/notes/5`)
+	//         .then(r => r.json())
+	//         .then((data) => {
+	//           // this.setState({
+	//           //   selected_note_content: data,
+	//           // });
+	//           // console.log('selected_note_content ', this.props.selected_note_content)
+	//         savedNoteArr.push(data);
+	//         console.log('data from note fetch ', savedNoteArr)
+	//         savedContent.push(Object.values(data)[2]);
+	//         console.log('data digged Values!!!=> ', savedContent[0]);
+	//         // console.log('title??? ', savedNoteArr[0].title)
+	//         objKeys.push(Object.keys(data));
+	//         console.log('keys!!! ', objKeys);
+	//         })
+	//         .catch(err => console.log(err));
+	//     }
+	//   function mappingObject() {
+	//   }
+	//   return(
+	//     <div className="savedNoteContainer">
+	//       <h5>Display Saved Note</h5>
+	//       <div className="displaySavedNoteContent">
+	//         <h3 id="noteID">{this.props.selected_note}</h3>
+	//         <p>Hi</p>
+	//       </div>
+	//       <button onClick={getNoteContent}>GET!</button>
+	//     </div>
+	//   )
+	// }
+	// <h3>{this.savedNoteArr[0].title}</h3>
 	// <p>{this.props.notes[this.props.selected_note]}</p>
 	// <p>Topic: {this.props.selected_note_object.topic_name}</p>
 	// <p>Title: {this.props.selected_note_object.title}</p>
 	// {this.props.selected_note_object.title}
 	// <p>{this.props.selected_note_content}</p>
-	});
+	// })
+	exports.default=DisplaySavedNote;
 
 /***/ },
 /* 383 */
@@ -13602,10 +13642,11 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 387 */
-/*!**************************************************************!*\
-  !*** ./src/components/DisplaySavedNote/DisplaySavedNote.css ***!
-  \**************************************************************/
+/* 387 */,
+/* 388 */
+/*!*****************************************************************!*\
+  !*** ./src/components/DisplaySavedNote/DisplaySavedNoteCss.css ***!
+  \*****************************************************************/
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
