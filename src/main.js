@@ -16,7 +16,7 @@ import CohortLogin from './components/CohortLogin/CohortLogin.jsx'
 render((
   // <App />, document.querySelector('#container'));
   <Router history={browserHistory}>
-    <Route path="/login" component={CohortLogin} />
-    <Route path="/" component={App} />
+    <Route path="/" component={CohortLogin} />
+    <Route path="/dashboard" component={App} />
   </Router>
   ), document.querySelector('#container'));

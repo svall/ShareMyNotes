@@ -10,11 +10,12 @@ export default class CohortLogin extends React.Component {
       <div>
         <h1>Cohort Login</h1>
         <h3>Enter Cohort Name</h3>
-        <form>
+        <a href="/dashboard">Dashboard</a>
+        {/*<form>
           <input type="text" placeholder="enter cohort" />
           <input type="text" placeholder="enter password" />
           <button type="submit">LOGIN</button>
-        </form>
+        </form>*/}
       </div>
     )
   }
