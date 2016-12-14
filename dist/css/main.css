@@ -1,7 +1,5 @@
 * {
-  font-family: 'Shadows Into Light Two', cursive;
-  font-family: 'Reenie Beanie', cursive;
-  font-family: 'Enriqueta', serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 .active {
@@ -97,12 +95,12 @@
 }
 .wrapperHeaderNewNote {
   /*background-color: blue;*/
-  margin-bottom: 8px;
+  margin-bottom: 3px;
   padding: 5px 8px 0px 8px;
 }
 
 .editorBox {
-  /*padding: 20px;*/
+  /*color: red;*/
 }
 .saveButton {
   font-size: 13px;
@@ -239,11 +237,8 @@
 .noteSnippet:active {
   background-color: lightgreen;
 }
-
 * {
-  font-family: 'Shadows Into Light Two', cursive;
-  font-family: 'Reenie Beanie', cursive;
-  font-family: 'Enriqueta', serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 .containerCohort {
@@ -271,14 +266,15 @@
 
 .dashboardLink {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 27px;
+  /*font-weight: bold;*/
 /*  width: 200px;
   height: 30px;*/
 }
 
 .dashboardButton {
   width: 290px;
-  height: 40px;
+  height: 45px;
 }
 
 /*# sourceMappingURL=main.css.map*/

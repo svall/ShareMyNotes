@@ -16,12 +16,12 @@
 }
 .wrapperHeaderNewNote {
   /*background-color: blue;*/
-  margin-bottom: 8px;
+  margin-bottom: 3px;
   padding: 5px 8px 0px 8px;
 }
 
 .editorBox {
-  /*padding: 20px;*/
+  /*color: red;*/
 }
 .saveButton {
   font-size: 13px;
