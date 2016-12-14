@@ -124,7 +124,7 @@ export default class DisplaySavedNote extends React.Component {
           {/*<h2>{this.props.params.repoName}</h2>*/}
         </div>
         <div className="displaySavedNoteContent">
-          <div className="editorContainer" style={{ backgroundColor: 'white', width: '99.2%', border: '1px solid rgba(0, 0, 0, 0.5)' }}>
+          <div className="editorContainer" style={{ backgroundImage: 'url("http://a.rgbimg.com/cache1uLiVQ/users/x/xy/xymonau/300/o8aZlNs.jpg")', width: '99.2%', border: '1px solid rgba(0, 0, 0, 0.5)' }}>
             <Editor
               // style={{padding: '5px'}}
               className="editorBox"

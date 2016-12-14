@@ -179,6 +179,19 @@
   /*background-color: green;*/
   padding: 5px 8px 10px 8px;
 }
+
+::-webkit-input-placeholder {
+    color: lightgrey;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: lightgrey;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: lightgrey;
+}
+
 .noteListDiv {
   /*background-color: lightblue;*/
   border: 1px solid black;
@@ -213,6 +226,30 @@
 
 .noteSnippet:active {
   background-color: lightgreen;
+}
+.containerCohort {
+  /*background-color: green;*/
+  background-image: url('https://images.designtrends.com/wp-content/uploads/2015/12/23090031/Spiral-Lined-Notebook-Texture.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*width: 80%;*/
+  text-align: center;
+  margin: auto;
+  height: 90vh;
+  padding-top: 30%;
+}
+
+.dashboardLink {
+  text-decoration: none;
+  font-size: 20px;
+/*  width: 200px;
+  height: 30px;*/
+}
+
+.dashboardButton {
+  width: 290px;
+  height: 40px;
 }
 
 /*# sourceMappingURL=main.css.map*/

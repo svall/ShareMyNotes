@@ -1,0 +1,24 @@
+.containerCohort {
+  /*background-color: green;*/
+  background-image: url('https://images.designtrends.com/wp-content/uploads/2015/12/23090031/Spiral-Lined-Notebook-Texture.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*width: 80%;*/
+  text-align: center;
+  margin: auto;
+  height: 90vh;
+  padding-top: 30%;
+}
+
+.dashboardLink {
+  text-decoration: none;
+  font-size: 20px;
+/*  width: 200px;
+  height: 30px;*/
+}
+
+.dashboardButton {
+  width: 290px;
+  height: 40px;
+}
