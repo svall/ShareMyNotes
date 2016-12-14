@@ -8,6 +8,7 @@ export default class CohortLogin extends React.Component {
  render(){
     return (
       <div>
+        <link href="https://fonts.googleapis.com/css?family=Enriqueta|Reenie+Beanie|Shadows+Into+Light+Two" rel="stylesheet"></link>
         <div className="containerCohort">
           <h1 className="headerCohort">SHARE MY NOTES</h1>
           <h3 className="subheaderCohort">Click on the button to enter the dashboard for your cohort</h3>

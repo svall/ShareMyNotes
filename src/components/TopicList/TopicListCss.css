@@ -16,11 +16,17 @@
 
 .buttonTopics {
   /*background-color: blue;*/
-  font-size: 11px;
+  font-size: 14px;
   margin: 0.5px;
 
 }
 
 .buttonTopics:active {
   /*background-color: lightgreen;*/
+}
+
+.topicContainer {
+  height: 81%;
+  overflow-y: scroll;
+  /*background-color: blue;*/
 }

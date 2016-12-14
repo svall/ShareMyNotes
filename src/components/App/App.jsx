@@ -126,6 +126,7 @@ export default class App extends React.Component {
   render(){
     return(
       <container>
+        <link href="https://fonts.googleapis.com/css?family=Enriqueta|Reenie+Beanie|Shadows+Into+Light+Two" rel="stylesheet"></link>
         <div role="nav">
           <Header />
         </div>

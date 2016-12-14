@@ -7,9 +7,13 @@ VALUES
 INSERT INTO topics(name, cohort_id)
 VALUES
   ('Ruby', 1),
+  ('Rails', 1),
   ('Javascript', 1),
-  ('Rails', 2),
-  ('React', 1);
+  ('React', 1),
+  ('Big O', 1),
+  ('Express', 1),
+  ('SQL', 1),
+  ('NoSQL', 1);
 
 INSERT INTO students(name, password, cohort_id)
 VALUES

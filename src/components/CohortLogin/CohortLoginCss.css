@@ -1,3 +1,10 @@
+
+* {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Enriqueta', serif;
+}
+
 .containerCohort {
   /*background-color: green;*/
   background-image: url('https://images.designtrends.com/wp-content/uploads/2015/12/23090031/Spiral-Lined-Notebook-Texture.jpg');
@@ -11,9 +18,19 @@
   padding-top: 30%;
 }
 
+.headerCohort {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.subheaderCohort {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
 .dashboardLink {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
 /*  width: 200px;
   height: 30px;*/
 }

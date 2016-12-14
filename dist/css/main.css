@@ -1,3 +1,9 @@
+* {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Enriqueta', serif;
+}
+
 .active {
   color: green;
 }
@@ -59,13 +65,19 @@
 
 .buttonTopics {
   /*background-color: blue;*/
-  font-size: 11px;
+  font-size: 14px;
   margin: 0.5px;
 
 }
 
 .buttonTopics:active {
   /*background-color: lightgreen;*/
+}
+
+.topicContainer {
+  height: 81%;
+  overflow-y: scroll;
+  /*background-color: blue;*/
 }
 .newNoteContainer {
   /*border: 2px solid green;*/
@@ -85,7 +97,7 @@
 }
 .wrapperHeaderNewNote {
   /*background-color: blue;*/
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 5px 8px 0px 8px;
 }
 
@@ -110,7 +122,7 @@
 }
  #titleInput {
   font-size: 13px;
-  margin-left: 3px;
+  margin-left: 5px;
   margin-bottom: 8px;
   width: 180px;
  }
@@ -149,7 +161,7 @@
   /*background-color: pink;*/
   /*padding: 1px 0;*/
   text-align: center;
-  margin: 0 0 -3px 0;
+  margin: 0 0 -10px 0;
   /*margin-bottom: 6px;*/
 }
 .displayNoteButton {
@@ -227,6 +239,13 @@
 .noteSnippet:active {
   background-color: lightgreen;
 }
+
+* {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Enriqueta', serif;
+}
+
 .containerCohort {
   /*background-color: green;*/
   background-image: url('https://images.designtrends.com/wp-content/uploads/2015/12/23090031/Spiral-Lined-Notebook-Texture.jpg');
@@ -240,9 +259,19 @@
   padding-top: 30%;
 }
 
+.headerCohort {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.subheaderCohort {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
 .dashboardLink {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
 /*  width: 200px;
   height: 30px;*/
 }

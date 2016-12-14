@@ -12,6 +12,7 @@ import type {RawDraftEntity} from 'RawDraftEntity';
 const divStyle = {
   color: 'red',
   fontWeight: 'bold',
+  fontSize: '20px',
 };
 
 // export default React.createClass({

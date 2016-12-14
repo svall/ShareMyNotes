@@ -31,7 +31,7 @@ export default class TopicList extends React.Component {
     return(
       <div className="topicListDiv">
         <h3 className="topicHeader">TOPICS</h3>
-        <div>
+        <div className="topicContainer">
           {this.showTopics(this.props.topics)}
         </div>
       </div>
