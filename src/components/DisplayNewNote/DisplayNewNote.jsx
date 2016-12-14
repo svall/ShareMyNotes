@@ -98,6 +98,26 @@ export default class DisplayNewNote extends React.Component {
     ));
   }
 
+  makeStrikeThrough() {
+    this.onChange(RichUtils.toggleInlineStyle(
+      this.state.editorState,
+      'STRIKETHROUGH'
+    ));
+  }
+
+  other() {
+    this.onChange(RichUtils.toggleInlineStyle(
+      this.state.editorState,
+      'MARK'
+    ));
+  }
+
+  other2() {
+    this.onChange(RichUtils.toggleInlineStyle(
+      this.state.editorState,
+      'SUB'
+    ));
+  }
 
 
   render() {
@@ -151,9 +171,14 @@ export default class DisplayNewNote extends React.Component {
         </div>
         {/*<h2>{this.props.params.repoName}</h2>*/}
         <div className="stylebuttons">
-          <button onClick={() => {this.makeBold();}}>B</button>
-          <button onClick={() => {this.makeItalic();}}>I</button>
+          <button onClick={() => {this.makeItalic();}}><i>I</i></button>
           <button onClick={() => {this.makeUnderline();}}>U</button>
+          <button onClick={() => {this.makeBold();}}><b>B</b></button>
+          <button onClick={() => {this.makeStrikeThrough();}}><em>-</em></button>
+          <button onClick={() => {this.other();}}><mark>T</mark></button>
+          <button onClick={() => {this.other2();}}><sub>O</sub></button>
+
+
         </div>
         <div className="displayNewNoteContent">
           {/*<div className="editorContainer" style={{ backgroundColor: 'rgb(254,250,180)', width: '99.2%', border: '1px solid rgba(0, 0, 0, 0.5)' }}>*/}
