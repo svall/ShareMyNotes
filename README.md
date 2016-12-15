@@ -44,6 +44,12 @@ To create a new note, students can start typing directly under the "Create New N
 - Setting up react router
 
 
+## **Next Steps**
+- User login (teacher and student)
+- Adding Draft.js plugins for more editing options
+- Delete/Edit notes
+
+
 ## **Attributions**
 - Draft.js Rich Text Editor setup: "draftjs-tutorial" (jbasdf) - https://github.com/atomicjolt/draftjs-tutorial
 - Draft.js data formatting (for db saving): http://stackoverflow.com/questions/36499858/draft-js-persist-editorcontent-to-database
