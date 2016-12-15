@@ -1,7 +1,7 @@
 # ShareMyNotes
 
 ## **Links**
-Heroku: https://share-my-notes.herokuapp.com/
+Hosting: Heroku - https://share-my-notes.herokuapp.com/
 
 
 ## **Summary**
@@ -9,7 +9,11 @@ The app is a tool for students to take centralize note-taking and sharing with c
 
 
 ## **User Stories**
-ShareMyNotes allows students to have access to take notes during class and share them with classmates. Notes are organized by topic and easily accessible. Clicking on a topic will display a list of all notes saved under it, and students can select browse through all notes by their titles and select one to display.  
+ShareMyNotes allows students to have access to take notes during class and share them with classmates. Students need to access their cohort name in the homepage. When logged in, they will see all class topics displayed on the left side. 
+
+Notes are organized by topic and easily accessible. Clicking on each topic will display a list of all notes associated to that specific topic. Students can browse through all notes (by their titles) and select one to display. The note selected will appear under the "Display Existing Note" heading. 
+
+To create a new note, students can start typing directly under the "Create New Note" header. They can add a Title for the note, select which topic the note will be saved under, and write the note. The note content can be styled with the buttons available above it.
 
 
 ## **Technologies**
@@ -45,6 +49,7 @@ ShareMyNotes allows students to have access to take notes during class and share
 - Render Draft.js from db (convertFromRaw()): https://www.npmjs.com/package/draft-js-editor
 - Models and routes structur - CiryGrow (Project 3): https://github.com/svall/citygrow
 - Heroku deployment: Phil Winchester - https://github.com/Blockchain-voting/block-ed/blob/master/HelpfulTips.md
+
 
 ## **Resources**
 - https://medium.com/@rajaraodv/how-draft-js-represents-rich-text-data-eeabb5f25cf2#.4q9tz0fxk
