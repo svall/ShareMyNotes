@@ -39,15 +39,16 @@ To create a new note, students can start typing directly under the "Create New N
 
 
 ## **Constraints**
-- Using a different framework (Draft.js) with React.js
-- Setting up the Schema correctly with multiple cross-reference tables
+- Understanding the structure and functionality of Draft.js 
+- Saving and retrieving data for the text editor
+- Setting up react router
 
 
 ## **Attributions**
 - Draft.js Rich Text Editor setup: "draftjs-tutorial" (jbasdf) - https://github.com/atomicjolt/draftjs-tutorial
 - Draft.js data formatting (for db saving): http://stackoverflow.com/questions/36499858/draft-js-persist-editorcontent-to-database
 - Render Draft.js from db (convertFromRaw()): https://www.npmjs.com/package/draft-js-editor
-- Models and routes structur - CiryGrow (Project 3): https://github.com/svall/citygrow
+- Models and routes structure - CityGrow (Project 3): https://github.com/svall/citygrow
 - Heroku deployment: Phil Winchester - https://github.com/Blockchain-voting/block-ed/blob/master/HelpfulTips.md
 
 
