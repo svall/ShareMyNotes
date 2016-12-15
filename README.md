@@ -1,4 +1,6 @@
 # ShareMyNotes
+![alt tag](./images/homepage.png)
+
 
 ## **Links**
 Hosting: Heroku - https://share-my-notes.herokuapp.com/
