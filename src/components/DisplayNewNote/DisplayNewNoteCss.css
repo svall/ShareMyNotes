@@ -1,12 +1,7 @@
 .newNoteContainer {
-  /*border: 2px solid green;*/
   width: 47%;
   margin: 0 0 0 15px;
   padding: 0 2px;
-  /*height: 93%;*/
-  /*padding-top: 10px;*/
-  /*overflow-y: scroll;*/
-  /*text-align: center;*/
 }
 
 .displayNewNoteContent {
@@ -20,13 +15,9 @@
   padding: 5px 8px 0px 8px;
 }
 
-.editorBox {
-  /*color: red;*/
-}
 .saveButton {
   font-size: 13px;
   margin: 13px 0 3px 0;
-  /*text-align: center;*/
 }
 
 #buttonDiv {

@@ -1,33 +1,23 @@
 .savedNoteContainer {
-  /*border: 2px solid red;*/
   width: 47%;
-  /*height: 95%;*/
-  /*text-align: center;*/
   margin: 0 15px 0 0;
   padding: 0 2px;
 }
 
 .displaySavedNoteContent {
-  /*border: 1px solid black;*/
   background: white;
-  /*width: 80%;*/
-  /*margin: auto;*/
-  /*overflow-y: scroll;*/
   height: 75%;
   overflow-y: scroll;
-  /*height: 90%;*/
 }
+
 .titleButtonSaved {
-  /*background-color: pink;*/
-  /*padding: 1px 0;*/
   text-align: center;
   margin: 0 0 -10px 0;
-  /*margin-bottom: 6px;*/
 }
+
 .displayNoteButton {
   font-size: 13px;
   margin-top: 10px;
-  /*margin-bottom: 5px;*/
 }
 
 #savedNoteHeader {
@@ -44,14 +34,11 @@
   display: inline;
 }
 
-.newNoteTitle {
-  /*margin: -10px 0;*/
-}
 .savedWrapper {
-  /*background-color: green;*/
   padding: 5px 8px 10px 8px;
 }
 
+/*attribution: https://css-tricks.com/snippets/css/style-placeholder-text/*/
 ::-webkit-input-placeholder {
     color: lightgrey;
 }

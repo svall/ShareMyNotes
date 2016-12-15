@@ -2,8 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import DisplayNewNoteCss from './DisplayNewNoteCss.css'
 import { Editor, EditorState, RichUtils, convertFromRaw, Entity, convertToRaw, ContentState, DefaultDraftBlockRenderMap, Modifier } from 'draft-js'
-// import type {RawDraftContentBlock} from 'RawDraftContentBlock';
-// import type {RawDraftEntity} from 'RawDraftEntity';
 
 const divStyle = {
   color: 'red',
@@ -11,6 +9,8 @@ const divStyle = {
   fontSize: '20px',
 };
 
+// attribution Draft.js Rich Text Editor setup: "draftjs-tutorial" (jbasdf) - https://github.com/atomicjolt/draftjs-tutorial,
+// data format to save to pqsl: http://stackoverflow.com/questions/36499858/draft-js-persist-editorcontent-to-database
 export default class DisplayNewNote extends React.Component {
   constructor(props) {
     super(props);
@@ -18,21 +18,24 @@ export default class DisplayNewNote extends React.Component {
       editorState: EditorState.createEmpty(),
       title: 'None'
     };
-    // console.log(this.state.editorState)
   }
 
+  // onChange() updates the state when there are changes to the editor component
   onChange(editorState) {
     this.setState({
       editorState,
     });
   }
 
+  // addTitle() changes the "title" state when the user types in the title input box
   addTitle(e) {
     this.setState({
       title: e.target.value
     })
   }
 
+  // saveEditorNote() does a POST to the notes table in the database
+  // function executes on click of the "SAVE NOTE" button
   saveEditorNote(e){
     const thisraw = convertToRaw(this.state.editorState.getCurrentContent());
     fetch(`/api/cohort/newnote`, {
@@ -49,10 +52,11 @@ export default class DisplayNewNote extends React.Component {
     .catch((err) => {
       console.log(err);
     });
-    // console.log('clicked SAVE note: ', this.state.editorState)
   }
 
-  // ========= INLINE TEXT STYLING BUTTON FUNCTIONS ==========
+  // ========= INLINE TEXT STYLING FUNCTIONS ==========
+  // makeBold(),  makeItalic(), makeUnderline(), makeStrikeThrough(), change the
+  // styling of the editor state for the content selected
   makeBold() {
     this.onChange(RichUtils.toggleInlineStyle(
       this.state.editorState,
@@ -82,14 +86,15 @@ export default class DisplayNewNote extends React.Component {
   }
 
   render() {
+    // console.log EditorState:
     const toJSData = this.state.editorState.toJS();
     console.log('EditorState ==> ', toJSData);
-
+    // console.log EditorState Raw:
     const rawJS = JSON.stringify(toJSData);
     console.log('EditorState Raw ==> ', rawJS);
-
-    const thisraw = convertToRaw(this.state.editorState.getCurrentContent());
-    console.log('ContentState ==> ', thisraw);
+    // console.log ContentState:
+    const contentSt = convertToRaw(this.state.editorState.getCurrentContent());
+    console.log('ContentState ==> ', contentSt);
 
     return(
       <div className="newNoteContainer">

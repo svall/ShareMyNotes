@@ -1,7 +1,9 @@
+// Models structure attributed to Project 3: https://github.com/svall/citygrow
+
 const db = require('../lib/dbConnect');
 
+// getAllTopics() gets all the topics from the topics table
 function getAllTopics(req, res, next) {
-  // const cID = Number.parseInt(req.params.cohortID);
   db.any(`
     SELECT *
     FROM topics;
@@ -14,6 +16,7 @@ function getAllTopics(req, res, next) {
   .catch(error => next(error));
 }
 
+// getOneTopic() gets one topic from the topics table based on the topic id given
 function getOneTopic(req, res, next) {
   const tID = Number.parseInt(req.params.topicID);
     db.any(`SELECT
@@ -30,27 +33,23 @@ function getOneTopic(req, res, next) {
     `, tID)
   .then((tdata) => {
     res.topic = tdata;
-    // console.log('in model one topic', tdata);
     next();
   })
   .catch(error => next(error));
 }
 
-
+// saveNewNote() inserts the new note into the notes table, adds the topic id selected too
 function saveNewNote(req, res, next) {
-  // const topic = 2;
-  // const content = 'this is the first note';
   db.none(`INSERT INTO notes (title, content, topic_id)
     VALUES ($/title/, $/content/, $/topic_id/)
     ;`, req.body)
   .then(() => {
-    // res.newnote = newnote;
-    console.log('this is the post ', req.body);
     next();
   })
   .catch(error => next(error));
 }
 
+// getOneNote() gets one saved note by id from the notes table
 function getOneNote(req, res, next) {
   const noteID = Number.parseInt(req.params.noteID);
   db.one(`
@@ -60,12 +59,10 @@ function getOneNote(req, res, next) {
     ;`, noteID)
     .then((note) => {
       res.note = note;
-      // console.log('in model notes ===== ', res.note)
       next();
     })
     .catch(error => next(error));
 }
-
 
 module.exports = {
   getAllTopics,

@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /*width: 80%;*/
   text-align: center;
   margin: auto;
   height: 80vh;
@@ -28,9 +27,6 @@
 .dashboardLink {
   text-decoration: none;
   font-size: 27px;
-  /*font-weight: bold;*/
-/*  width: 200px;
-  height: 30px;*/
 }
 
 .dashboardButton {

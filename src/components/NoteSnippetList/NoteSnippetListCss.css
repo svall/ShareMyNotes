@@ -4,11 +4,9 @@
   width: 150px;
   display: inline-block;
   text-align: center;
-
 }
 
 .allNotesContainer {
   overflow-y: scroll;
-  /*background-color: purple;*/
   height: 200px;
 }

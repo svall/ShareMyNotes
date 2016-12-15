@@ -6,8 +6,7 @@ import NoteSnippetListCss from './NoteSnippetListCss.css'
 import NoteSnippetItem from '../NoteSnippetItem/NoteSnippetItem'
 
 class NoteSnippetList extends React.Component {
-// export default class NoteSnippetList extends React.Component {
-// export default React.createClass({
+  // showNotes() maps throught the notes state array, passes the data to the NoteSnippetItem component
   showNotes(notes) {
     return this.props.notes.map((notes, key) =>
       <NoteSnippetItem
@@ -18,7 +17,6 @@ class NoteSnippetList extends React.Component {
         notes={this.props.notes}
         selected_note={this.props.selected_note}
         selectNote={this.props.selectNote}
-        // onClick={() => this.props.selectNote(notes.note_id)}
       />
     )
   }
@@ -34,7 +32,5 @@ class NoteSnippetList extends React.Component {
     )
   }
 }
-          // {console.log('in noteSnippetList ', this.props.notes)}
-        // {this.props.children}
 
 export default NoteSnippetList;
