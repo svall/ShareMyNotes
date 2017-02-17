@@ -1,5 +1,8 @@
 # ShareMyNotes
+Susana Isaza - General Assembly (Dec. 15, 2016)
+
 ![alt tag](./images/homepage.png)
+
 
 
 ## **Links**
